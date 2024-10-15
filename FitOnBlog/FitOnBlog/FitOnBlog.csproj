@@ -6,4 +6,146 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\acorn" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\acorn.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\acorn.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\atob" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\atob.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\atob.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\autoprefixer" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\autoprefixer.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\autoprefixer.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\browser-sync" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\browser-sync.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\browser-sync.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\browserslist" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\browserslist.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\browserslist.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\color-support" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\color-support.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\color-support.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\css-beautify" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\css-beautify.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\css-beautify.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\dev-ip" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\dev-ip.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\dev-ip.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\editorconfig" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\editorconfig.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\editorconfig.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\gulp" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\gulp.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\gulp.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\he" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\he.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\he.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\html-beautify" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\html-beautify.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\html-beautify.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\html-minifier" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\html-minifier.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\html-minifier.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\in-install" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\in-install.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\in-install.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\in-publish" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\in-publish.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\in-publish.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\js-beautify" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\js-beautify.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\js-beautify.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\lt" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\lt.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\lt.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\mime" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\mime.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\mime.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\mkdirp" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\mkdirp.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\mkdirp.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\node-gyp" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\node-gyp.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\node-gyp.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\node-sass" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\node-sass.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\node-sass.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\nopt" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\nopt.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\nopt.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\not-in-install" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\not-in-install.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\not-in-install.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\not-in-publish" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\not-in-publish.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\not-in-publish.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\npm" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\npm.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\npm.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\npx" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\npx.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\npx.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\rimraf" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\rimraf.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\rimraf.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\sassgraph" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\sassgraph.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\sassgraph.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\semver" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\semver.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\semver.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\sshpk-conv" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\sshpk-conv.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\sshpk-conv.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\sshpk-sign" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\sshpk-sign.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\sshpk-sign.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\sshpk-verify" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\sshpk-verify.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\sshpk-verify.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\strip-indent" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\strip-indent.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\strip-indent.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\throttleproxy" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\throttleproxy.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\throttleproxy.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\uglifyjs" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\uglifyjs.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\uglifyjs.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\uuid" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\uuid.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\uuid.ps1" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\which" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\which.cmd" />
+    <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\which.ps1" />
+    <None Include="wwwroot\MiniBlog\.DS_Store" />
+    <None Include="wwwroot\MiniBlog\css\.DS_Store" />
+    <None Include="wwwroot\MiniBlog\fonts\.DS_Store" />
+    <None Include="wwwroot\MiniBlog\images\.DS_Store" />
+    <None Include="wwwroot\MiniBlog\scss\.DS_Store" />
+    <None Include="wwwroot\MiniBlog\scss\bootstrap\.DS_Store" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.10">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BusinessLayer\BusinessLayer.csproj" />
+    <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
+    <ProjectReference Include="..\EntityLayer\EntityLayer.csproj" />
+  </ItemGroup>
+
 </Project>
