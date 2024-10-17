@@ -1,3 +1,4 @@
+using BusinessLayer.Containers;
 using DataAccessLayer.Contexts;
 using Microsoft.AspNetCore.Identity;
 
@@ -24,7 +25,7 @@ builder.Services.AddIdentity<FitOnBlogUser, IdentityRole>
     .AddEntityFrameworkStores<FitOnContext>()
     .AddDefaultTokenProviders();
 
-//builder.Services.ContainerDependencies();
+builder.Services.ContainerDependencies();
 
 builder.Services.AddMvc();
 
@@ -48,6 +49,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Default}/{action=Index}/{id?}");
 
 app.Run();

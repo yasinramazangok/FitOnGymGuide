@@ -16,12 +16,6 @@ namespace DataAccessLayer.Contexts
         [Required]
         public string? Name { get; set; }
 
-        [StringLength(50)]
-        public string? Mail { get; set; }
-
-        [StringLength(25)]
-        public string? Phone { get; set; }
-
         [StringLength(200)]
         public string? Address { get; set; }
     }

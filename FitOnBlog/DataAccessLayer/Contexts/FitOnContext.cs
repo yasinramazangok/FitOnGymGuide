@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Contexts
 {
-    public class FitOnContext : IdentityDbContext<IdentityUser>
+    public class FitOnContext : IdentityDbContext<FitOnBlogUser>
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
