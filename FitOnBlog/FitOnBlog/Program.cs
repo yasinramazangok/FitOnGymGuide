@@ -1,7 +1,33 @@
+using DataAccessLayer.Contexts;
+using Microsoft.AspNetCore.Identity;
+
 var builder = WebApplication.CreateBuilder(args);
+
+var connectionString = builder.Configuration.GetConnectionString("FitOnBlogConnection");
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<FitOnContext>(); // for database
+
+builder.Services.AddIdentity<FitOnBlogUser, IdentityRole>
+    (
+        options =>
+        {
+            options.Password.RequiredUniqueChars = 0;
+            options.Password.RequireUppercase = false;
+            options.Password.RequiredLength = 8;
+            options.Password.RequireNonAlphanumeric = false;
+            options.Password.RequireLowercase = false;
+        }
+    )
+    .AddEntityFrameworkStores<FitOnContext>()
+    .AddDefaultTokenProviders();
+
+//builder.Services.ContainerDependencies();
+
+builder.Services.AddMvc();
+
 
 var app = builder.Build();
 
