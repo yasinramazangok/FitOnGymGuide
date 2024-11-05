@@ -4257,6 +4257,14 @@
       "PackagePath": "staticwebassets\\MiniBlog\\images\\cebupacific-booking.jpg"
     },
     {
+      "Id": "C:\\Users\\yasin\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\fiton-favicon.png",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\fiton-favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\yasin\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\fiton-logo.svg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\fiton-logo.svg"
+    },
+    {
       "Id": "C:\\Users\\yasin\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\hero_1.jpg",
       "PackagePath": "staticwebassets\\MiniBlog\\images\\hero_1.jpg"
     },
@@ -4303,6 +4311,10 @@
     {
       "Id": "C:\\Users\\yasin\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\person_5.jpg",
       "PackagePath": "staticwebassets\\MiniBlog\\images\\person_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasin\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\slider-bg-1.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\slider-bg-1.jpg"
     },
     {
       "Id": "C:\\Users\\yasin\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\index.html",

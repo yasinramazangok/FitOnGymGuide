@@ -8,5 +8,20 @@ namespace FitOnBlog.Controllers
         {
             return View();
         }
+
+        public IActionResult RecentPosts()
+        {
+            return View();
+        }
+
+        public IActionResult FeaturedPosts()
+        {
+            return View();
+        }
+
+        public IActionResult OtherFeaturedPosts()
+        {
+            return View();
+        }
     }
 }

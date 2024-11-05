@@ -1,0 +1,30 @@
+﻿@*
+    Color Hex Codes
+    {
+        Black : #0a0a0a
+        Grey  : #151515
+        Orange: #f36100
+    }
+*@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+
+@await Html.PartialAsync("/Views/FrontPartials/HeadPartial.cshtml")
+
+<body>
+
+    @await Html.PartialAsync("/Views/FrontPartials/NavbarPartial.cshtml")
+
+    @RenderBody()
+
+    @await Html.PartialAsync("/Views/FrontPartials/FooterPartial.cshtml")
+
+    @await Html.PartialAsync("/Views/FrontPartials/ScriptPartial.cshtml")
+
+</body>
+</html>
