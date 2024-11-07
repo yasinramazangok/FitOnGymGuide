@@ -9,6 +9,21 @@ namespace FitOnBlog.Controllers
             return View();
         }
 
+        public IActionResult Home()
+        {
+            return View();
+        }
+
+        public IActionResult ContactCover()
+        {
+            return View();
+        }
+
+        public IActionResult SendMessage()
+        {
+            return View();
+        }
+
         public IActionResult MailSubscribe()
         {
             return View();

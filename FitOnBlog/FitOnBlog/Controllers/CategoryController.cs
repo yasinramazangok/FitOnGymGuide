@@ -14,5 +14,11 @@ namespace FitOnBlog.Controllers
             var values = _categoryService.GetListAll();
             return View(values);
         }
+
+        public IActionResult CategoryList()
+        {
+            // This partial view shows the category list in the blog details.
+            return View();
+        }
     }
 }

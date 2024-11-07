@@ -9,6 +9,24 @@ namespace FitOnBlog.Controllers
             return View();
         }
 
-        
+        public IActionResult BlogDetails()
+        {
+            return View();
+        }
+
+        public IActionResult BlogCover()
+        {
+            return View();
+        }
+
+        public IActionResult BlogContent()
+        {
+            return View();
+        }
+
+        public IActionResult BlogByCategory()
+        {
+            return View();
+        }
     }
 }

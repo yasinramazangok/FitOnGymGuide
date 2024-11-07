@@ -12,19 +12,21 @@
 }
 
 <!DOCTYPE html>
+
 <html>
 
-@await Html.PartialAsync("/Views/FrontPartials/HeadPartial.cshtml")
+    @await Html.PartialAsync("/Views/FrontPartials/HeadPartial.cshtml")
 
-<body>
+    <body class="bg-image">
 
-    @await Html.PartialAsync("/Views/FrontPartials/NavbarPartial.cshtml")
+        @await Html.PartialAsync("/Views/FrontPartials/NavbarPartial.cshtml")
 
-    @RenderBody()
+        @RenderBody()
 
-    @await Html.PartialAsync("/Views/FrontPartials/FooterPartial.cshtml")
+        @await Html.PartialAsync("/Views/FrontPartials/FooterPartial.cshtml")
 
-    @await Html.PartialAsync("/Views/FrontPartials/ScriptPartial.cshtml")
+        @await Html.PartialAsync("/Views/FrontPartials/ScriptPartial.cshtml")
 
-</body>
+    </body>
+
 </html>

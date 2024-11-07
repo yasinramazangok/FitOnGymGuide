@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "BlogDetails";
+    Layout = "~/Views/Shared/_FrontLayout.cshtml";
+}
+
+@await Html.PartialAsync("/Views/Blog/BlogCover.cshtml")
+
+<section class="site-section py-lg">
+
+    <div class="container">
+
+        <div class="row blog-entries element-animate">
+
+            <div class="col-md-12 col-lg-8 main-content">
+
+                @await Html.PartialAsync("/Views/Blog/BlogContent.cshtml")
+
+                @await Html.PartialAsync("/Views/Comment/CommentList.cshtml")
+             
+            </div>
+
+        </div>
+
+        <div class="col-md-12 col-lg-4 sidebar">
+
+            @await Html.PartialAsync("/Views/Author/AuthorAbout.cshtml")
+
+            @await Html.PartialAsync("/Views/Author/AuthorPopularPosts.cshtml")
+
+            @await Html.PartialAsync("/Views/Category/CategoryList.cshtml")
+
+        </div>
+
+    </div>
+
+</section>
+
+@await Html.PartialAsync("/Views/Default/OtherFeaturedPosts.cshtml")
+
+@await Html.PartialAsync("/Views/Contact/MailSubscribe.cshtml")

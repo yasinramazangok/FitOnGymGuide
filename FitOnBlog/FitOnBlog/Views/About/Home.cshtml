@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Home";
+    Layout = "~/Views/Shared/_FrontLayout.cshtml";
+}
+
+@await Html.PartialAsync("/Views/About/AboutCover.cshtml")
+
+@await Html.PartialAsync("/Views/About/AboutContent1.cshtml")
+
+@await Html.PartialAsync("/Views/About/MeetTheTeam.cshtml")
+
+@await Html.PartialAsync("/Views/About/AboutContent2.cshtml")
+
+@await Html.PartialAsync("/Views/Contact/MailSubscribe.cshtml")
