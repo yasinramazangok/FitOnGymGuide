@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\yasin\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FitOnBlog.bundle.scp.css",
-      "PackagePath": "staticwebassets\\FitOnBlog.bundle.scp.css"
+      "PackagePath": "staticwebassets\\FitOnBlog.ozqr4jihtf.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\yasin\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\ConnectPlusAdmin\\.gitattributes",
@@ -4971,6 +4971,10 @@
     {
       "Id": "C:\\Users\\yasin\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FitOnBlog.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FitOnBlog.Microsoft.AspNetCore.StaticWebAssets.props",

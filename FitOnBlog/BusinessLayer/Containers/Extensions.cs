@@ -17,6 +17,9 @@ namespace BusinessLayer.Containers
         {        
             services.AddScoped<ICategoryService, CategoryManager>();
             services.AddScoped<ICategoryDal, EfCategoryDal>();
+
+            services.AddScoped<IBlogService, BlogManager>();
+            services.AddScoped<IBlogDal, EfBlogDal>();
         }
     }
 }
