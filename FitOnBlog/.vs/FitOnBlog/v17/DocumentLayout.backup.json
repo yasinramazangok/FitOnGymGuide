@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\yasin\\Desktop\\FitOnGymGuide\\FitOnBlog\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0D09F084-F821-4C24-9561-D2AEDB9CC666}|FitOnBlog\\FitOnBlog.csproj|c:\\users\\yasin\\desktop\\fitongymguide\\fitonblog\\fitonblog\\views\\default\\otherfeaturedposts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D09F084-F821-4C24-9561-D2AEDB9CC666}|FitOnBlog\\FitOnBlog.csproj|solutionrelative:fitonblog\\views\\default\\otherfeaturedposts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0D09F084-F821-4C24-9561-D2AEDB9CC666}|FitOnBlog\\FitOnBlog.csproj|c:\\users\\yasin\\desktop\\fitongymguide\\fitonblog\\fitonblog\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0D09F084-F821-4C24-9561-D2AEDB9CC666}|FitOnBlog\\FitOnBlog.csproj|solutionrelative:fitonblog\\views\\default\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -9,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 29,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +31,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "OtherFeaturedPosts.cshtml",
+              "DocumentMoniker": "C:\\Users\\yasin\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\Views\\Default\\OtherFeaturedPosts.cshtml",
+              "RelativeDocumentMoniker": "FitOnBlog\\Views\\Default\\OtherFeaturedPosts.cshtml",
+              "ToolTip": "C:\\Users\\yasin\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\Views\\Default\\OtherFeaturedPosts.cshtml",
+              "RelativeToolTip": "FitOnBlog\\Views\\Default\\OtherFeaturedPosts.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T14:58:41.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\yasin\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\Views\\Default\\Index.cshtml",
+              "RelativeDocumentMoniker": "FitOnBlog\\Views\\Default\\Index.cshtml",
+              "ToolTip": "C:\\Users\\yasin\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\Views\\Default\\Index.cshtml",
+              "RelativeToolTip": "FitOnBlog\\Views\\Default\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-26T14:58:38.834Z",
+              "EditorCaption": ""
             }
           ]
         }
