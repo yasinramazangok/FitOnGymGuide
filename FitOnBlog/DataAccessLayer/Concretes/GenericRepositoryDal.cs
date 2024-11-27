@@ -24,7 +24,7 @@ namespace DataAccessLayer.Concretes
             return fitOnContext.Set<T>().Find(id);
         }
 
-        public List<T> GetListAll()
+        public virtual List<T> GetListAll()
         {
             using var fitOnContext = new FitOnContext();
             return fitOnContext.Set<T>().ToList();

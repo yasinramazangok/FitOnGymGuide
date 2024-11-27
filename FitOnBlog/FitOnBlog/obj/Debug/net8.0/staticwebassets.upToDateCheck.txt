@@ -1120,6 +1120,12 @@ wwwroot\MiniBlog\fonts\icomoon\fonts\icomoon.woff
 wwwroot\MiniBlog\fonts\icomoon\Read Me.txt
 wwwroot\MiniBlog\fonts\icomoon\selection.json
 wwwroot\MiniBlog\fonts\icomoon\style.css
+wwwroot\MiniBlog\images\authors\team-1.jpg
+wwwroot\MiniBlog\images\authors\team-2.jpg
+wwwroot\MiniBlog\images\authors\team-3.jpg
+wwwroot\MiniBlog\images\authors\team-4.jpg
+wwwroot\MiniBlog\images\authors\team-5.jpg
+wwwroot\MiniBlog\images\authors\team-6.jpg
 wwwroot\MiniBlog\images\cebupacific-booking.jpg
 wwwroot\MiniBlog\images\fiton-favicon.png
 wwwroot\MiniBlog\images\fiton-logo.svg

@@ -9,6 +9,26 @@ body {
     font-family: "Muli", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+.content-summary {
+    display: block;
+    width: 100%; /* En geni? alan? kaplas?n */
+    text-align: justify; /* Metni her iki yana yasla */
+    line-height: 1.5em; /* Sat?r aral??? */
+    max-height: 6em; /* 4 sat?rl?k alan, line-height ile çarp?lmal? */
+    overflow: hidden; /* 4 sat?r? geçerse gizle */
+    text-overflow: ellipsis; /* Metin bitti?inde '...' ekle */
+}
+
+    .content-summary::after {
+        content: "";
+        display: block;
+        height: 0;
+        clear: both;
+    }
+
+
+
+
 ::-moz-selection {
     background: #000;
     color: #fff;
@@ -63,7 +83,7 @@ h1, h2, h3, h4, h5,
     -o-transition: .3s all ease-in-out;
     transition: .3s all ease-in-out;
     /*    background: rgba(0, 0, 0, 0.6); */
-    background-image : url('/MiniBlog/images/slider-bg-1.jpg');
+    background-image: url('/MiniBlog/images/slider-bg-1.jpg');
     content: "";
     position: absolute;
     z-index: 2000;

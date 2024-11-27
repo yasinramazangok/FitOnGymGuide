@@ -14,12 +14,24 @@ namespace BusinessLayer.Containers
     public static class Extensions
     {
         public static void ContainerDependencies(this IServiceCollection services)
-        {        
+        {
             services.AddScoped<ICategoryService, CategoryManager>();
             services.AddScoped<ICategoryDal, EfCategoryDal>();
 
             services.AddScoped<IBlogService, BlogManager>();
             services.AddScoped<IBlogDal, EfBlogDal>();
+
+            services.AddScoped<IAuthorService, AuthorManager>();
+            services.AddScoped<IAuthorDal, EfAuthorDal>();
+
+            services.AddScoped<ICommentService, CommentManager>();
+            services.AddScoped<ICommentDal, EfCommentDal>();
+            
+            services.AddScoped<IBlogService, BlogManager>();
+            services.AddScoped<IBlogDal, EfBlogDal>();
+            
+            services.AddScoped<IContactService, ContactManager>();
+            services.AddScoped<IContactDal, EfContactDal>();
         }
     }
 }
