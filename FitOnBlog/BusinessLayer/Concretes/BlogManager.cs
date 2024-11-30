@@ -23,6 +23,16 @@ namespace BusinessLayer.Concretes
             return _blogDal.GetById(id);
         }
 
+        public Blog GetFirstBlogByCategory(int categoryId)
+        {
+            return _blogDal.GetFirstBlogByCategory(categoryId);
+        }
+
+        public Blog GetLastBlogByCategory(int categoryId)
+        {
+            return _blogDal.GetLastBlogByCategory(categoryId);
+        }
+
         public List<Blog> GetListAll()
         {
             return _blogDal.GetListAll();

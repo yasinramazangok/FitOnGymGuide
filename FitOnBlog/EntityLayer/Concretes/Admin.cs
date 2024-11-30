@@ -9,11 +9,12 @@ namespace EntityLayer.Concretes
 {
     public class Admin
     {
-        [Key]
-        public int AdminID { get; set; }
+        public int AdminId { get; set; }
+
         [StringLength(50)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
+
         [StringLength(50)]
-        public string Password { get; set; }
+        public string? Password { get; set; }
     }
 }

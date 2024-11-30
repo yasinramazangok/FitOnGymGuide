@@ -4,11 +4,6 @@ using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
-var connectionString = builder.Configuration.GetConnectionString("FitOnBlogConnection");
-
-// Add services to the container.
-builder.Services.AddControllersWithViews();
-
 builder.Services.AddDbContext<FitOnContext>(); // for database
 
 builder.Services.AddIdentity<FitOnBlogUser, IdentityRole>

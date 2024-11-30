@@ -9,10 +9,9 @@ namespace EntityLayer.Concretes
 {
     public class Category
     {
-        [Key]
-        public int CategoryID { get; set; }
+        public int CategoryId { get; set; }
         [StringLength(50)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
         public ICollection<Blog>? Blogs { get; set; }
     }
 }

@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FitOnBlog.bundle.scp.css",
-      "PackagePath": "staticwebassets\\FitOnBlog.bundle.scp.css"
+      "PackagePath": "staticwebassets\\FitOnBlog.ozqr4jihtf.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\ConnectPlusAdmin\\.gitattributes",
@@ -4253,6 +4253,30 @@
       "PackagePath": "staticwebassets\\MiniBlog\\fonts\\icomoon\\style.css"
     },
     {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\authors\\team-1.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\authors\\team-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\authors\\team-2.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\authors\\team-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\authors\\team-3.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\authors\\team-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\authors\\team-4.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\authors\\team-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\authors\\team-5.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\authors\\team-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\authors\\team-6.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\authors\\team-6.jpg"
+    },
+    {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\cebupacific-booking.jpg",
       "PackagePath": "staticwebassets\\MiniBlog\\images\\cebupacific-booking.jpg"
     },
@@ -4971,6 +4995,10 @@
     {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FitOnBlog.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.FitOnBlog.Microsoft.AspNetCore.StaticWebAssets.props",

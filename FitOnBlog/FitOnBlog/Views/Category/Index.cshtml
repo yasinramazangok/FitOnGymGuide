@@ -24,10 +24,10 @@
                         @foreach (var item in Model)
                         {
                             <tr>
-                                <td>@item.CategoryID</td>
+                                <td>@item.CategoryId</td>
                                 <td>@item.Name</td>
-                                <td><a href="/Category/DeleteCategory/@item.CategoryID" class="btn btn-outline-danger">Sil</a></td>
-                                <td><a href="/Category/UpdateCategory/@item.CategoryID" class="btn btn-outline-warning">Güncelle</a></td>
+                                <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-outline-danger">Sil</a></td>
+                                <td><a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-outline-warning">Güncelle</a></td>
                             </tr>
                         }
                     </tbody>

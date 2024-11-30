@@ -9,16 +9,20 @@ namespace EntityLayer.Concretes
 {
     public class Contact
     {
-        [Key]
-        public int ContactID { get; set; }
+        public int ContactId { get; set; }
+
         [StringLength(50)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
+
         [StringLength(50)]
-        public string Email { get; set; }
+        public string? Email { get; set; }
+
         [StringLength(30)]
         public string? PhoneNumber { get; set; }
+
         [StringLength(100)]
-        public string Subject { get; set; }
-        public string Message { get; set; }
+        public string? Subject { get; set; }
+
+        public string? Message { get; set; }
     }
 }

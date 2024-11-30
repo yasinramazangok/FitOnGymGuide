@@ -9,5 +9,9 @@ namespace DataAccessLayer.Abstracts
 {
     public interface IBlogDal : IGenericDal<Blog>
     {
+        public Blog GetLastBlogByCategory(int categoryId);
+
+        public Blog GetFirstBlogByCategory(int categoryId);
+
     }
 }
