@@ -13,14 +13,45 @@ namespace DataAccessLayer.EntityFrameworkCore
 {
     public class EfBlogDal : GenericRepositoryDal<Blog>, IBlogDal
     {
+        public Blog GetLastBlogByCategory(int categoryId)
+        {
+            using var fitOnContext = new FitOnContext();
+
+            return fitOnContext.Blogs
+                        .Where(c => c.CategoryId == categoryId)
+                        .OrderByDescending(d => d.BlogId)
+                        .Select(b => new Blog
+                        {
+                            Title = b.Title,
+                            ImageUrl = b.ImageUrl,
+                            Date = b.Date
+                        })
+                        .FirstOrDefault();
+        }
+
+        public Blog GetFirstBlogByCategory(int categoryId)
+        {
+            using var fitOnContext = new FitOnContext();
+
+            return fitOnContext.Blogs
+                        .Where(c => c.CategoryId == categoryId)
+                        .OrderBy(d => d.BlogId)
+                        .Select(b => new Blog
+                        {
+                            Title = b.Title,
+                            ImageUrl = b.ImageUrl,
+                            Date = b.Date
+                        })
+                        .FirstOrDefault();
+        }
+
         public override List<Blog> GetListAll()
         {
             using var fitOnContext = new FitOnContext();
 
-            // Include ile ilişkili verileri dahil ediyoruz
             return fitOnContext.Blogs
-                .Include(blog => blog.Author)   // Author'ı dahil et
-                .Include(blog => blog.Category) // Category'yi dahil et
+                .Include(blog => blog.Author)
+                .Include(blog => blog.Category)
                 .ToList();
         }
     }

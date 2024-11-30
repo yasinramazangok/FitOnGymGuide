@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fhJQ11fI8K3EZ2jAsbK0IizzQLyCuBFzNZWV+2B7fkw=",
+  "Hash": "tBflL8IXhlmSsUJBcaHAIcROXwhgy//mAd+83VbTMTM=",
   "Source": "FitOnBlog",
   "BasePath": "_content/FitOnBlog",
   "Mode": "Default",
@@ -23173,8 +23173,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "rzhhknn1km",
-      "Integrity": "V3XGMcGWAaV1zm+vHh/yul/rd6LXY+X6bz2iKNy+7Eg=",
+      "Fingerprint": "yr490nxlx9",
+      "Integrity": "knNz3nhmhendA+jVA0ezwhGwfUr+rKfM6Kf0egAXC9w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\MiniBlog\\css\\style.css"
@@ -110505,7 +110505,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 27 Nov 2024 20:42:04 GMT"
+          "Value": "Sat, 30 Nov 2024 14:49:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -110542,7 +110542,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 27 Nov 2024 20:42:04 GMT"
+          "Value": "Sat, 30 Nov 2024 14:49:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -110587,7 +110587,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 27 Nov 2024 20:42:04 GMT"
+          "Value": "Sat, 30 Nov 2024 14:49:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -110632,7 +110632,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 27 Nov 2024 20:42:04 GMT"
+          "Value": "Sat, 30 Nov 2024 14:49:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -116643,7 +116643,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "45141"
+          "Value": "45129"
         },
         {
           "Name": "Content-Type",
@@ -116651,11 +116651,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"V3XGMcGWAaV1zm+vHh/yul/rd6LXY+X6bz2iKNy+7Eg=\""
+          "Value": "\"knNz3nhmhendA+jVA0ezwhGwfUr+rKfM6Kf0egAXC9w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 27 Nov 2024 20:34:13 GMT"
+          "Value": "Fri, 29 Nov 2024 17:19:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -116665,12 +116665,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-V3XGMcGWAaV1zm+vHh/yul/rd6LXY+X6bz2iKNy+7Eg="
+          "Value": "sha256-knNz3nhmhendA+jVA0ezwhGwfUr+rKfM6Kf0egAXC9w="
         }
       ]
     },
     {
-      "Route": "MiniBlog/css/style.rzhhknn1km.css",
+      "Route": "MiniBlog/css/style.yr490nxlx9.css",
       "AssetFile": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\css\\style.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -116680,7 +116680,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "45141"
+          "Value": "45129"
         },
         {
           "Name": "Content-Type",
@@ -116688,11 +116688,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"V3XGMcGWAaV1zm+vHh/yul/rd6LXY+X6bz2iKNy+7Eg=\""
+          "Value": "\"knNz3nhmhendA+jVA0ezwhGwfUr+rKfM6Kf0egAXC9w=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 27 Nov 2024 20:34:13 GMT"
+          "Value": "Fri, 29 Nov 2024 17:19:20 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -116702,7 +116702,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rzhhknn1km"
+          "Value": "yr490nxlx9"
         },
         {
           "Name": "label",
@@ -116710,7 +116710,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-V3XGMcGWAaV1zm+vHh/yul/rd6LXY+X6bz2iKNy+7Eg="
+          "Value": "sha256-knNz3nhmhendA+jVA0ezwhGwfUr+rKfM6Kf0egAXC9w="
         }
       ]
     },

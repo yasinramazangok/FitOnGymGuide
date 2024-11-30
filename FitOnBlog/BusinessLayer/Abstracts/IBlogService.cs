@@ -1,4 +1,5 @@
-﻿using EntityLayer.Concretes;
+﻿using DataAccessLayer.Contexts;
+using EntityLayer.Concretes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,9 @@ namespace BusinessLayer.Abstracts
 {
     public interface IBlogService : IGenericService<Blog>
     {
+        public Blog GetLastBlogByCategory(int categoryId);
+
+        public Blog GetFirstBlogByCategory(int categoryId);
+
     }
 }

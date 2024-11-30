@@ -9,15 +9,18 @@ namespace EntityLayer.Concretes
 {
     public class Comment
     {
-        [Key]
-        public int CommentID { get; set; }
+        public int CommentId { get; set; }
+
         [StringLength(50)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
+
         [StringLength(50)]
         public string? Email { get; set; }
+
         [StringLength(300)]
-        public string CommentText { get; set; }
-        public int BlogID { get; set; }
+        public string? CommentText { get; set; }
+
+        public int BlogId { get; set; }
         public virtual Blog? Blogs { get; set; }
     }
 }

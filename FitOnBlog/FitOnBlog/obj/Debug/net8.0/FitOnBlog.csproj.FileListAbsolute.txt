@@ -395,6 +395,8 @@ C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\bin\Debug\net
 C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\bin\Debug\net8.0\System.Text.Encodings.Web.dll
 C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\bin\Debug\net8.0\X.PagedList.dll
+C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
 C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\bin\Debug\net8.0\af\Humanizer.resources.dll
 C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\bin\Debug\net8.0\ar\Humanizer.resources.dll
 C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\bin\Debug\net8.0\az\Humanizer.resources.dll

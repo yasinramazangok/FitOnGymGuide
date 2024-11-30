@@ -19830,8 +19830,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>rzhhknn1km</Fingerprint>
-      <Integrity>V3XGMcGWAaV1zm+vHh/yul/rd6LXY+X6bz2iKNy+7Eg=</Integrity>
+      <Fingerprint>yr490nxlx9</Fingerprint>
+      <Integrity>knNz3nhmhendA+jVA0ezwhGwfUr+rKfM6Kf0egAXC9w=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MiniBlog\css\style.css'))</OriginalItemSpec>
