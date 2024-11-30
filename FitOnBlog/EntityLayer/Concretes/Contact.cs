@@ -9,6 +9,7 @@ namespace EntityLayer.Concretes
 {
     public class Contact
     {
+        [Key]
         public int ContactId { get; set; }
 
         [StringLength(50)]

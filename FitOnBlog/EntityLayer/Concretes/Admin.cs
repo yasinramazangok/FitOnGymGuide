@@ -9,6 +9,7 @@ namespace EntityLayer.Concretes
 {
     public class Admin
     {
+        [Key]
         public int AdminId { get; set; }
 
         [StringLength(50)]

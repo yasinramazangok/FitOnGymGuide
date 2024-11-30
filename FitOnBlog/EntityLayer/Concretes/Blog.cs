@@ -9,6 +9,7 @@ namespace EntityLayer.Concretes
 {
     public class Blog
     {
+        [Key]
         public int BlogId { get; set; }  
 
         [StringLength(150)]
