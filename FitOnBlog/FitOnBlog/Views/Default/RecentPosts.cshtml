@@ -52,7 +52,7 @@
                         <a href="single.html"><img src="@item.ImageUrl" alt="Image" class="img-fluid rounded"></a>
                         <div class="excerpt">
                             <span class="@categoryColor">@item.Category?.Name</span>
-                            <h2><a href="single.html">@item.Title</a></h2>
+                            <h2><a href="/Blog/BlogDetails/@item.BlogId/">@item.Title</a></h2>
                             <div class="post-meta align-items-center text-left clearfix">
                                 <figure class="author-figure mb-0 mr-3 float-left"><img src="@item.Author?.ImageUrl" alt="Image" class="img-fluid"></figure>
                                 <span class="d-inline-block mt-1"><a href="#">@item.Author?.Name</a></span>
@@ -70,24 +70,24 @@
         </div>
         </br>
         <div class="row text-center pt-5 border-top"></div>
+        @Html.PagedListPager(
+                 Model,
+                 page => Url.Action("Index", new { page }),
+                 new PagedListRenderOptions
+        {
+            DisplayLinkToFirstPage = PagedListDisplayMode.Always,
+            DisplayLinkToLastPage = PagedListDisplayMode.Always,
+            DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+            DisplayLinkToNextPage = PagedListDisplayMode.Always,
+            // DisplayPageCountAndCurrentLocation = true,
+            // DisplayItemSliceAndTotal = true,
+            MaximumPageNumbersToDisplay = 5,
+            ClassToApplyToFirstListItemInPager = "first-item",
+            ClassToApplyToLastListItemInPager = "last-item",
+            LinkToPreviousPageFormat = "«",
+            LinkToNextPageFormat = "»",
+            LinkToFirstPageFormat = "««",
+            LinkToLastPageFormat = "»»"
+        })
     </div>
 </div>
-@Html.PagedListPager(
-                        Model,
-                        page => Url.Action("Index", new { page }),
-                        new PagedListRenderOptions
-                    {
-                        DisplayLinkToFirstPage = PagedListDisplayMode.Always,
-                        DisplayLinkToLastPage = PagedListDisplayMode.Always,
-                        DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
-                        DisplayLinkToNextPage = PagedListDisplayMode.Always,
-                        // DisplayPageCountAndCurrentLocation = true,
-                        // DisplayItemSliceAndTotal = true,
-                        MaximumPageNumbersToDisplay = 5,
-                        ClassToApplyToFirstListItemInPager = "first-item",
-                        ClassToApplyToLastListItemInPager = "last-item",
-                        LinkToPreviousPageFormat = "«",
-                        LinkToNextPageFormat = "»",
-                        LinkToFirstPageFormat = "««",
-                        LinkToLastPageFormat = "»»"
-                    })

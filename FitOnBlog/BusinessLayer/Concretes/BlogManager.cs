@@ -33,6 +33,11 @@ namespace BusinessLayer.Concretes
             return _blogDal.GetLastBlogByCategory(categoryId);
         }
 
+        public List<Blog> GetBlogById(int id)
+        {
+            return _blogDal.GetBlogById(id);
+        }
+
         public List<Blog> GetListAll()
         {
             return _blogDal.GetListAll();

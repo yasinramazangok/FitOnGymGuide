@@ -1,17 +1,27 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using BusinessLayer.Abstracts;
+using Microsoft.AspNetCore.Mvc;
 
 namespace FitOnBlog.Controllers
 {
     public class BlogController : Controller
     {
+        private readonly IBlogService _blogService;
+
+        public BlogController(IBlogService blogService)
+        {
+            _blogService = blogService;
+        }
+
         public IActionResult Index()
         {
             return View();
         }
 
-        public IActionResult BlogDetails()
+        public IActionResult BlogDetails(int id)
         {
-            return View();
+            var blogDetails = _blogService.GetBlogById(id);
+
+            return View(blogDetails);
         }
 
         public IActionResult BlogCover()

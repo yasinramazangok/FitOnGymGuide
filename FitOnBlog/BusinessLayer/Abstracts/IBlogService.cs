@@ -14,5 +14,6 @@ namespace BusinessLayer.Abstracts
 
         public Blog GetFirstBlogByCategory(int categoryId);
 
+        public List<Blog> GetBlogById(int id);
     }
 }

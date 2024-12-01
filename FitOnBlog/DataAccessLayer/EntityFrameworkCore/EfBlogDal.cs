@@ -45,6 +45,17 @@ namespace DataAccessLayer.EntityFrameworkCore
                         .FirstOrDefault();
         }
 
+        public List<Blog> GetBlogById(int id)
+        {
+            using var fitOnContext = new FitOnContext();
+
+            return fitOnContext.Blogs.
+                        Where(b => b.BlogId == id)
+                        .Include(blog => blog.Author)
+                        .Include(blog => blog.Category)
+                        .ToList();
+        }
+
         public override List<Blog> GetListAll()
         {
             using var fitOnContext = new FitOnContext();
