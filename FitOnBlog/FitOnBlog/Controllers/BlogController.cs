@@ -21,6 +21,10 @@ namespace FitOnBlog.Controllers
         {
             var blogDetails = _blogService.GetBlogById(id);
 
+            var selectedBlog = blogDetails.FirstOrDefault(b => b.BlogId == id);
+
+            ViewBag.authorId = selectedBlog.AuthorId;
+
             ViewBag.id = id;
 
             return View(blogDetails);

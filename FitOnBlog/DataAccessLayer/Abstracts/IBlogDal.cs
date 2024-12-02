@@ -15,5 +15,6 @@ namespace DataAccessLayer.Abstracts
 
         public List<Blog> GetBlogById(int id);
 
+        public List<Blog> GetBlogsByAuthorId(int id);      
     }
 }

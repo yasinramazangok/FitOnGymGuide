@@ -38,6 +38,11 @@ namespace BusinessLayer.Concretes
             return _blogDal.GetBlogById(id);
         }
 
+        public List<Blog> GetBlogsByAuthorId(int id)
+        {
+            return _blogDal.GetBlogsByAuthorId(id);
+        }
+
         public List<Blog> GetListAll()
         {
             return _blogDal.GetListAll();
@@ -52,5 +57,7 @@ namespace BusinessLayer.Concretes
         {
             _blogDal.Update(blog);
         }
+
+
     }
 }
