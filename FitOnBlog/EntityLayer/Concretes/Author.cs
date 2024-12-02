@@ -9,6 +9,7 @@ namespace EntityLayer.Concretes
 {
     public class Author
     {
+        [Key]
         public int AuthorId { get; set; }
 
         [StringLength(50)]

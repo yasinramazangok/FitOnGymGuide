@@ -23,10 +23,5 @@ namespace FitOnBlog.Controllers
         {
             return View();
         }
-
-        public IActionResult MailSubscribe()
-        {
-            return View();
-        }
     }
 }

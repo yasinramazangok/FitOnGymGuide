@@ -13,12 +13,12 @@ namespace DataAccessLayer.EntityFrameworkCore
 {
     public class EfBlogDal : GenericRepositoryDal<Blog>, IBlogDal
     {
-        public Blog GetLastBlogByCategory(int categoryId)
+        public Blog GetLastBlogByCategory(int id)
         {
             using var fitOnContext = new FitOnContext();
 
             return fitOnContext.Blogs
-                        .Where(c => c.CategoryId == categoryId)
+                        .Where(c => c.CategoryId == id)
                         .OrderByDescending(d => d.BlogId)
                         .Select(b => new Blog
                         {
@@ -29,12 +29,12 @@ namespace DataAccessLayer.EntityFrameworkCore
                         .FirstOrDefault();
         }
 
-        public Blog GetFirstBlogByCategory(int categoryId)
+        public Blog GetFirstBlogByCategory(int id)
         {
             using var fitOnContext = new FitOnContext();
 
             return fitOnContext.Blogs
-                        .Where(c => c.CategoryId == categoryId)
+                        .Where(c => c.CategoryId == id)
                         .OrderBy(d => d.BlogId)
                         .Select(b => new Blog
                         {
@@ -43,6 +43,17 @@ namespace DataAccessLayer.EntityFrameworkCore
                             Date = b.Date
                         })
                         .FirstOrDefault();
+        }
+
+        public List<Blog> GetBlogById(int id)
+        {
+            using var fitOnContext = new FitOnContext();
+
+            return fitOnContext.Blogs.
+                        Where(b => b.BlogId == id)
+                        .Include(b => b.Author)
+                        .Include(b => b.Category)
+                        .ToList();
         }
 
         public override List<Blog> GetListAll()

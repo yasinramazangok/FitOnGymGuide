@@ -32,6 +32,9 @@ namespace BusinessLayer.Containers
             
             services.AddScoped<IContactService, ContactManager>();
             services.AddScoped<IContactDal, EfContactDal>();
+
+            services.AddScoped<IEmailSubscriptionService, EmailSubscriptionManager>();
+            services.AddScoped<IEmailSubscriptionDal, EfEmailSubscriptionDal>();
         }
     }
 }

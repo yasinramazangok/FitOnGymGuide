@@ -4,13 +4,11 @@
 
 <div class="site-wrap bg-image">
 
-    @await Html.PartialAsync("/Views/Default/FeaturedPosts.cshtml")
+    @await Component.InvokeAsync("DefaultFeaturedBlogsPartial")
 
-    @await Html.PartialAsync("/Views/Default/RecentPosts.cshtml")
+    @await Component.InvokeAsync("DefaultRecentBlogsPartial", new { pageNumber = Model })
 
-    @* @await Html.PartialAsync("/Views/Default/OtherFeaturedPosts.cshtml") *@
- 
-    @await Html.PartialAsync("/Views/Contact/MailSubscribe.cshtml")
+    @await Html.PartialAsync("/Views/EmailSubscription/AddSubscriber.cshtml")
 
 </div>
 

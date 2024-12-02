@@ -9,5 +9,6 @@ namespace BusinessLayer.Abstracts
 {
     public interface ICommentService : IGenericService<Comment>
     {
+        public List<Comment> GetCommentsByBlogId(int id);
     }
 }
