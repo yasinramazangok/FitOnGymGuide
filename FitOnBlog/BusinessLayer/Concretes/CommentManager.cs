@@ -9,9 +9,14 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concretes
 {
-    public class CommentManager(ICommentDal commentDal) : ICommentService
+    public class CommentManager : ICommentService
     {
-        private readonly ICommentDal _commentDal = commentDal; // Primary Constructor
+        private readonly ICommentDal _commentDal;
+
+        public CommentManager(ICommentDal commentDal)
+        {
+            _commentDal = commentDal;
+        }
 
         public void Delete(Comment comment)
         {
@@ -23,6 +28,11 @@ namespace BusinessLayer.Concretes
             return _commentDal.GetById(id);
         }
 
+        public List<Comment> GetCommentsByBlogId(int blogId)
+        {
+            return _commentDal.GetCommentsByBlogId(blogId);
+        }
+
         public List<Comment> GetListAll()
         {
             return _commentDal.GetListAll();
@@ -30,6 +40,10 @@ namespace BusinessLayer.Concretes
 
         public void Insert(Comment comment)
         {
+            if (string.IsNullOrWhiteSpace(comment?.Name) || comment.Name.Length > 50 || comment.Name.Length < 2 || string.IsNullOrWhiteSpace(comment?.Email) || comment.Email.Length > 50 || comment.Email.Length < 11 || string.IsNullOrWhiteSpace(comment?.CommentText) || comment.CommentText.Length > 300 || comment.CommentText.Length < 1)
+            {
+                throw new NotImplementedException();
+            }
             _commentDal.Insert(comment);
         }
 

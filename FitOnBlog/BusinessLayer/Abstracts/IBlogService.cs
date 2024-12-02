@@ -10,9 +10,9 @@ namespace BusinessLayer.Abstracts
 {
     public interface IBlogService : IGenericService<Blog>
     {
-        public Blog GetLastBlogByCategory(int categoryId);
+        public Blog GetLastBlogByCategory(int id);
 
-        public Blog GetFirstBlogByCategory(int categoryId);
+        public Blog GetFirstBlogByCategory(int id);
 
         public List<Blog> GetBlogById(int id);
     }

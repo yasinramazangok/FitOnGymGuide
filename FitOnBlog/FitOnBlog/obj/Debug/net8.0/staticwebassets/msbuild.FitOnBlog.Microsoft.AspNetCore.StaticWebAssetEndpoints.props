@@ -12328,13 +12328,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\FitOnBlog.ozqr4jihtf.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-nC5xxGyL9XGgtVZJ0kTrcdOLymls3I\u002BOgFMoZ5jOMdM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1127"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022nC5xxGyL9XGgtVZJ0kTrcdOLymls3I\u002BOgFMoZ5jOMdM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Dec 2024 01:41:24 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1127"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022nC5xxGyL9XGgtVZJ0kTrcdOLymls3I\u002BOgFMoZ5jOMdM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Dec 2024 04:30:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FitOnBlog/FitOnBlog.ozqr4jihtf.bundle.scp.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\FitOnBlog.ozqr4jihtf.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ozqr4jihtf"},{"Name":"integrity","Value":"sha256-nC5xxGyL9XGgtVZJ0kTrcdOLymls3I\u002BOgFMoZ5jOMdM="},{"Name":"label","Value":"_content/FitOnBlog/FitOnBlog.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1127"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022nC5xxGyL9XGgtVZJ0kTrcdOLymls3I\u002BOgFMoZ5jOMdM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Dec 2024 01:41:24 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1127"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022nC5xxGyL9XGgtVZJ0kTrcdOLymls3I\u002BOgFMoZ5jOMdM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 02 Dec 2024 04:30:01 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/FitOnBlog/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

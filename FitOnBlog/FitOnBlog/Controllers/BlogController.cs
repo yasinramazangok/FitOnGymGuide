@@ -21,6 +21,8 @@ namespace FitOnBlog.Controllers
         {
             var blogDetails = _blogService.GetBlogById(id);
 
+            ViewBag.id = id;
+
             return View(blogDetails);
         }
 
