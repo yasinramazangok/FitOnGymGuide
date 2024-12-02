@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FitOnBlog")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b4a59120248a2bfff50f4ccd423470ac0d91199f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+024a2f6f09c52d494cbc200644c1bbd7b59c10e6")]
 [assembly: System.Reflection.AssemblyProductAttribute("FitOnBlog")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FitOnBlog")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

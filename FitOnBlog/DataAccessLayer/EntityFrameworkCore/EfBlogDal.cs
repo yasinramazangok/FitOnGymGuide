@@ -51,8 +51,8 @@ namespace DataAccessLayer.EntityFrameworkCore
 
             return fitOnContext.Blogs.
                         Where(b => b.BlogId == id)
-                        .Include(blog => blog.Author)
-                        .Include(blog => blog.Category)
+                        .Include(b => b.Author)
+                        .Include(b => b.Category)
                         .ToList();
         }
 
