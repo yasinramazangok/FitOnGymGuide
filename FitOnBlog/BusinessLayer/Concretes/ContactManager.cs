@@ -9,9 +9,14 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concretes
 {
-    public class ContactManager(IContactDal contactDal) : IContactService
+    public class ContactManager : IContactService
     {
-        private readonly IContactDal _contactDal = contactDal; // Primary Constructor
+        private readonly IContactDal _contactDal;
+
+        public ContactManager(IContactDal contactDal)
+        {
+            _contactDal = contactDal;
+        }
 
         public void Delete(Contact contact)
         {
