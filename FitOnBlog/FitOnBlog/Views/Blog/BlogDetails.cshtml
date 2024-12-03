@@ -15,7 +15,7 @@
 
                 @await Html.PartialAsync("/Views/Blog/BlogContent.cshtml")
 
-                @await Component.InvokeAsync("BlogCommentListByBlogIdPartial", new { id = ViewBag.id })
+                @await Component.InvokeAsync("BlogDetailsCommentListPartial", new { id = ViewBag.id })
             </div>
 
         </div>
@@ -36,4 +36,4 @@
 
 @await Html.PartialAsync("/Views/Default/OtherFeaturedPosts.cshtml")
 
-@await Html.PartialAsync("/Views/EmailSubscription/AddSubscriber.cshtml")
+@* @await Html.PartialAsync("/Views/EmailSubscription/AddSubscriber.cshtml") *@

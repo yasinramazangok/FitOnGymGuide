@@ -40,9 +40,17 @@ namespace FitOnBlog.Controllers
             return View();
         }
 
-        public IActionResult BlogByCategory()
+        public IActionResult BlogsByCategory(int id)
         {
-            return View();
+            var blogListByCategory = _blogService.GetBlogsByCategoryId(id);
+
+            var selectedBlog = blogListByCategory.FirstOrDefault();
+
+            ViewBag.categoryName = selectedBlog?.Category?.Name;
+
+            ViewBag.categoryDescription = selectedBlog?.Category?.Description;
+
+            return View(blogListByCategory);
         }
     }
 }

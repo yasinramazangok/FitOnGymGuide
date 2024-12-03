@@ -49,7 +49,7 @@
 
                 <div class="col-lg-4 mb-4">
                     <div class="entry2">
-                        <a href="single.html"><img src="@item.ImageUrl" alt="Image" class="img-fluid rounded"></a>
+                        <a href="/Blog/BlogDetails/@item.BlogId/"><img src="@item.ImageUrl" alt="Image" class="img-fluid rounded"></a>
                         <div class="excerpt">
                             <span class="@categoryColor">@item.Category?.Name</span>
                             <h2><a href="/Blog/BlogDetails/@item.BlogId/">@item.Title</a></h2>
@@ -61,7 +61,7 @@
                                 </span>
                             </div>
                             <p>@item.Content?.Substring(0, item.Content.Substring(0, 150).LastIndexOf(" "))...</p>
-                            <p><a href="#">Devamını Oku</a></p>
+                            <p><a href="/Blog/BlogDetails/@item.BlogId/">Devamını Oku</a></p>
 
                         </div>
                     </div>
@@ -90,4 +90,5 @@
             LinkToLastPageFormat = "»»"
         })
     </div>
+    @await Html.PartialAsync("/Views/EmailSubscription/AddSubscriber.cshtml")
 </div>
