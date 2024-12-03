@@ -4,21 +4,27 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FitOnBlog.Controllers
 {
-    [Authorize]
-    public class CategoryController(ICategoryService categoryService) : Controller
+    public class CategoryController : Controller
     {
-        private readonly ICategoryService _categoryService = categoryService; // Primary Constructor
+        private readonly ICategoryService _categoryService;
+
+        public CategoryController(ICategoryService categoryService)
+        {
+            _categoryService = categoryService;
+        }
 
         public IActionResult Index()
         {
-            var values = _categoryService.GetListAll();
-            return View(values);
+            var categoryList = _categoryService.GetListAll();
+            
+            return View(categoryList);
         }
 
-        public IActionResult CategoryList()
+        public IActionResult CategoryListInBlogDetails()
         {
-            // This partial view shows the category list in the blog details.
-            return View();
+            var categoryList = _categoryService.GetListAll();
+            
+            return View(categoryList);
         }
     }
 }

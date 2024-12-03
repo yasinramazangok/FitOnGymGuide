@@ -1,0 +1,86 @@
+﻿@using EntityLayer.Concretes
+@model List<Blog>
+
+@{
+    ViewData["Title"] = "BlogByCategory";
+    Layout = "~/Views/Shared/_FrontLayout.cshtml";
+    string categoryColor = string.Empty;
+}
+
+<div class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <span>Kategori</span>
+                <h3>@ViewBag.categoryName</h3>
+                <p>@ViewBag.categoryDescription</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="site-section">
+    <div class="container">
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                if (item.Category?.Name == "YOGA")
+                {
+                    categoryColor = "post-category text-white bg-warning mb-3";
+                }
+                if (item.Category?.Name == "PİLATES")
+                {
+                    categoryColor = "post-category text-white bg-info mb-3";
+                }
+                if (item.Category?.Name == "DİYET")
+                {
+                    categoryColor = "post-category text-white bg-secondary mb-3";
+                }
+                if (item.Category?.Name == "KARDİYO")
+                {
+                    categoryColor = "post-category text-white bg-danger mb-3";
+                }
+                if (item.Category?.Name == "CROSSFİT")
+                {
+                    categoryColor = "post-category text-white bg-primary mb-3";
+                }
+                if (item.Category?.Name == "VÜCUT GELİŞTİRME")
+                {
+                    categoryColor = "post-category text-white bg-success mb-3";
+                }
+
+                <div class="col-lg-4 mb-4">
+                    <div class="entry2">
+                        <a href="/Blog/BlogDetails/@item.BlogId/"><img src="@item.ImageUrl" alt="Image" class="img-fluid rounded"></a>
+                        <div class="excerpt">
+                            <span class="@categoryColor">@item.Category?.Name</span>
+
+                            <h2><a href="/Blog/BlogDetails/@item.BlogId/">@item.Title</a></h2>
+                            <div class="post-meta align-items-center text-left clearfix">
+                                <figure class="author-figure mb-0 mr-3 float-left"><img src="@item.Author?.ImageUrl" alt="Image" class="img-fluid"></figure>
+                                <span class="d-inline-block mt-1">By <a href="#">@item.Author?.Name</a></span>
+                                <span>&nbsp;-&nbsp; @(((DateTime)item.Date).ToString("dd.MM.yyyy"))</span>
+                            </div>
+
+                            <p>@item.Content?.Substring(0, item.Content.Substring(0, 150).LastIndexOf(" "))...</p>
+                            <p><a href="/Blog/BlogDetails/@item.BlogId/">Devamını Oku</a></p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="row text-center pt-5 border-top">
+            <div class="col-md-12">
+                <div class="custom-pagination">
+                    <span>1</span>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <span>...</span>
+                    <a href="#">15</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    @await Html.PartialAsync("/Views/EmailSubscription/AddSubscriber.cshtml")
+</div>

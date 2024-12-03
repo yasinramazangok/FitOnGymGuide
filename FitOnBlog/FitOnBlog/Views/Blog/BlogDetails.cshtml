@@ -15,7 +15,7 @@
 
                 @await Html.PartialAsync("/Views/Blog/BlogContent.cshtml")
 
-                @await Component.InvokeAsync("CommentListByBlogIdPartial", new { id = ViewBag.id })
+                @await Component.InvokeAsync("BlogDetailsCommentListPartial", new { id = ViewBag.id })
             </div>
 
         </div>
@@ -24,9 +24,9 @@
 
             @await Html.PartialAsync("/Views/Author/AuthorAbout.cshtml")
 
-            @await Html.PartialAsync("/Views/Author/AuthorPopularPosts.cshtml")
+            @await Component.InvokeAsync("BlogDetailsAuthorPopularBlogsPartial", new { id = ViewBag.authorId })
 
-            @await Html.PartialAsync("/Views/Category/CategoryList.cshtml")
+            @await Component.InvokeAsync("BlogDetailsCategoryListPartial")
 
         </div>
 
@@ -36,4 +36,4 @@
 
 @await Html.PartialAsync("/Views/Default/OtherFeaturedPosts.cshtml")
 
-@await Html.PartialAsync("/Views/EmailSubscription/AddSubscriber.cshtml")
+@* @await Html.PartialAsync("/Views/EmailSubscription/AddSubscriber.cshtml") *@
