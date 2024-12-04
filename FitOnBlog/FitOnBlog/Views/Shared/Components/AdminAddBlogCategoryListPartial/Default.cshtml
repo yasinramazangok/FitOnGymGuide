@@ -1,0 +1,12 @@
+﻿@using EntityLayer.Concretes
+@model List<Category>
+
+@*
+    Partial View
+*@
+
+    <option value="">Kategori Seçiniz</option>
+    @foreach (var item in Model)
+    {
+        <option value="@item.CategoryId">@item.Name</option>
+    }

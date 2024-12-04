@@ -19,6 +19,7 @@ namespace DataAccessLayer.EntityFrameworkCore
 
             return fitOnContext.Comments.
                         Where(b => b.BlogId == id)
+                        .Include(b => b.Blog)
                         .ToList();
         }
     }
