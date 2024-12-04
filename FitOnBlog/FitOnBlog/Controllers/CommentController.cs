@@ -37,5 +37,10 @@ namespace FitOnBlog.Controllers
             }
             return View();
         }
+
+        public IActionResult CommentListByBlogId(int id)
+        {
+            return ViewComponent("AdminBlogCommentListPartial", new { id });
+        }
     }
 }

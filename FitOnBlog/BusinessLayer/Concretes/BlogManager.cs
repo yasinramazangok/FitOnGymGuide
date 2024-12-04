@@ -23,6 +23,21 @@ namespace BusinessLayer.Concretes
             return _blogDal.GetById(id);
         }
 
+        public List<Blog> GetListAll()
+        {
+            return _blogDal.GetListAll();
+        }
+
+        public void Insert(Blog blog)
+        {
+            _blogDal.Insert(blog);
+        }
+
+        public void Update(Blog blog)
+        {
+            _blogDal.Update(blog);
+        }
+
         public Blog GetFirstBlogByCategory(int id)
         {
             return _blogDal.GetFirstBlogByCategory(id);
@@ -38,19 +53,14 @@ namespace BusinessLayer.Concretes
             return _blogDal.GetBlogById(id);
         }
 
-        public List<Blog> GetListAll()
+        public List<Blog> GetBlogsByAuthorId(int id)
         {
-            return _blogDal.GetListAll();
+            return _blogDal.GetBlogsByAuthorId(id);
         }
 
-        public void Insert(Blog blog)
+        public List<Blog> GetBlogsByCategoryId(int id)
         {
-            _blogDal.Insert(blog);
-        }
-
-        public void Update(Blog blog)
-        {
-            _blogDal.Update(blog);
+            return _blogDal.GetBlogsByCategoryId(id);
         }
     }
 }

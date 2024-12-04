@@ -1,4 +1,6 @@
-﻿@*
+﻿@model EntityLayer.Concretes.Contact
+
+@*
     Partial View
 *@
 
@@ -6,61 +8,45 @@
     <div class="container">
         <div class="row">
             <div class="col-md-7 mb-5">
-                <form action="#" class="p-5">
+                @*                 <form method="post" class="col p-5">*@             
+                @using (Html.BeginForm("SendMessage", "Contact", FormMethod.Post))
+                {
                     <div class="row form-group">
-                        <div class="col-md-6 mb-3 mb-md-0">
-                            <label class="text-black" for="fname">First Name</label>
-                            <input type="text" id="fname" class="form-control">
-                        </div>
-                        <div class="col-md-6">
-                            <label class="text-black" for="lname">Last Name</label>
-                            <input type="text" id="lname" class="form-control">
-                        </div>
-                    </div>
-
-                    <div class="row form-group">
-
-                        <div class="col-md-12">
-                            <label class="text-black" for="email">Email</label>
-                            <input type="email" id="email" class="form-control">
-                        </div>
-                    </div>
-
-                    <div class="row form-group">
-
-                        <div class="col-md-12">
-                            <label class="text-black" for="subject">Subject</label>
-                            <input type="subject" id="subject" class="form-control">
+                        <div class="col-md-12 mb-3 mb-md-0">
+                            <label class="text-black" for="Name">Adınız</label>
+                            <input type="text" class="form-control" asp-for="Name">
                         </div>
                     </div>
 
                     <div class="row form-group">
                         <div class="col-md-12">
-                            <label class="text-black" for="message">Message</label>
-                            <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+                            <label class="text-black" for="Email">Email</label>
+                            <input type="email" class="form-control" asp-for="Email">
                         </div>
                     </div>
 
                     <div class="row form-group">
                         <div class="col-md-12">
-                            <input type="submit" value="Send Message" class="btn btn-primary py-2 px-4 text-white">
+                            <label class="text-black" for="Subject">Konu</label>
+                            <input type="text" class="form-control" asp-for="Subject">
                         </div>
                     </div>
-                </form>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <label class="text-black" for="Message">Mesajınız</label>
+                            <textarea cols="30" rows="12" class="form-control" placeholder="Buraya mesajınızı yazabilirsiniz..." asp-for="Message"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-outline-warning text-white py-2 px-4">Gönder</button>
+                        </div>
+                    </div>
+                }
             </div>
-            <div class="col-md-5">
-
-                <div class="p-4 mb-3">
-                    <p class="mb-0 font-weight-bold">Address</p>
-                    <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
-
-                    <p class="mb-0 font-weight-bold">Phone</p>
-                    <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
-
-                    <p class="mb-0 font-weight-bold">Email Address</p>
-                    <p class="mb-0"><a href="#">youremail@domain.com</a></p>
-                </div>
-            </div>
+            @await Component.InvokeAsync("ContactAddressPartial")
         </div>
     </div>
 </div>

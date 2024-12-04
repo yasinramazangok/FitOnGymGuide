@@ -1,16 +1,22 @@
-﻿@*
+﻿@using EntityLayer.Concretes
+@model List<About>
+
+@*
     Partial View
 *@
-
-<div class="site-cover site-cover-sm same-height overlay single-page" style="background-image: url('/Miniblog/images/img_4.jpg');">
-    <div class="container">
-        <div class="row same-height justify-content-center">
-            <div class="col-md-12 col-lg-10">
-                <div class="post-entry text-center">
-                    <h1 class="">About Us</h1>
-                    <p class="lead mb-4 text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, adipisci?</p>
+@foreach (var item in Model)
+{
+    <div class="site-cover site-cover-sm same-height overlay single-page" style="background-image: url('@item.ImageUrl');">
+        <div class="container">
+            <div class="row same-height justify-content-center">
+                <div class="col-md-12 col-lg-10">
+                    <div class="post-entry text-center">
+                        <h1 class="">Hakkımızda</h1>
+                        <p class="lead mb-4 text-white">🏃 FitOn Health & Fitness, İstanbul, İzmir ve Eskişehir'deki yeni şubeleri ile sizlerle! 🏃</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+}
+

@@ -21,7 +21,6 @@ namespace FitOnBlog.ViewComponents
             var recentBlogsList = _blogService.GetListAll().ToPagedList(pageNumber, 6);
 
             return View(recentBlogsList);
-
         }
     }
 }

@@ -1,0 +1,12 @@
+﻿@using EntityLayer.Concretes
+@model List<Author>
+
+@*
+    Partial View
+*@
+
+<option value="">Yazar Seçiniz</option>
+@foreach (var item in Model)
+{
+    <option value="@item.AuthorId">@item.Name</option>
+}

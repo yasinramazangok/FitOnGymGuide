@@ -21,6 +21,12 @@ namespace BusinessLayer.Containers
             services.AddScoped<IBlogService, BlogManager>();
             services.AddScoped<IBlogDal, EfBlogDal>();
 
+            services.AddScoped<IAboutService, AboutManager>();
+            services.AddScoped<IAboutDal, EfAboutDal>();
+
+            services.AddScoped<IAddressService, AddressManager>();
+            services.AddScoped<IAddressDal, EfAddressDal>();
+
             services.AddScoped<IAuthorService, AuthorManager>();
             services.AddScoped<IAuthorDal, EfAuthorDal>();
 
