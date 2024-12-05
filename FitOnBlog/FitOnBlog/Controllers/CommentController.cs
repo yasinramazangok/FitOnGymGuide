@@ -15,10 +15,22 @@ namespace FitOnBlog.Controllers
             _commentService = commentService;
         }
 
+        #region Admin Operations
+
         public IActionResult Index()
         {
-            return View();
+            var values = _commentService.GetListAll();
+            return View(values);
         }
+
+        public IActionResult CommentListByBlogId(int id)
+        {
+            return ViewComponent("AdminBlogCommentListPartial", new { id });
+        }
+
+        #endregion
+
+        #region UI Operations
 
         [HttpGet]
         public IActionResult LeaveComment(int id)
@@ -38,9 +50,6 @@ namespace FitOnBlog.Controllers
             return View();
         }
 
-        public IActionResult CommentListByBlogId(int id)
-        {
-            return ViewComponent("AdminBlogCommentListPartial", new { id });
-        }
+        #endregion     
     }
 }

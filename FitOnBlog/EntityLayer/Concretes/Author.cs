@@ -27,7 +27,7 @@ namespace EntityLayer.Concretes
         [StringLength(50)]
         public string? Password { get; set; }
 
-        [StringLength(300)]
+        [StringLength(500)]
         public string? About { get; set; }
 
         [StringLength(75)]
