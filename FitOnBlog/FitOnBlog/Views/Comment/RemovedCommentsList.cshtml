@@ -1,0 +1,36 @@
+﻿@using EntityLayer.Concretes
+@model List<Comment>
+
+@{
+    ViewData["Title"] = "RemovedCommentsList";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="card-body">
+                @foreach (var item in Model)
+                {
+                    <div class="post">
+                        <div class="user-block">
+                            <img class="img-circle img-bordered-sm" src="~/BlogAdminLTE/dist/img/user1-128x128.jpg" alt="user image">
+                            <span class="username">
+                                <a href="#">@item.Name</a>
+                            </span>
+                            <span class="description">@item.Blog?.Title</span>
+                        </div>
+                        <p>@item.CommentText</p>
+                        <p>
+                            <span class="description">@(((DateTime)item.Date).ToString("dd.MM.yyyy"))</span>
+                            <span class="float-right">
+                                <a href="/Comment/ChangeStatusToTrue/@item.CommentId" class="link-black text-sm"><i class="far fa-trash-alt mr-1"></i>Yorumu Yayınla</a>
+                            </span>
+                            <br />
+                        </p>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>

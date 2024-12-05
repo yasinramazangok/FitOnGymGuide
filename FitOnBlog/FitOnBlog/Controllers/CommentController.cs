@@ -23,6 +23,24 @@ namespace FitOnBlog.Controllers
             return View(values);
         }
 
+        public IActionResult RemovedCommentsList()
+        {
+            var values = _commentService.GetListStatusFalse();
+            return View(values);
+        }
+
+        public IActionResult ChangeStatusToFalse(int id)
+        {
+            _commentService.ChangeCommentStatusToFalse(id);
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult ChangeStatusToTrue(int id)
+        {
+            _commentService.ChangeCommentStatusToTrue(id);
+            return RedirectToAction("RemovedCommentsList");
+        }
+
         public IActionResult CommentListByBlogId(int id)
         {
             return ViewComponent("AdminBlogCommentListPartial", new { id });
