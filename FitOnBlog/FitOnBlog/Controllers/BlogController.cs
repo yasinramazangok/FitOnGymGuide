@@ -65,7 +65,7 @@ namespace FitOnBlog.Controllers
                 _blogService.Update(blog);
                 return RedirectToAction("Index");
             }
-           
+
             return View();
         }
         #endregion
