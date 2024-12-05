@@ -12,14 +12,22 @@ namespace FitOnBlog.Controllers
             _blogService = blogService;
         }
 
+        #region Admin Operations
+
         public IActionResult Index()
         {
             return View();
         }
 
+        #endregion
+
+        #region UI Operations
+
         public IActionResult AuthorAbout()
         {
             return View();
         }
+
+        #endregion
     }
 }

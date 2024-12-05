@@ -15,13 +15,13 @@ namespace EntityLayer.Concretes
         [StringLength(50)]
         public string? Name { get; set; }
 
-        [StringLength(50)]
+        [StringLength(75)]
         public string? Email { get; set; }
+
+        public DateTime? Date { get; set; }
 
         [StringLength(300)]
         public string? CommentText { get; set; }
-
-        public DateTime? Date { get; set; }
 
         public int BlogId { get; set; }
         public virtual Blog? Blog { get; set; }

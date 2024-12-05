@@ -7,6 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="wwwroot\BlogAdminLTE\.github\ISSUE_TEMPLATE\bug-report-for-adminlte-v2-4-x.md" />
+    <None Include="wwwroot\BlogAdminLTE\.github\ISSUE_TEMPLATE\bug-report-for-adminlte-v3-x.md" />
+    <None Include="wwwroot\BlogAdminLTE\.github\ISSUE_TEMPLATE\feature-request-for-adminlte-v3-x.md" />
     <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\acorn" />
     <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\acorn.cmd" />
     <None Include="wwwroot\ConnectPlusAdmin\node_modules\.bin\acorn.ps1" />

@@ -15,16 +15,16 @@ namespace EntityLayer.Concretes
         [StringLength(50)]
         public string? Name { get; set; }
 
-        [StringLength(50)]
+        [StringLength(75)]
         public string? Email { get; set; }
 
-        [StringLength(30)]
+        [StringLength(25)]
         public string? PhoneNumber { get; set; }
 
-        [StringLength(100)]
-        public string? Subject { get; set; }
-
         public DateTime Date { get; set; }
+
+        [StringLength(100)]
+        public string? Subject { get; set; }        
 
         public string? Message { get; set; }
     }
