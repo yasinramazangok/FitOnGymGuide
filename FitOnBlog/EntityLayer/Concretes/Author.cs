@@ -15,15 +15,27 @@ namespace EntityLayer.Concretes
         [StringLength(50)]
         public string? Name { get; set; }
 
+        [StringLength(75)]
+        public string? Email { get; set; }
+
+        [StringLength(25)]
+        public string? PhoneNumber { get; set; }
+
         [StringLength(200)]
         public string? ImageUrl { get; set; }
 
-        [StringLength(30)]
-        public string? PhoneNumber { get; set; }
+        [StringLength(50)]
+        public string? Password { get; set; }
 
-        [StringLength(300)]
+        [StringLength(500)]
         public string? About { get; set; }
 
+        [StringLength(75)]
+        public string? Title { get; set; }
+
+        [StringLength(300)]
+        public string? Expertises { get; set; }
+        
         public ICollection<Blog>? Blogs { get; set; }
     }
 }

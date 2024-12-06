@@ -1,0 +1,50 @@
+﻿@using EntityLayer.Concretes
+@model List<About>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-warning">
+                <div class="card-header">
+                    <h3 class="card-title">Hakkımızda</h3>
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body">
+                    @foreach (var item in Model)
+                    {
+                        <div class="form-group">
+                            <label for="inputName">Resim 1</label>
+                            <input type="text" id="inputName" class="form-control" value="@item.ImageUrl">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputName">Resim 2</label>
+                            <input type="text" id="inputName" class="form-control" value="@item.ImageUrl1">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputName">Resim 3</label>
+                            <input type="text" id="inputName" class="form-control" value="@item.ImageUrl2">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDescription">İçerik 1</label>
+                            <textarea id="inputDescription" class="form-control" rows="4">@item.Content</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDescription">İçerik 2</label>
+                            <textarea id="inputDescription" class="form-control" rows="4">@item.Content1</textarea>
+                        </div>
+                        <a href="/About/UpdateAbout/@item.AboutId" class="btn btn-outline-warning">Güncelle</a>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

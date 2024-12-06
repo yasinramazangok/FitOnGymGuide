@@ -6,7 +6,7 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace FitOnBlog.Controllers
 {
-    [Authorize]
+    //[Authorize]
     public class ContactController : Controller
     {
         private readonly IContactService _contactService;
@@ -16,10 +16,23 @@ namespace FitOnBlog.Controllers
             _contactService = contactService;
         }
 
+        #region Admin Operations
+
         public IActionResult Index()
         {
-            return View();
+            var values = _contactService.GetListAll();
+            return View(values);
         }
+
+        public IActionResult MessageDetails(int id)
+        {
+            var message = _contactService.GetById(id);
+            return View(message);
+        }
+
+        #endregion
+
+        #region UI Operations
 
         [AllowAnonymous]
         public IActionResult Home()
@@ -42,5 +55,7 @@ namespace FitOnBlog.Controllers
             _contactService.Insert(contact);
             return RedirectToAction("Home", "Contact");
         }
+
+        #endregion
     }
 }

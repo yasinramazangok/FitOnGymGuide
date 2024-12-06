@@ -1,0 +1,188 @@
+﻿@using EntityLayer.Concretes
+@model List<Contact>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Mesajlar</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="content">
+    <div class="row">
+        <div class="col-md-3">
+            <a href="compose.html" class="btn btn-success btn-block mb-3">Yeni Mesaj Oluştur</a>
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Klasörler</h3>
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body p-0">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item active">
+                            <a href="/Contact/Index/" class="nav-link">
+                                <i class="fas fa-inbox"></i> Gelen Kutusu
+                                <span class="badge bg-primary float-right">12</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-envelope"></i> Gönderilenler
+                                <span class="badge bg-success float-right">12</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-file-alt"></i> Taslaklar
+                                <span class="badge bg-warning float-right">12</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fas fa-filter"></i> Spam
+                                <span class="badge bg-secondary float-right">65</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-trash-alt"></i> Çöp Kutusu
+                                <span class="badge bg-danger float-right">12</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card collapsed-card">
+                <div class="card-header">
+                    <h3 class="card-title">Hazır Mesajlar</h3>
+                    <div class="card-tools">
+                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="card-body p-0">
+                    <ul class="nav nav-pills flex-column">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-circle text-danger"></i>
+                                Sosyal Medya Mesajları
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-circle text-warning"></i> Tanıtımlar
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="far fa-circle text-primary"></i>
+                                Mail Bülteni
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="card card-success card-outline">
+                <div class="card-header">
+                    <h3 class="card-title">Gelen Mesajlar</h3>
+                    <div class="card-tools">
+                        <div class="input-group input-group-sm">
+                            <input type="text" class="form-control" placeholder="Arama yapın...">
+                            <div class="input-group-append">
+                                <div class="btn btn-primary">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body p-0">
+                    <div class="table-responsive mailbox-messages">
+                        <table class="table table-hover table-striped">
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            <div class="icheck-primary">
+                                                <input type="checkbox" value="@item.ContactId" id="check+@item.ContactId">
+                                                <label for="check+@item.ContactId"></label>
+                                            </div>
+                                        </td>
+
+                                        <td class="mailbox-name">@item.Name</td>
+                                        <td class="mailbox-subject">
+                                            <a href="/Contact/MessageDetails/@item.ContactId" style="color:black"><b>@item.Subject</b> - @item.Message?.Substring(0, @item.Message.Substring(0, 50).LastIndexOf(" "))...</a>
+                                        </td>
+                                        <td class="mailbox-attachment"><a href="/Contact/MessageDetails/@item.ContactId">Mesajı Oku</a></td>
+                                        <td class="mailbox-date">@(((DateTime)item.Date).ToString("dd.MM.yyyy"))</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br />
+                <div class="card-footer">
+                    @*  <div class="mailbox-controls">
+                        <button type="button" class="btn btn-default btn-sm checkbox-toggle">
+                            <i class="far fa-square"></i>
+                        </button>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-default btn-sm"><i class="far fa-trash-alt"></i></button>
+                            <button type="button" class="btn btn-default btn-sm"><i class="fas fa-reply"></i></button>
+                            <button type="button" class="btn btn-default btn-sm"><i class="fas fa-share"></i></button>
+                        </div>
+                        <button type="button" class="btn btn-default btn-sm"><i class="fas fa-sync-alt"></i></button>
+                        <div class="float-right">
+                            1-50/200
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-sm"><i class="fas fa-chevron-left"></i></button>
+                                <button type="button" class="btn btn-default btn-sm"><i class="fas fa-chevron-right"></i></button>
+                            </div>
+                        </div>
+                    </div> *@
+                    <div class="float-right">
+                        <button type="button" class="btn btn-danger"><i class="far fa-trash-alt"></i> Sil</button>
+                    </div>
+                    <a href="/Contact/Index/" class="btn btn-success"><i class="fas fa-sync-alt"></i> Yenile</a>
+                    <button type="button" class="btn btn-warning"><i class="fas fa-print"></i> Yazdır</button>
+                    <button type="button" class="btn btn-primary"><i class="fas fa-share"></i> Paylaş</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="~/BlogAdminLTE/plugins/jquery/jquery.min.js"></script>
+<script src="~/BlogAdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/BlogAdminLTE/dist/js/adminlte.min.js"></script>
+<script>
+    $(function () {
+      $('.checkbox-toggle').click(function () {
+        var clicks = $(this).data('clicks')
+        if (clicks) {
+          $('.mailbox-messages input[type=\'checkbox\']').prop('checked', false)
+          $('.checkbox-toggle .far.fa-check-square').removeClass('fa-check-square').addClass('fa-square')
+        } else {
+          $('.mailbox-messages input[type=\'checkbox\']').prop('checked', true)
+          $('.checkbox-toggle .far.fa-square').removeClass('fa-square').addClass('fa-check-square')
+        }
+        $(this).data('clicks', !clicks)
+      })
+    })
+</script>
+<script src="~/BlogAdminLTE/dist/js/demo.js"></script>

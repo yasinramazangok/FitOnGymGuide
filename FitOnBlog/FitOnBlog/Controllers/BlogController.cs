@@ -24,6 +24,12 @@ namespace FitOnBlog.Controllers
             return View(values);
         }
 
+        public IActionResult BlogOverview()
+        {
+            var values = _blogService.GetListAll();
+            return View(values);
+        }
+
         [HttpGet]
         public IActionResult AddBlog()
         {
@@ -65,9 +71,10 @@ namespace FitOnBlog.Controllers
                 _blogService.Update(blog);
                 return RedirectToAction("Index");
             }
-           
+
             return View();
         }
+
         #endregion
 
         #region UI Operations

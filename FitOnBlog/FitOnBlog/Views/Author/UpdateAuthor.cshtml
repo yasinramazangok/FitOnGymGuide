@@ -1,0 +1,80 @@
+﻿@model EntityLayer.Concretes.Author
+
+@{
+    ViewData["Title"] = "UpdateAuthor";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="card card-default">
+            <div class="card-header">
+                <h3 class="card-title">Yazar Güncelleme</h3>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse"><i class="fas fa-minus"></i></button>
+                </div>
+            </div>
+            <div class="card-body">
+                <form class="forms-sample" method="post">
+                    @Html.HiddenFor(a => a.AuthorId)
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Yazar Adı</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" placeholder="Yazar adını giriniz" asp-for="Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Meslek / Branşı</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" placeholder="Meslek / branş giriniz" asp-for="Title">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Uzmanlıklar</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" placeholder="Uzmanlık alanlarını giriniz" asp-for="Expertises">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Resim Yolu</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" placeholder="Resim yolunu giriniz" asp-for="ImageUrl">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Email</label>
+                        <div class="col-sm-9">
+                            <input type="email" class="form-control" placeholder="Email adresini giriniz" asp-for="Email">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Telefon</label>
+                        <div class="col-sm-9">
+                            <input type="tel" class="form-control" placeholder="Telefon numarasını giriniz" asp-for="PhoneNumber">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Şifre</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" placeholder="Şifreyi giriniz" asp-for="Password">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label">Hakkında</label>
+                        <div class="col-sm-9">
+                            <textarea type="text" class="form-control" cols="30" rows="15" placeholder="Yazar hakkında bilgileri yazınız" asp-for="About"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-3 col-form-label"></label>
+                        <div class="col-sm-9">
+                            <button type="submit" class="btn btn-outline-warning mr-2">Güncelle</button>
+                            <a class="btn btn-outline-secondary mr-2" href="/Author/Index/">İptal</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+

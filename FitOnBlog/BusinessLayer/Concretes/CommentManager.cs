@@ -18,6 +18,16 @@ namespace BusinessLayer.Concretes
             _commentDal = commentDal;
         }
 
+        public void ChangeCommentStatusToFalse(int id)
+        {
+            _commentDal.ChangeCommentStatusToFalse(id);
+        }
+
+        public void ChangeCommentStatusToTrue(int id)
+        {
+            _commentDal.ChangeCommentStatusToTrue(id);
+        }
+
         public void Delete(Comment comment)
         {
             _commentDal.Delete(comment);
@@ -36,6 +46,11 @@ namespace BusinessLayer.Concretes
         public List<Comment> GetListAll()
         {
             return _commentDal.GetListAll();
+        }
+
+        public List<Comment> GetListStatusFalse()
+        {
+            return _commentDal.GetListStatusFalse();
         }
 
         public void Insert(Comment comment)

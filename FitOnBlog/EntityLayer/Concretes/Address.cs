@@ -12,6 +12,15 @@ namespace EntityLayer.Concretes
         [Key]
         public int AddressId { get; set; }
 
+        [StringLength(75)]
+        public string? Email { get; set; }
+
+        [StringLength(25)]
+        public string? PhoneNumber { get; set; }
+
+        [StringLength(25)]
+        public string? PhoneNumber1 { get; set; }
+
         [StringLength(200)]
         public string? Country { get; set; }
 
@@ -44,16 +53,7 @@ namespace EntityLayer.Concretes
 
         [StringLength(25)]
         public string? PostalCode { get; set; }
-
-        [StringLength(25)]
-        public string? PhoneNumber { get; set; }
-
-        [StringLength(25)]
-        public string? PhoneNumber1 { get; set; }
-
-        [StringLength(75)]
-        public string? Email { get; set; }
-
+     
         [StringLength(500)]
         public string? MapInformation { get; set; }
     }

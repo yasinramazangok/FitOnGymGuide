@@ -2,6 +2,117 @@
     Partial View
 *@
 
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <a href="/Blog/Index/" class="brand-link">
+        <img src="~/BlogAdminLTE/dist/img/logo/fiton-logo.svg" alt="FitOn Admin" class="brand-image img-size-64"
+             style="opacity: .8">
+        <span class="brand-text">Admin</span>
+    </a>
+    <div class="sidebar">
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <li class="nav-item">
+                    <a href="/Blog/Index/" class="nav-link">
+                        <i class="nav-icon fas fa-edit"></i>
+                        <p>
+                            Bloglar
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Blog/BlogOverview/" class="nav-link">
+                        <i class="nav-icon fas fa-blog"></i>
+                        <p>
+                            Blog Hızlı Bakış
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Author/Index/" class="nav-link">
+                        <i class="nav-icon fas fa-user-edit"></i>
+                        <p>
+                            Yazarlar
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-comment"></i>
+                        <p>
+                            Yorumlar
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="/Comment/Index/" class="nav-link">
+                                <i class="far fa-comment-dots nav-icon"></i>
+                                <p>Yayınlanan Yorumlar</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Comment/RemovedCommentsList/" class="nav-link">
+                                <i class="far fa-trash-alt nav-icon"></i>
+                                <p>Kaldırılan Yorumlar</p>
+                            </a>
+                        </li>                     
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="/Category/Index/" class="nav-link">
+                        <i class="nav-icon fas fa-tags"></i>
+                        <p>
+                            Kategoriler
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/About/Index/" class="nav-link">
+                        <i class="nav-icon fas fa-info-circle"></i>
+                        <p>
+                            Hakkımızda
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Contact/Index/" class="nav-link">
+                        <i class="nav-icon fas fa-envelope"></i>
+                        <p>
+                            İletişim
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Chart/Index/" class="nav-link">
+                        <i class="nav-icon fas fa-chart-line"></i>
+                        <p>
+                            Grafikler
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Blog/Index/" class="nav-link">
+                        <i class="nav-icon fas fa-user-shield"></i>
+                        <p>
+                            Yetkilendirme
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Account/Logout/" class="nav-link">
+                        <i class="nav-icon fas fa-sign-out-alt"></i>
+                        <p>
+                            Çıkış Yap
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
+
+
+@*
 <style>
     .sidebar {
         background-color: #181824;
@@ -68,3 +179,4 @@
         </li>
     </ul>
 </nav>
+*@

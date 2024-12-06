@@ -1,8 +1,41 @@
-﻿
-@{
+﻿@{
     Layout = null;
 }
 
+<!DOCTYPE html>
+<html>
+
+@await Html.PartialAsync("/Views/AdminPartials/PartialHead.cshtml")
+
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+
+        @await Html.PartialAsync("/Views/AdminPartials/PartialNavbar.cshtml")
+
+        @await Html.PartialAsync("/Views/AdminPartials/PartialSidebar.cshtml")
+
+        <div class="content-wrapper">
+            <section class="content-header">
+                <div class="container-fluid">
+                    @RenderBody()
+                </div>
+            </section>
+        </div>
+    </div>
+    <footer class="main-footer">
+        <strong>Copyright &copy; @DateTime.Now.Year. Designed by <a href="https://www.linkedin.com/in/yasinramazangok/" target="_blank">Yasin Ramazan GÖK</a>.</strong>
+        Tüm hakları saklıdır.
+        <div class="float-right d-none d-sm-inline-block">
+            <b>Version</b> 1.0
+        </div>
+    </footer>
+
+    @await Html.PartialAsync("/Views/AdminPartials/PartialScript.cshtml")
+
+</body>
+</html>
+
+@*
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,4 +78,4 @@
 
 </body>
 </html>
-
+*@
