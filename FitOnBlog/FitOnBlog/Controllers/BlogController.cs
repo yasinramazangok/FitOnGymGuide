@@ -24,6 +24,12 @@ namespace FitOnBlog.Controllers
             return View(values);
         }
 
+        public IActionResult BlogOverview()
+        {
+            var values = _blogService.GetListAll();
+            return View(values);
+        }
+
         [HttpGet]
         public IActionResult AddBlog()
         {

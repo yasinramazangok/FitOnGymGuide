@@ -1,0 +1,47 @@
+﻿@model EntityLayer.Concretes.About
+
+@{
+    ViewData["Title"] = "UpdateAbout";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<section class="content">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card card-warning">
+                <div class="card-header">
+                    <h3 class="card-title">Hakkımızda Güncelleme</h3>
+                    <div class="card-tools">
+                    </div>
+                </div>
+                <div class="card-body">
+                    <form class="forms-sample" method="post">
+                        @Html.HiddenFor(a =>a.AboutId)
+                        <div class="form-group">
+                            <label for="inputName">Resim 1</label>
+                            <input type="text" asp-for="ImageUrl" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputName">Resim 2</label>
+                            <input type="text" asp-for="ImageUrl1" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputName">Resim 3</label>
+                            <input type="text" asp-for="ImageUrl2" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDescription">İçerik 1</label>
+                            <textarea asp-for="Content" class="form-control" rows="4"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputDescription">İçerik 2</label>
+                            <textarea asp-for="Content1" class="form-control" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-warning mr-2">Kaydet</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -14,12 +14,18 @@ namespace FitOnBlog.Controllers
             _categoryService = categoryService;
         }
 
+        #region Admin Operations
+
         public IActionResult Index()
         {
             var categoryList = _categoryService.GetListAll();
             
             return View(categoryList);
         }
+
+        #endregion
+
+        #region UI Operations
 
         [AllowAnonymous]
         public IActionResult CategoryListInBlogDetails()
@@ -28,5 +34,8 @@ namespace FitOnBlog.Controllers
             
             return View(categoryList);
         }
+
+        #endregion
+
     }
 }

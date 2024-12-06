@@ -1,0 +1,91 @@
+﻿@using EntityLayer.Concretes
+@model List<Blog>
+
+@{
+    ViewData["Title"] = "BlogOverview";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    string categoryColor = string.Empty;
+}
+
+<section class="content">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title">Blog Hızlı Bakış</h3>
+            <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                    <i class="fas fa-minus"></i>
+                </button>
+            </div>
+        </div>
+        <div class="card-body p-0">
+            <table class="table table-striped projects">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Başlık</th>
+                        <th style="width: 15%">Yazar</th>
+                        <th class="text-center">Kategori</th>
+                        <th>Beğeni Oranı</th>
+                        <th class="text-center">Yorumlar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        if (item.Category?.Name == "YOGA")
+                        {
+                            categoryColor = "badge badge-warning";
+                        }
+                        if (item.Category?.Name == "PİLATES")
+                        {
+                            categoryColor = "badge badge-info";
+                        }
+                        if (item.Category?.Name == "DİYET")
+                        {
+                            categoryColor = "badge badge-secondary";
+                        }
+                        if (item.Category?.Name == "KARDİYO")
+                        {
+                            categoryColor = "badge badge-danger";
+                        }
+                        if (item.Category?.Name == "CROSSFİT")
+                        {
+                            categoryColor = "badge badge-primary";
+                        }
+                        if (item.Category?.Name == "VÜCUT GELİŞTİRME")
+                        {
+                            categoryColor = "badge badge-success";
+                        }
+                        <tr>
+                            <td>@item.BlogId</td>
+                            <td><a>@item.Title</a><br /><small></small></td>
+                            <td>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <img alt="Avatar" class="table-avatar" src="@item.Author?.ImageUrl">  @item.Author?.Name
+                                    </li>
+                                </ul>
+                            </td>
+                            <td class="project-state"><span class="@categoryColor">@item.Category?.Name</span></td>
+                            <td class="project_progress text-center">
+                                <div class="progress progress-sm">
+                                    <div class="progress-bar bg-green" role="progressbar" aria-volumenow="57" aria-volumemin="0" aria-volumemax="100" style="width: 57%">
+                                    </div>
+                                </div>
+                                <small class="text-left">
+                                    57% Complete
+                                </small>
+                            </td>
+                            <td class="project-actions text-center">
+                                <a class="btn btn-primary btn-sm" href="/Comment/CommentListByBlogId/@item.BlogId"><i class="fas fa-folder"></i>Yorumları Gör</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+<a href="/Blog/AddBlog/" class="btn btn-outline-success">Yeni Blog Ekle</a>
+
+
