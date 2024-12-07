@@ -36,12 +36,12 @@
                         <td>@(((DateTime)item.Date).ToString("dd.MM.yyyy"))</td>
                         <td><a href="/Blog/DeleteBlog/@item.BlogId" class="btn btn-outline-danger">Sil</a></td>
                         <td><a href="/Blog/UpdateBlog/@item.BlogId" class="btn btn-outline-warning">Güncelle</a></td>
-                        <td><a href="/Blog/BlogDetails/@item.BlogId" class="btn btn-outline-primary">Detaylara Git</a></td>
+                        <td><a href="/Blog/BlogDetails/@item.BlogId" class="btn btn-outline-primary">Sitede Gör</a></td>
                         <td><a href="/Comment/CommentListByBlogId/@item.BlogId" class="btn btn-outline-secondary">Yorumları Oku</a></td>
                     </tr>
                 }
             </tbody>
-        </table>   
+        </table>
     </div>
 </div>
-    <a href="/Blog/AddBlog/" class="btn btn-outline-success">Yeni Blog Ekle</a>
+<a href="/Blog/AddBlog/" class="btn btn-outline-success">Yeni Blog Ekle</a>
