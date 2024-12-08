@@ -18,9 +18,11 @@ namespace FitOnBlog.Controllers
 
         #region Admin Operations
 
+
         public IActionResult Index()
         {
             var values = _blogService.GetListAll();
+
             return View(values);
         }
 
@@ -45,8 +47,13 @@ namespace FitOnBlog.Controllers
         [HttpPost]
         public IActionResult AddBlog(Blog blog)
         {
-            _blogService.Insert(blog);
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                _blogService.Insert(blog);
+                return RedirectToAction("Index");
+            }
+
+            return View();
         }
 
         public IActionResult DeleteBlog(int id)

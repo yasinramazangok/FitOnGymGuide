@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewData["Title"] = "BlogRating";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<head>
+    <title>Blog İstatistikleri</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                type: "POST",
+                dataType: "json",
+                contentType: "application/json",
+                url: '@Url.Action("BlogRatingsInCharts", "Chart")',
+                success: function (result) {
+                    var ctx = document.getElementById('Piechart_div').getContext('2d');
+                    var chart = new Chart(ctx, {
+                        type: 'polarArea',
+                        data: {
+                            labels: result.labels,
+                            datasets: result.datasets
+                        },
+                        options: {
+                            responsive: true,
+                            plugins: {
+                                legend: {
+                                    position: 'top',
+                                },
+                                tooltip: {
+                                    callbacks: {
+                                        label: function(tooltipItem) {
+                                            return tooltipItem.label + ": " + tooltipItem.raw;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</head>
+
+<div style="width: 75%; height: 200px; margin: auto;">
+    <h2 class="text-center">Blog Beğeni Oranı Dağılımı</h2>
+    <br />
+    <canvas id="Piechart_div"></canvas>
+</div>

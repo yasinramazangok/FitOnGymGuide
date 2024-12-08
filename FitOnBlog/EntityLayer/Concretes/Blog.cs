@@ -10,7 +10,7 @@ namespace EntityLayer.Concretes
     public class Blog
     {
         [Key]
-        public int BlogId { get; set; }  
+        public int BlogId { get; set; }
 
         [StringLength(150)]
         public string? Title { get; set; }
@@ -21,6 +21,8 @@ namespace EntityLayer.Concretes
         public DateTime Date { get; set; }
 
         public string? Content { get; set; }
+
+        public int? Rating { get; set; }
 
         public int CategoryId { get; set; }
         public virtual Category? Category { get; set; }

@@ -9,9 +9,19 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concretes
 {
-    public class CategoryManager(ICategoryDal categoryDal) : ICategoryService
+    public class CategoryManager : ICategoryService
     {
-        private readonly ICategoryDal _categoryDal = categoryDal; // Primary Constructor
+        private readonly ICategoryDal _categoryDal;
+
+        public CategoryManager(ICategoryDal categoryDal)
+        {
+            _categoryDal = categoryDal;
+        }
+
+        public void DecrementBlogCount(int categoryId)
+        {
+            _categoryDal.DecrementBlogCount(categoryId);
+        }
 
         public void Delete(Category category)
         {
@@ -26,6 +36,11 @@ namespace BusinessLayer.Concretes
         public List<Category> GetListAll()
         {
             return _categoryDal.GetListAll();
+        }
+
+        public void IncrementBlogCount(int categoryId)
+        {
+            _categoryDal.IncrementBlogCount(categoryId);
         }
 
         public void Insert(Category category)
