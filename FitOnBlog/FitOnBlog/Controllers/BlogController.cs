@@ -1,12 +1,15 @@
 ﻿using BusinessLayer.Abstracts;
 using EntityLayer.Concretes;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
 
 namespace FitOnBlog.Controllers
 {
-    //[Authorize]
+    [Authorize(Roles = "Admin, Yazar")]
     public class BlogController : Controller
     {
         private readonly IBlogService _blogService;
@@ -18,15 +21,52 @@ namespace FitOnBlog.Controllers
 
         #region Admin Operations
 
+
         public IActionResult Index()
         {
-            var values = _blogService.GetListAll();
+            IEnumerable<Blog> values;
+
+            if (User.IsInRole("Admin"))
+            {
+                values = _blogService.GetListAll();
+            }
+
+            else if (User.IsInRole("Yazar"))
+            {
+                string authorUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+                ViewBag.Name = User.FindFirst(ClaimTypes.Name)?.Value;
+
+                values = _blogService.GetBlogsByAuthorId(authorUserId);
+            }
+            else
+            {
+                values = new List<Blog>();
+            }
             return View(values);
         }
 
         public IActionResult BlogOverview()
         {
-            var values = _blogService.GetListAll();
+            IEnumerable<Blog> values;
+
+            if (User.IsInRole("Admin"))
+            {
+                values = _blogService.GetListAll();
+            }
+
+            else if (User.IsInRole("Yazar"))
+            {
+                string authorUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+                ViewBag.Name = User.FindFirst(ClaimTypes.Name)?.Value;
+
+                values = _blogService.GetBlogsByAuthorId(authorUserId);
+            }
+            else
+            {
+                values = new List<Blog>();
+            }
             return View(values);
         }
 
@@ -45,8 +85,13 @@ namespace FitOnBlog.Controllers
         [HttpPost]
         public IActionResult AddBlog(Blog blog)
         {
-            _blogService.Insert(blog);
-            return RedirectToAction("Index");
+            if (ModelState.IsValid)
+            {
+                _blogService.Insert(blog);
+                return RedirectToAction("Index");
+            }
+
+            return View();
         }
 
         public IActionResult DeleteBlog(int id)

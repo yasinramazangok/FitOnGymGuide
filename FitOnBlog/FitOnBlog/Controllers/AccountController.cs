@@ -1,4 +1,6 @@
-﻿using DataAccessLayer.Contexts;
+﻿using BusinessLayer.Abstracts;
+using DataAccessLayer.Contexts;
+using EntityLayer.Concretes;
 using FitOnBlog.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -9,11 +11,13 @@ namespace FitOnBlog.Controllers
     {
         private readonly SignInManager<FitOnBlogUser> _signInManager;
         private readonly UserManager<FitOnBlogUser> _userManager;
+        private readonly IAuthorService _authorService;
 
-        public AccountController(SignInManager<FitOnBlogUser> signInManager, UserManager<FitOnBlogUser> userManager)
+        public AccountController(SignInManager<FitOnBlogUser> signInManager, UserManager<FitOnBlogUser> userManager, IAuthorService authorService)
         {
             _signInManager = signInManager;
             _userManager = userManager;
+            _authorService = authorService;
         }
 
         public IActionResult Login(string? returnUrl = null)
@@ -24,22 +28,41 @@ namespace FitOnBlog.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(LoginViewModel loginViewModel, string? returnUrl = null)
+        public async Task<IActionResult> Login(LoginViewModel model, string? returnUrl = null)
         {
-            ViewData["ReturnUrl"] = returnUrl;
-
             if (ModelState.IsValid)
             {
-                var result = await _signInManager.PasswordSignInAsync(loginViewModel.Username!, loginViewModel.Password!, loginViewModel.RememberMe, false);
+                var user = await _userManager.FindByNameAsync(model.Username);
 
-                if (result.Succeeded)
+                if (user != null && model.Role != null && await _userManager.CheckPasswordAsync(user, model.Password))
                 {
-                    return RedirectToLocal(returnUrl);
+                    var roles = await _userManager.GetRolesAsync(user);
+
+                    if (roles.Contains(model.Role))
+                    {
+                        var signInResult = await _signInManager.PasswordSignInAsync(user, model.Password, false, false);
+                        if (signInResult.Succeeded)
+                        {
+                            if (model.Role == "Admin")
+                                return RedirectToAction("Index", "Blog");
+                            if (model.Role == "Yazar")
+                                return RedirectToAction("Index", "Blog");
+                            else
+                                return RedirectToLocal(returnUrl);
+                        }
+                    }
+                    else
+                    {
+                        ModelState.AddModelError("", "Seçilen rol ile eşleşen bir kullanıcı bulunamadı.");
+                    }
                 }
-                ModelState.AddModelError("", "Giriş doğrulanamadı!");
-                return View(loginViewModel);
+                ModelState.AddModelError("", "Geçersiz kullanıcı adı veya şifre.");
             }
-            return View(loginViewModel);
+            else
+            {
+                ModelState.AddModelError("", "Geçersiz kullanıcı adı veya şifre.");
+            }
+            return View(model);
         }
 
         public IActionResult Register(string? returnUrl = null)
@@ -61,15 +84,36 @@ namespace FitOnBlog.Controllers
                     Name = registerViewModel.Name,
                     UserName = registerViewModel.Email,
                     Email = registerViewModel.Email,
-                    Address = registerViewModel.Address
                 };
 
                 var result = await _userManager.CreateAsync(fitOnBlogUser, registerViewModel.Password!);
 
                 if (result.Succeeded)
                 {
-                    // await _signInManager.SignInAsync(user, false);
+                    if(registerViewModel.Role == "Admin")
+                    {
+                        await _userManager.AddToRoleAsync(fitOnBlogUser, "Admin");
+                    }
+                    else if (registerViewModel.Role == "Yazar")
+                    {
+                        await _userManager.AddToRoleAsync(fitOnBlogUser, "Yazar");
 
+                        Author author = new()
+                        {
+                            UserId = fitOnBlogUser.Id,
+                            Name = registerViewModel.Name,
+                            Email = registerViewModel.Email,
+                            Password = registerViewModel.Password,
+                            PhoneNumber = registerViewModel.PhoneNumber,
+                            ImageUrl = registerViewModel.ImageUrl,
+                            Title = registerViewModel.Title,
+                            Expertises = registerViewModel.Expertises,
+                            About = registerViewModel.About,
+                        };
+
+                        _authorService.Insert(author);
+
+                    }
                     return RedirectToLocal(returnUrl);
                 }
                 foreach (var error in result.Errors)

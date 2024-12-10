@@ -64,6 +64,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/Account/SelectRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxTZWxlY3RSb2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/AdminPartials/PartialHead.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYXJ0aWFsc1xQYXJ0aWFsSGVhZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -78,6 +82,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/AdminPartials/PartialSidebar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYXJ0aWFsc1xQYXJ0aWFsU2lkZWJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/AuthorPartials/PartialHead.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yUGFydGlhbHNcUGFydGlhbEhlYWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/AuthorPartials/PartialNavbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yUGFydGlhbHNcUGFydGlhbE5hdmJhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/AuthorPartials/PartialScript.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yUGFydGlhbHNcUGFydGlhbFNjcmlwdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/AuthorPartials/PartialSidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aG9yUGFydGlhbHNcUGFydGlhbFNpZGViYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/Author/AddAuthor.cshtml]
@@ -132,12 +152,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQmxvZ1xVcGRhdGVCbG9nLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/Category/AddCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQWRkQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/Category/CategoryListInBlogDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcQ2F0ZWdvcnlMaXN0SW5CbG9nRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/Category/UpdateCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcnlcVXBkYXRlQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/Chart/BlogRating.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcnRcQmxvZ1JhdGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/Chart/CategoryBlogCount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2hhcnRcQ2F0ZWdvcnlCbG9nQ291bnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/Comment/Index.cshtml]
@@ -238,6 +274,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/Shared/_AdminLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BZG1pbkxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/Shared/_AuthorLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9BdXRob3JMYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/yasinramazangok/Desktop/FitOnGymGuide/FitOnBlog/FitOnBlog/Views/Shared/_FrontLayout.cshtml]

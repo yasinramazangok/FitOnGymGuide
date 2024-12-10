@@ -1,9 +1,11 @@
 ﻿using BusinessLayer.Abstracts;
 using EntityLayer.Concretes;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FitOnBlog.Controllers
 {
+    [Authorize]
     public class AboutController : Controller
     {
         private readonly IAboutService _aboutService;
@@ -44,24 +46,32 @@ namespace FitOnBlog.Controllers
 
         #region UI Operations
 
+        [AllowAnonymous]
         public IActionResult Home()
         {
             var values = _aboutService.GetListAll();
             return View(values);
         }
 
+        [AllowAnonymous]
         public IActionResult AboutCover()
         {
             return View();
         }
+
+        [AllowAnonymous]
         public IActionResult AboutContent1()
         {
             return View();
         }
+
+        [AllowAnonymous]
         public IActionResult MeetTheTeam()
         {
             return View();
         }
+
+        [AllowAnonymous]
         public IActionResult AboutContent2()
         {
             return View();

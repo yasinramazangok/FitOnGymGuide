@@ -1,0 +1,21 @@
+﻿
+@*
+    Partial View
+*@
+
+@{
+    ViewData["Title"] = "Rol Seçimi";
+}
+
+<h2>Rol Seçimi</h2>
+
+<form method="post" action="@Url.Action("SelectRole", "Account")">
+    <div>
+        <label for="role">Rol Seçin:</label>
+        <select id="role" name="role">
+            <option value="Admin">Admin</option>
+            <option value="User">Yazar</option>
+        </select>
+    </div>
+    <button type="submit">Devam Et</button>
+</form>

@@ -9,13 +9,22 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concretes
 {
-    public class AuthorManager(IAuthorDal authorDal) : IAuthorService
+    public class AuthorManager : IAuthorService
     {
-        private readonly IAuthorDal _authorDal = authorDal; // Primary Constructor  
+        private readonly IAuthorDal _authorDal;
 
+        public AuthorManager(IAuthorDal authorDal)
+        {
+            _authorDal = authorDal;
+        }
         public void Delete(Author author)
         {
             _authorDal.Delete(author);
+        }
+
+        public IEnumerable<Author> GetAuthenticatedAuthor(string userId)
+        {
+            return _authorDal.GetAuthenticatedAuthor(userId);
         }
 
         public Author GetById(int id)

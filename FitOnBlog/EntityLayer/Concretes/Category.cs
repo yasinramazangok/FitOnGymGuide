@@ -18,6 +18,8 @@ namespace EntityLayer.Concretes
         [StringLength(500)]
         public string? Description { get; set; }
 
+        public int? BlogCount { get; set; }
+
         public ICollection<Blog>? Blogs { get; set; }
     }
 }

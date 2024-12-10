@@ -1,9 +1,11 @@
 ﻿@using EntityLayer.Concretes
-@model List<Author>
+@model IEnumerable<Author>
 
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = User.IsInRole("Admin") ? "~/Views/Shared/_AdminLayout.cshtml" :
+             User.IsInRole("Yazar") ? "~/Views/Shared/_AuthorLayout.cshtml" :
+             "~/Views/Shared/_DefaultLayout.cshtml";
 }
 
 <div class="wrapper">
@@ -57,13 +59,10 @@
                         </div>
                     }
                 </div>
-
             </div>
-
         </div>
     </section>
-    <a href="/Author/AddAuthor/" class="btn btn-outline-success">Yeni Yazar Ekle</a>
-
+    <a href="/Account/Register/" class="btn btn-outline-success">Yeni Yazar Ekle</a>
 </div>
 
 

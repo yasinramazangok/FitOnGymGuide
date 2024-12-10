@@ -9,5 +9,6 @@ namespace DataAccessLayer.Abstracts
 {
     public interface IAuthorDal : IGenericDal<Author>
     {
+        public IEnumerable<Author> GetAuthenticatedAuthor(string userId);
     }
 }
