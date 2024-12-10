@@ -9,5 +9,8 @@ namespace DataAccessLayer.Abstracts
 {
     public interface ICategoryDal : IGenericDal<Category>
     {
+        public void IncrementBlogCount(int categoryId);
+
+        public void DecrementBlogCount(int categoryId);
     }
 }

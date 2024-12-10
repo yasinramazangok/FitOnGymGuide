@@ -41,6 +41,9 @@ namespace BusinessLayer.Containers
 
             services.AddScoped<IEmailSubscriptionService, EmailSubscriptionManager>();
             services.AddScoped<IEmailSubscriptionDal, EfEmailSubscriptionDal>();
+
+            services.AddScoped<IChartService, ChartManager>();
+
         }
     }
 }

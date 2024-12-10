@@ -13,5 +13,9 @@ namespace FitOnBlog.Models
 
         [Display(Name = "Beni Hatırla")]
         public bool RememberMe { get; set; }
+
+        [Required(ErrorMessage = "Kullanıcı türü seçmelisiniz!")]
+        public string? Role { get; set; }
+
     }
 }

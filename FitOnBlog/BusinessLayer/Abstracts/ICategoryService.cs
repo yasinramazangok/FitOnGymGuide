@@ -9,5 +9,9 @@ namespace BusinessLayer.Abstracts
 {
     public interface ICategoryService : IGenericService<Category>
     {
+        public void IncrementBlogCount(int categoryId);
+
+        public void DecrementBlogCount(int categoryId);
+
     }
 }

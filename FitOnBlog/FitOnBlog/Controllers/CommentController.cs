@@ -2,10 +2,12 @@
 using DataAccessLayer.Abstracts;
 using DataAccessLayer.EntityFrameworkCore;
 using EntityLayer.Concretes;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FitOnBlog.Controllers
 {
+    [Authorize(Roles ="Admin, Yazar")]
     public class CommentController : Controller
     {
         private readonly ICommentService _commentService;
@@ -50,6 +52,7 @@ namespace FitOnBlog.Controllers
 
         #region UI Operations
 
+        [AllowAnonymous]
         [HttpGet]
         public IActionResult LeaveComment(int id)
         {
@@ -57,6 +60,7 @@ namespace FitOnBlog.Controllers
             return View();
         }
 
+        [AllowAnonymous]
         [HttpPost]
         public IActionResult LeaveComment(Comment comment)
         {

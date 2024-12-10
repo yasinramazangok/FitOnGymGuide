@@ -18,6 +18,8 @@ namespace BusinessLayer.Abstracts
 
         public List<Blog> GetBlogsByAuthorId(int id);
 
+        public IEnumerable<Blog> GetBlogsByAuthorId(string userId);
+
         public List<Blog> GetBlogsByCategoryId(int id);
     }
 }

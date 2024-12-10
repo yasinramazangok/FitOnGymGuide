@@ -2,9 +2,11 @@
 using EntityLayer.Concretes;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace FitOnBlog.Controllers
 {
+    [Authorize(Roles = "Admin, Yazar")]
     public class AuthorController : Controller
     {
         private readonly IAuthorService _authorService;
@@ -18,7 +20,25 @@ namespace FitOnBlog.Controllers
 
         public IActionResult Index()
         {
-            var values = _authorService.GetListAll();
+            IEnumerable<Author> values;
+
+            if (User.IsInRole("Admin"))
+            {
+                values = _authorService.GetListAll();
+            }
+
+            else if (User.IsInRole("Yazar"))
+            {
+                string userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+                values = _authorService.GetAuthenticatedAuthor(userId);
+            }
+
+            else
+            {
+                values = new List<Author>();
+            }
+
             return View(values);
         }
 

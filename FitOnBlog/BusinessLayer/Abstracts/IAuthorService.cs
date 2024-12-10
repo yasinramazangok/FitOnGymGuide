@@ -9,5 +9,6 @@ namespace BusinessLayer.Abstracts
 {
     public interface IAuthorService : IGenericService<Author>
     {
+        public IEnumerable<Author> GetAuthenticatedAuthor(string userId);
     }
 }

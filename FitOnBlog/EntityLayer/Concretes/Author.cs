@@ -12,6 +12,9 @@ namespace EntityLayer.Concretes
         [Key]
         public int AuthorId { get; set; }
 
+        [StringLength(450)]
+        public string? UserId { get; set; }
+
         [StringLength(50)]
         public string? Name { get; set; }
 

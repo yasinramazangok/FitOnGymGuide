@@ -18,7 +18,7 @@ namespace DataAccessLayer.Contexts
         {
             optionsBuilder.UseSqlServer("server = YASINRAMAZANGOK; database = FitOnBlogDatabase; integrated security = true; trustservercertificate = true;");
         }
-
+      
         public DbSet<About> Abouts { get; set; }
         public DbSet<Address> Addresses { get; set; }
         public DbSet<Admin> Admins { get; set; }

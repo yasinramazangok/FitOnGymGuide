@@ -1,0 +1,80 @@
+﻿@*
+    Partial View
+*@
+
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <a href="/Blog/Index/" class="brand-link">
+        <img src="~/BlogAdminLTE/dist/img/logo/fiton-logo.svg" alt="FitOn Admin" class="brand-image img-size-64"
+             style="opacity: .8">
+        <span class="brand-text">Admin</span>
+    </a>
+    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+            <img src="~/BlogAdminLTE/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+            <a href="#" class="d-block">Alexander Pierce</a>
+        </div>
+    </div>
+    <div class="sidebar">
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <li class="nav-item">
+                    <a href="/Blog/Index/" class="nav-link">
+                        <i class="nav-icon fas fa-edit"></i>
+                        <p>
+                            Bloglar
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Blog/BlogOverview/" class="nav-link">
+                        <i class="nav-icon fas fa-blog"></i>
+                        <p>
+                            Blog Hızlı Bakış
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-chart-line"></i>
+                        <p>
+                            Grafikler
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="/Chart/CategoryBlogCount/" class="nav-link">
+                                <i class="far fa-dot-circle nav-icon"></i>
+                                <p>Kategorilerdeki Blog Sayısı</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/Chart/BlogRating/" class="nav-link">
+                                <i class="far fa-star nav-icon"></i>
+                                <p>Blogların Beğeni Oranı</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="/Author/Index/" class="nav-link">
+                        <i class="nav-icon fas fa-user-edit"></i>
+                        <p>
+                            Profil
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/Account/Logout/" class="nav-link">
+                        <i class="nav-icon fas fa-sign-out-alt"></i>
+                        <p>
+                            Çıkış Yap
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</aside>
