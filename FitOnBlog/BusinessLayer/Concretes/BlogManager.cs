@@ -71,5 +71,10 @@ namespace BusinessLayer.Concretes
         {
             return _blogDal.GetBlogsByCategoryId(id);
         }
+
+        public IEnumerable<Blog> GetBlogsByAuthorId(string userId)
+        {
+            return _blogDal.GetBlogsByAuthorId(userId);
+        }
     }
 }

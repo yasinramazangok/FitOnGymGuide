@@ -1,6 +1,8 @@
 ﻿ @{
     ViewData["Title"] = "CategoryBlogCount";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    Layout = User.IsInRole("Admin") ? "~/Views/Shared/_AdminLayout.cshtml" :
+             User.IsInRole("Yazar") ? "~/Views/Shared/_AuthorLayout.cshtml" :
+             "~/Views/Shared/_DefaultLayout.cshtml";
 }
 
 <head>

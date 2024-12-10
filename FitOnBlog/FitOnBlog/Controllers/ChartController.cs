@@ -1,10 +1,12 @@
 ﻿using BusinessLayer.Abstracts;
 using FitOnBlog.ViewComponents;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
 namespace FitOnBlog.Controllers
 {
+    [Authorize(Roles ="Admin, Yazar")]
     public class ChartController : Controller
     {
         private readonly IChartService _chartService;

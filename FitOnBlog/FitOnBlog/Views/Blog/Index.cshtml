@@ -1,9 +1,12 @@
 ﻿@using EntityLayer.Concretes
-@model List<Blog>
+@model IEnumerable<Blog>
 
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+    Layout = User.IsInRole("Admin") ? "~/Views/Shared/_AdminLayout.cshtml" :
+             User.IsInRole("Yazar") ? "~/Views/Shared/_AuthorLayout.cshtml" :
+             "~/Views/Shared/_DefaultLayout.cshtml";
 }
 
 <div class="card">
@@ -44,4 +47,5 @@
         </table>
     </div>
 </div>
-<a href="/Blog/AddBlog/" class="btn btn-outline-success">Yeni Blog Ekle</a>
+<a href="/Blog/AddBlog/" class="btn btn-outlin-e-success">Yeni Blog Ekle</a>
+@ViewBag.Name

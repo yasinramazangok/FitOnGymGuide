@@ -2107,6 +2107,8 @@ wwwroot\DarkPan\element.html
 wwwroot\DarkPan\form.html
 wwwroot\DarkPan\img\fiton-favicon.png
 wwwroot\DarkPan\img\fiton-logo.svg
+wwwroot\DarkPan\img\role-screen.jpg
+wwwroot\DarkPan\img\role-screen1.jpg
 wwwroot\DarkPan\img\slider-bg-1.jpg
 wwwroot\DarkPan\img\testimonial-1.jpg
 wwwroot\DarkPan\img\testimonial-2.jpg

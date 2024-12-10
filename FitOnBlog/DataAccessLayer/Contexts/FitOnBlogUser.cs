@@ -15,8 +15,5 @@ namespace DataAccessLayer.Contexts
         [MaxLength(100)]
         [Required]
         public string? Name { get; set; }
-
-        [StringLength(200)]
-        public string? Address { get; set; }
     }
 }

@@ -1,12 +1,15 @@
 ﻿using BusinessLayer.Abstracts;
 using EntityLayer.Concretes;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
 
 namespace FitOnBlog.Controllers
 {
-    //[Authorize]
+    [Authorize(Roles = "Admin, Yazar")]
     public class BlogController : Controller
     {
         private readonly IBlogService _blogService;
@@ -21,14 +24,49 @@ namespace FitOnBlog.Controllers
 
         public IActionResult Index()
         {
-            var values = _blogService.GetListAll();
+            IEnumerable<Blog> values;
 
+            if (User.IsInRole("Admin"))
+            {
+                values = _blogService.GetListAll();
+            }
+
+            else if (User.IsInRole("Yazar"))
+            {
+                string authorUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+                ViewBag.Name = User.FindFirst(ClaimTypes.Name)?.Value;
+
+                values = _blogService.GetBlogsByAuthorId(authorUserId);
+            }
+            else
+            {
+                values = new List<Blog>();
+            }
             return View(values);
         }
 
         public IActionResult BlogOverview()
         {
-            var values = _blogService.GetListAll();
+            IEnumerable<Blog> values;
+
+            if (User.IsInRole("Admin"))
+            {
+                values = _blogService.GetListAll();
+            }
+
+            else if (User.IsInRole("Yazar"))
+            {
+                string authorUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+                ViewBag.Name = User.FindFirst(ClaimTypes.Name)?.Value;
+
+                values = _blogService.GetBlogsByAuthorId(authorUserId);
+            }
+            else
+            {
+                values = new List<Blog>();
+            }
             return View(values);
         }
 

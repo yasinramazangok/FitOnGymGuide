@@ -77,6 +77,17 @@ namespace DataAccessLayer.EntityFrameworkCore
                                     .ToList();
         }
 
+        public IEnumerable<Blog> GetBlogsByAuthorId(string userId)
+        {
+            using var fitOnContext = new FitOnContext();
+
+            return fitOnContext.Blogs.
+                                    Where(b => b.Author.UserId == userId)
+                                    .Include(b => b.Author)
+                                    .Include(b => b.Category)
+                                    .ToList();
+        }
+
         public List<Blog> GetBlogsByCategoryId(int id)
         {
             using var fitOnContext = new FitOnContext();
@@ -87,5 +98,7 @@ namespace DataAccessLayer.EntityFrameworkCore
                                     .Include(b => b.Category)
                                     .ToList();
         }
+
+        
     }
 }
