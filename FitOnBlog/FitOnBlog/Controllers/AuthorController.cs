@@ -6,7 +6,6 @@ using System.Security.Claims;
 
 namespace FitOnBlog.Controllers
 {
-    [Authorize(Roles = "Admin, Yazar")]
     public class AuthorController : Controller
     {
         private readonly IAuthorService _authorService;
@@ -18,7 +17,8 @@ namespace FitOnBlog.Controllers
 
         #region Admin Operations
 
-        public IActionResult Index()
+        [Authorize(Roles = "Admin, Yazar")]
+        public async Task<IActionResult> Index()
         {
             IEnumerable<Author> values;
 
@@ -31,6 +31,8 @@ namespace FitOnBlog.Controllers
             {
                 string userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
+                ViewBag.AuthorUserId = userId;
+
                 values = _authorService.GetAuthenticatedAuthor(userId);
             }
 
@@ -38,16 +40,17 @@ namespace FitOnBlog.Controllers
             {
                 values = new List<Author>();
             }
-
             return View(values);
         }
 
+        [Authorize(Roles = "Admin, Yazar")]
         [HttpGet]
         public IActionResult AddAuthor()
         {
             return View();
         }
 
+        [Authorize(Roles = "Admin, Yazar")]
         [HttpPost]
         public IActionResult AddAuthor(Author author)
         {
@@ -55,6 +58,7 @@ namespace FitOnBlog.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult DeleteAuthor(int id)
         {
             var value = _authorService.GetById(id);
@@ -62,6 +66,7 @@ namespace FitOnBlog.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize(Roles = "Yazar")]
         [HttpGet]
         public IActionResult UpdateAuthor(int id)
         {
@@ -69,6 +74,7 @@ namespace FitOnBlog.Controllers
             return View(value);
         }
 
+        [Authorize(Roles = "Yazar")]
         [HttpPost]
         public IActionResult UpdateAuthor(Author author)
         {

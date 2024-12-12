@@ -7,9 +7,10 @@ using X.PagedList.Extensions;
 
 namespace FitOnBlog.Controllers
 {
-    [AllowAnonymous]
+
     public class DefaultController : Controller
     {
+        [AllowAnonymous]
         public IActionResult Index(int pageNumber = 1)
         {
             return View(pageNumber);

@@ -2330,6 +2330,7 @@ wwwroot\MiniBlog\images\authors\team-4.jpg
 wwwroot\MiniBlog\images\authors\team-5.jpg
 wwwroot\MiniBlog\images\authors\team-6.jpg
 wwwroot\MiniBlog\images\cebupacific-booking.jpg
+wwwroot\MiniBlog\images\comment-icon.png
 wwwroot\MiniBlog\images\fiton-favicon.png
 wwwroot\MiniBlog\images\fiton-logo.svg
 wwwroot\MiniBlog\images\hero_1.jpg

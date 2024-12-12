@@ -1,8 +1,11 @@
 ﻿using BusinessLayer.Abstracts;
+using EntityLayer.Concretes;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FitOnBlog.ViewComponents
 {
+    [AllowAnonymous]
     public class DefaultFeaturedBlogsPartial : ViewComponent
     {
         private readonly IBlogService _blogService;
@@ -36,6 +39,7 @@ namespace FitOnBlog.ViewComponents
             ViewData["date6"] = _blogService.GetListAll().OrderBy(b => b.BlogId).Where(c => c.CategoryId == 6).Select(t => t.Date).FirstOrDefault();
             */
 
+            ViewData["id"] = _blogService.GetLastBlogByCategory(1).CategoryId;
             ViewData["title1"] = _blogService.GetLastBlogByCategory(1).Title;
             ViewData["imageUrl1"] = _blogService.GetLastBlogByCategory(1).ImageUrl;
             ViewData["date1"] = _blogService.GetLastBlogByCategory(1).Date;

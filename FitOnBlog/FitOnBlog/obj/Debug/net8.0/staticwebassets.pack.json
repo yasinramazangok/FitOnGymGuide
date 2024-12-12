@@ -9093,6 +9093,10 @@
       "PackagePath": "staticwebassets\\MiniBlog\\images\\cebupacific-booking.jpg"
     },
     {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\comment-icon.png",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\comment-icon.png"
+    },
+    {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\fiton-favicon.png",
       "PackagePath": "staticwebassets\\MiniBlog\\images\\fiton-favicon.png"
     },

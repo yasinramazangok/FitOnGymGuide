@@ -6,10 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
+using System.Text.Json.Serialization;
 
 namespace FitOnBlog.Controllers
 {
-    [Authorize(Roles = "Admin, Yazar")]
     public class BlogController : Controller
     {
         private readonly IBlogService _blogService;
@@ -21,7 +21,7 @@ namespace FitOnBlog.Controllers
 
         #region Admin Operations
 
-
+        [Authorize(Roles = "Admin, Yazar")]
         public IActionResult Index()
         {
             IEnumerable<Blog> values;
@@ -35,8 +35,6 @@ namespace FitOnBlog.Controllers
             {
                 string authorUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-                ViewBag.Name = User.FindFirst(ClaimTypes.Name)?.Value;
-
                 values = _blogService.GetBlogsByAuthorId(authorUserId);
             }
             else
@@ -46,6 +44,7 @@ namespace FitOnBlog.Controllers
             return View(values);
         }
 
+        [Authorize(Roles = "Admin, Yazar")]
         public IActionResult BlogOverview()
         {
             IEnumerable<Blog> values;
@@ -59,8 +58,6 @@ namespace FitOnBlog.Controllers
             {
                 string authorUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-                ViewBag.Name = User.FindFirst(ClaimTypes.Name)?.Value;
-
                 values = _blogService.GetBlogsByAuthorId(authorUserId);
             }
             else
@@ -70,6 +67,7 @@ namespace FitOnBlog.Controllers
             return View(values);
         }
 
+        [Authorize(Roles = "Yazar")]
         [HttpGet]
         public IActionResult AddBlog()
         {
@@ -82,6 +80,7 @@ namespace FitOnBlog.Controllers
             return View();
         }
 
+        [Authorize(Roles = "Yazar")]
         [HttpPost]
         public IActionResult AddBlog(Blog blog)
         {
@@ -94,6 +93,7 @@ namespace FitOnBlog.Controllers
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult DeleteBlog(int id)
         {
             var value = _blogService.GetById(id);
@@ -101,6 +101,7 @@ namespace FitOnBlog.Controllers
             return RedirectToAction("Index");
         }
 
+        [Authorize(Roles = "Yazar")]
         [HttpGet]
         public IActionResult UpdateBlog(int id)
         {
@@ -108,6 +109,7 @@ namespace FitOnBlog.Controllers
             return View(value);
         }
 
+        [Authorize(Roles = "Yazar")]
         [HttpPost]
         public IActionResult UpdateBlog(Blog blog)
         {
