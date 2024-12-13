@@ -25,6 +25,8 @@ namespace EntityLayer.Concretes
 
         public bool Status { get; set; }
 
+        public int? BlogRating { get; set; }
+
         public int BlogId { get; set; }
         public virtual Blog? Blog { get; set; }
     }

@@ -66,5 +66,12 @@ namespace DataAccessLayer.EntityFrameworkCore
                 .Include(blog => blog.Blog)
                 .ToList();
         }
+
+        public void UpdateBlogRating(int blogId)
+        {
+            using var fitOnContext = new FitOnContext();
+
+            fitOnContext.Database.ExecuteSqlRaw("EXEC UpdateBlogRating @BlogId = {0}", blogId);
+        }
     }
 }

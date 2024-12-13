@@ -16,7 +16,5 @@ namespace BusinessLayer.Abstracts
         public void ChangeCommentStatusToTrue(int id);
 
         public List<Comment> GetListStatusFalse();
-
-
     }
 }
