@@ -129,15 +129,23 @@ namespace FitOnBlog.Controllers
         [AllowAnonymous]
         public IActionResult BlogDetails(int id)
         {
-            var blogDetails = _blogService.GetBlogById(id);
+            try
+            {
+                var blogDetails = _blogService.GetBlogById(id);
 
-            var selectedBlog = blogDetails.FirstOrDefault(b => b.BlogId == id);
+                var selectedBlog = blogDetails.FirstOrDefault(b => b.BlogId == id);
 
-            ViewBag.authorId = selectedBlog?.AuthorId;
+                ViewBag.authorId = selectedBlog?.AuthorId;
 
-            ViewBag.id = id;
+                ViewBag.id = id;
 
-            return View(blogDetails);
+                return View(blogDetails);
+            }
+            catch (Exception e)
+            {
+                throw;
+            }
+
         }
 
         [AllowAnonymous]
@@ -155,15 +163,23 @@ namespace FitOnBlog.Controllers
         [AllowAnonymous]
         public IActionResult BlogsByCategory(int id)
         {
-            var blogListByCategory = _blogService.GetBlogsByCategoryId(id);
+            try
+            {
+                var blogListByCategory = _blogService.GetBlogsByCategoryId(id);
 
-            var selectedBlog = blogListByCategory.FirstOrDefault();
+                var selectedBlog = blogListByCategory.FirstOrDefault();
 
-            ViewBag.categoryName = selectedBlog?.Category?.Name;
+                ViewBag.categoryName = selectedBlog?.Category?.Name;
 
-            ViewBag.categoryDescription = selectedBlog?.Category?.Description;
+                ViewBag.categoryDescription = selectedBlog?.Category?.Description;
 
-            return View(blogListByCategory);
+                return View(blogListByCategory);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
         }
 
         #endregion

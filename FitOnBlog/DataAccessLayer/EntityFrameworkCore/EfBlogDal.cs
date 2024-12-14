@@ -32,6 +32,7 @@ namespace DataAccessLayer.EntityFrameworkCore
                         .OrderByDescending(d => d.BlogId)
                         .Select(b => new Blog
                         {
+                            BlogId = b.BlogId,
                             Title = b.Title,
                             ImageUrl = b.ImageUrl,
                             Date = b.Date
@@ -48,6 +49,7 @@ namespace DataAccessLayer.EntityFrameworkCore
                         .OrderBy(d => d.BlogId)
                         .Select(b => new Blog
                         {
+                            BlogId = b.BlogId,
                             Title = b.Title,
                             ImageUrl = b.ImageUrl,
                             Date = b.Date

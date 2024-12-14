@@ -1,7 +1,9 @@
-﻿using BusinessLayer.Containers;
+﻿using Azure;
+using BusinessLayer.Containers;
 using DataAccessLayer.Contexts;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc.Authorization;
 
@@ -46,13 +48,10 @@ builder.Services.AddControllers(config =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsProduction() || app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
-    app.UseStatusCodePagesWithReExecute("/Error/{0}");    
-    // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-    app.UseHsts();
+    app.UseStatusCodePagesWithReExecute("/Error/{0}");
 }
 
 app.UseHttpsRedirection();
