@@ -343,6 +343,9 @@ namespace DataAccessLayer.Migrations
                     b.Property<int>("BlogId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("BlogRating")
+                        .HasColumnType("int");
+
                     b.Property<string>("CommentText")
                         .HasMaxLength(300)
                         .HasColumnType("nvarchar(300)");

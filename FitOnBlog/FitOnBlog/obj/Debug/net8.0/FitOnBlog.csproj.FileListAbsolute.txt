@@ -581,9 +581,7 @@ C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\obj\Debug\net
 C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\obj\Debug\net8.0\FitOnBlog.RazorAssemblyInfo.cache
 C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\obj\Debug\net8.0\FitOnBlog.RazorAssemblyInfo.cs
 C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\obj\Debug\net8.0\FitOnBlog.sourcelink.json
-C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\obj\Debug\net8.0\scopedcss\bundle\FitOnBlog.styles.css
-C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\obj\Debug\net8.0\scopedcss\projectbundle\FitOnBlog.bundle.scp.css
 C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\obj\Debug\net8.0\staticwebassets.build.endpoints.json
@@ -600,3 +598,5 @@ C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\obj\Debug\net
 C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\obj\Debug\net8.0\FitOnBlog.pdb
 C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\obj\Debug\net8.0\FitOnBlog.genruntimeconfig.cache
 C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\obj\Debug\net8.0\ref\FitOnBlog.dll
+C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\yasinramazangok\Desktop\FitOnGymGuide\FitOnBlog\FitOnBlog\obj\Debug\net8.0\scopedcss\projectbundle\FitOnBlog.bundle.scp.css

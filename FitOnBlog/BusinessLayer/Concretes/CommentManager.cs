@@ -31,6 +31,7 @@ namespace BusinessLayer.Concretes
         public void Delete(Comment comment)
         {
             _commentDal.Delete(comment);
+            _commentDal.UpdateBlogRating(comment.BlogId);
         }
 
         public Comment GetById(int id)
@@ -60,6 +61,7 @@ namespace BusinessLayer.Concretes
                 throw new NotImplementedException();
             }
             _commentDal.Insert(comment);
+            _commentDal.UpdateBlogRating(comment.BlogId);
         }
 
         public void Update(Comment comment)

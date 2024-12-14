@@ -2,11 +2,13 @@
 using DataAccessLayer.Contexts;
 using EntityLayer.Concretes;
 using FitOnBlog.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FitOnBlog.Controllers
 {
+    [AllowAnonymous]
     public class AccountController : Controller
     {
         private readonly SignInManager<FitOnBlogUser> _signInManager;
@@ -46,7 +48,9 @@ namespace FitOnBlog.Controllers
                             if (model.Role == "Admin")
                                 return RedirectToAction("Index", "Blog");
                             if (model.Role == "Yazar")
+                            {
                                 return RedirectToAction("Index", "Blog");
+                            }
                             else
                                 return RedirectToLocal(returnUrl);
                         }
@@ -90,7 +94,7 @@ namespace FitOnBlog.Controllers
 
                 if (result.Succeeded)
                 {
-                    if(registerViewModel.Role == "Admin")
+                    if (registerViewModel.Role == "Admin")
                     {
                         await _userManager.AddToRoleAsync(fitOnBlogUser, "Admin");
                     }

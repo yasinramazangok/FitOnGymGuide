@@ -7,6 +7,9 @@
              User.IsInRole("Yazar") ? "~/Views/Shared/_AuthorLayout.cshtml" :
              "~/Views/Shared/_DefaultLayout.cshtml";
     string categoryColor = string.Empty;
+    string ratingStatusColor = string.Empty;
+    string ratingStatus = string.Empty;
+    int? rating;
 }
 
 <section class="content">
@@ -34,6 +37,34 @@
                 <tbody>
                     @foreach (var item in Model)
                     {
+                        #region Rating Status
+
+                        rating = (@item.Rating * 100) / 10;
+
+                        if (rating >= 85)
+                        {
+                            ratingStatusColor = "progress-bar bg-green";
+                            ratingStatus = "Çok İyi";
+                        }
+                        if (rating < 85 && rating >= 70)
+                        {
+                            ratingStatusColor = "badge badge-info";
+                            ratingStatus = "İyi";
+                        }
+                        if (rating < 70 && rating >= 40)
+                        {
+                            ratingStatusColor = "badge badge-warning";
+                            ratingStatus = "Orta";
+                        }
+                        if (rating < 40)
+                        {
+                            ratingStatusColor = "badge badge-danger";
+                            ratingStatus = "Kötü";
+                        }
+
+                        #endregion
+
+
                         if (item.Category?.Name == "YOGA")
                         {
                             categoryColor = "badge badge-warning";
@@ -58,6 +89,7 @@
                         {
                             categoryColor = "badge badge-success";
                         }
+
                         <tr>
                             <td>@item.BlogId</td>
                             <td><a>@item.Title</a><br /><small></small></td>
@@ -69,14 +101,12 @@
                                 </ul>
                             </td>
                             <td class="project-state"><span class="@categoryColor">@item.Category?.Name</span></td>
-                            <td class="project_progress text-center">
+                            <td class="project_progress text-left">
                                 <div class="progress progress-sm">
-                                    <div class="progress-bar bg-green" role="progressbar" aria-volumenow="57" aria-volumemin="0" aria-volumemax="100" style="width: 57%">
+                                    <div class="@ratingStatusColor" role="progressbar" aria-volumenow="57" aria-volumemin="0" aria-volumemax="100" style="width: @rating%">
                                     </div>
                                 </div>
-                                <small class="text-left">
-                                    57% Complete
-                                </small>
+                                <small class="text-left">@ratingStatus</small>
                             </td>
                             <td class="project-actions text-center">
                                 <a class="btn btn-primary btn-sm" href="/Comment/CommentListByBlogId/@item.BlogId"><i class="fas fa-folder"></i>Yorumları Gör</a>

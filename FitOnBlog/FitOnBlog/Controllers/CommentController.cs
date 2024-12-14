@@ -66,6 +66,7 @@ namespace FitOnBlog.Controllers
         {
             if (ModelState.IsValid)
             {
+                comment.Status = true;
                 _commentService.Insert(comment);
                 return RedirectToAction("BlogDetails", "Blog", new { id = comment.BlogId });
             }
