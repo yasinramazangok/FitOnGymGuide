@@ -30,6 +30,7 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
+
         .custom-btn {
             background-color: transparent;
             border: 1px solid #F36100;
@@ -40,30 +41,37 @@
             transition: background-color 0.3s, color 0.3s;
             display: inline-block;
         }
+
         .button-custom {
             flex: 1;
             margin-left: 25px;
             margin-right: 25px;
             gap: 25px;
         }
+
             .button-custom:last-child {
                 margin-right: 0;
             }
+
         .button-container {
             display: flex;
             justify-content: space-between;
         }
+
         .custom-btn:hover {
             background-color: #F36100;
             color: white;
         }
+
         .font-color {
             color: #F36100;
         }
+
         .text-danger ul {
             list-style-type: none;
             padding-left: 0;
         }
+
         .text-danger li {
             display: inline;
         }
@@ -81,26 +89,26 @@
                     <br />
                     <form asp-action="Login" method="post" asp-route-returnurl="@ViewData["ReturnUrl"]">
                         <div class="form-floating mb-3">
-                            <input asp-for="Username" type="email" class="form-control" id="floatingInput" placeholder="Email adresinizi giriniz">
-                            <label asp-for="Username" for="floatingInput">Email</label>
+                            <input asp-for="Username" type="email" class="form-control" id="floatingInput" placeholder="Email adresinizi giriniz" style="background : #fff">
+                            <label asp-for="Username" for="floatingInput" style="color:#f36100">Email</label>
                             <span asp-validation-for="Username" class="text-danger"></span>
                         </div>
                         <br />
                         <div class="form-floating mb-4">
-                            <input asp-for="Password" type="password" class="form-control" id="floatingPassword" placeholder="Şifrenizi giriniz">
-                            <label asp-for="Password" for="floatingPassword">Şifre</label>
+                            <input asp-for="Password" type="password" class="form-control" id="floatingPassword" placeholder="Şifrenizi giriniz" style="background-color: #fff">
+                            <label asp-for="Password" for="floatingPassword" style="color:#f36100">Şifre</label>
                             <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
                         <br />
                         <div class="d-flex align-items-center justify-content-center mb-3">
                             <div>
                                 <div class="form-check form-check-inline" style="width:150px">
-                                    <input asp-for="Role" type="radio" class="form-check-input" value="Admin">
-                                    <label class="form-check-label" for="RoleAdmin">Admin</label>
+                                    <input asp-for="Role" type="radio" class="form-check-input" value="Admin" checked style="background-color: #f36100">
+                                    <label class="form-check-label" for="RoleAdmin" style="color:#fff">Admin</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input asp-for="Role" type="radio" class="form-check-input" value="Yazar">
-                                    <label class="form-check-label" for="RoleYazar">Yazar</label>
+                                    <input asp-for="Role" type="radio" class="form-check-input" value="Yazar" style="background-color: #f36100">
+                                    <label class="form-check-label" for="RoleYazar" style="color:#fff">Yazar</label>
                                 </div>
                             </div>
                         </div>
@@ -110,10 +118,10 @@
                         <br />
                         <div class="d-flex align-items-center justify-content-between mb-3">
                             <div class="form-check">
-                                <input asp-for="RememberMe" type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">@Html.DisplayNameFor(l => l.RememberMe)</label>
+                                <input asp-for="RememberMe" type="checkbox" class="form-check-input" id="exampleCheck1" style="background-color: #f36100">
+                                <label class="form-check-label" for="exampleCheck1" style="color:#fff">@Html.DisplayNameFor(l => l.RememberMe)</label>
                             </div>
-                            <a href="" class="font-color">Şifrenizi mi unuttunuz?</a>
+                            <a href="" style="color:#fff">Şifrenizi mi unuttunuz?</a>
                         </div>
                         <br />
                         <div class="button-custom button-container">
@@ -121,7 +129,7 @@
                             <a class="text-center custom-btn custom-btn:hover py-3 w-100 mb-3" href="/Default/Index/">İptal</a>
                         </div>
                         <br />
-                        <p class="text-center mb-0">Bir hesabınız yok mu? <a class="font-color" asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]">Hesap Oluştur</a></p>
+                        <p class="text-center mb-0" style="color:#fff">Bir hesabınız yok mu? <a style="color:#f36100" asp-action="Register" asp-route-returnurl="@ViewData["ReturnUrl"]">Hesap Oluştur</a></p>
                     </form>
                     <br />
                     <div asp-validation-summary="ModelOnly" class="text-center text-danger"></div>

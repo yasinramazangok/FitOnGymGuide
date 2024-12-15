@@ -109,12 +109,12 @@
                         <div class="d-flex align-items-center justify-content-center mb-3">
                             <div>
                                 <div class="form-check form-check-inline" style="width:150px">
-                                    <input asp-for="Role" type="radio" class="form-check-input" value="Admin" id="RoleAdmin" checked>
-                                    <label class="form-check-label" for="RoleAdmin">Admin</label>
+                                    <input asp-for="Role" type="radio" class="form-check-input" value="Admin" id="RoleAdmin" checked style="background-color: #f36100">
+                                    <label class="form-check-label" for="RoleAdmin" style="color: #fff">Admin</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="Role" id="RoleYazar" value="Yazar">
-                                    <label class="form-check-label" for="RoleYazar">Yazar</label>
+                                    <input class="form-check-input" type="radio" name="Role" id="RoleYazar" value="Yazar" style="background-color: #f36100">
+                                    <label class="form-check-label" for="RoleYazar" style="color: #fff">Yazar</label>
                                 </div>
                             </div>
                         </div>
@@ -123,50 +123,50 @@
                         </div>
                         <div class="admin-fields">
                             <div class="form-floating mb-3">
-                                <input asp-for="Name" type="text" class="form-control" id="floatingInput" placeholder="Adınızı giriniz">
-                                <label asp-for="Name" for="floatingInput">Ad Soyad</label>
+                                <input asp-for="Name" type="text" class="form-control" id="floatingInput" placeholder="Adınızı giriniz" style="background-color: #fff">
+                                <label asp-for="Name" for="floatingInput" style="color:#f36100">Ad Soyad</label>
                                 <span asp-validation-for="Name" class="text-danger"></span>
                             </div>
                             <div class="form-floating mb-3">
-                                <input asp-for="Email" type="email" class="form-control" id="floatingInput" placeholder="Email adresinizi giriniz">
-                                <label asp-for="Email" for="floatingInput">Email</label>
+                                <input asp-for="Email" type="email" class="form-control" id="floatingInput" placeholder="Email adresinizi giriniz" style="background-color: #fff">
+                                <label asp-for="Email" for="floatingInput" style="color:#f36100">Email</label>
                                 <span asp-validation-for="Email" class="text-danger"></span>
                             </div>
                             <div class="form-floating mb-3">
-                                <input asp-for="Password" type="password" class="form-control" id="floatingPassword" placeholder="Şifrenizi giriniz">
-                                <label asp-for="Password" for="floatingPassword">Şifre</label>
+                                <input asp-for="Password" type="password" class="form-control" id="floatingPassword" placeholder="Şifrenizi giriniz" style="background-color: #fff">
+                                <label asp-for="Password" for="floatingPassword" style="color:#f36100">Şifre</label>
                                 <span asp-validation-for="Password" class="text-danger"></span>
                             </div>
                             <div class="form-floating mb-3">
-                                <input asp-for="ConfirmPassword" type="password" class="form-control" id="floatingPassword" placeholder="Şifrenizi tekrar giriniz">
-                                <label asp-for="ConfirmPassword" for="floatingPassword">Şifre Tekrar</label>
+                                <input asp-for="ConfirmPassword" type="password" class="form-control" id="floatingPassword" placeholder="Şifrenizi tekrar giriniz" style="background-color: #fff">
+                                <label asp-for="ConfirmPassword" for="floatingPassword" style="color:#f36100">Şifre Tekrar</label>
                                 <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                             </div>
                             <div class="author-fields">
                                 <div class="form-floating mb-3">
-                                    <input asp-for="PhoneNumber" type="text" class="form-control" id="floatingPhone" placeholder="Telefon numaranızı giriniz">
-                                    <label asp-for="PhoneNumber" for="floatingPhone">Telefon Numarası</label>
+                                    <input asp-for="PhoneNumber" type="text" class="form-control" id="floatingPhone" placeholder="Telefon numaranızı giriniz" style="background-color: #fff">
+                                    <label asp-for="PhoneNumber" for="floatingPhone" style="color:#f36100">Telefon Numarası</label>
                                     <span asp-validation-for="PhoneNumber" class="text-danger"></span>
                                 </div>
 
                                 <div class="form-floating mb-3">
-                                    <input asp-for="ImageUrl" type="text" class="form-control" id="floatingImageUrl" placeholder="Resim URL'sini giriniz">
-                                    <label asp-for="ImageUrl" for="floatingImageUrl">Resim URL</label>
+                                    <input asp-for="ImageUrl" type="text" class="form-control" id="floatingImageUrl" placeholder="Resim URL'sini giriniz" style="background-color: #fff">
+                                    <label asp-for="ImageUrl" for="floatingImageUrl" style="color:#f36100">Resim URL</label>
                                     <span asp-validation-for="ImageUrl" class="text-danger"></span>
                                 </div>   
                                 <div class="form-floating mb-3">
-                                    <input asp-for="Title" type="text" class="form-control" id="floatingTitle" placeholder="Mesleğinizi giriniz">
-                                    <label asp-for="Title" for="floatingTitle">Meslek</label>
+                                    <input asp-for="Title" type="text" class="form-control" id="floatingTitle" placeholder="Mesleğinizi giriniz" style="background-color: #fff">
+                                    <label asp-for="Title" for="floatingTitle" style="color:#f36100">Meslek</label>
                                     <span asp-validation-for="Title" class="text-danger"></span>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input asp-for="Expertises" type="text" class="form-control" id="floatingExpertises" placeholder="Uzmanlık alanlarını giriniz">
-                                    <label asp-for="Expertises" for="floatingExpertises">Uzmanlık Alanları</label>
+                                    <input asp-for="Expertises" type="text" class="form-control" id="floatingExpertises" placeholder="Uzmanlık alanlarını giriniz" style="background-color: #fff">
+                                    <label asp-for="Expertises" for="floatingExpertises" style="color:#f36100">Uzmanlık Alanları</label>
                                     <span asp-validation-for="Expertises" class="text-danger"></span>
                                 </div>
                                 <div class="form-floating mb-4">
-                                    <textarea asp-for="About" class="form-control" rows="35" cols="30" id="floatingAbout" placeholder="Hakkında bilgisi giriniz"></textarea>
-                                    <label asp-for="About" for="floatingAbout">Hakkında</label>
+                                    <textarea asp-for="About" class="form-control" rows="35" cols="30" id="floatingAbout" placeholder="Hakkında bilgisi giriniz" style="background-color: #fff"></textarea>
+                                    <label asp-for="About" for="floatingAbout" style="color:#f36100">Hakkında</label>
                                     <span asp-validation-for="About" class="text-danger"></span>
                                 </div>
                             </div>
@@ -175,7 +175,7 @@
                             <button type="submit" class="custom-btn custom-btn:hover py-3 w-100 mb-3">Kaydet</button>
                             <a class="text-center custom-btn custom-btn:hover py-3 w-100 mb-3" href="/Account/Login/">İptal</a>
                         </div>
-                        <p class="text-center mb-0">Bir hesabınız var mı? <a class="font-color" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]">Giriş yapın</a></p>
+                        <p class="text-center mb-0" style="color: #fff">Bir hesabınız var mı? <a class="font-color" asp-action="Login" asp-route-returnurl="@ViewData["ReturnUrl"]">Giriş yapın</a></p>
                     </form>
                 </div>
             </div>

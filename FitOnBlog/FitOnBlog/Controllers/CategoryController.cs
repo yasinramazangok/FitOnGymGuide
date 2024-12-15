@@ -1,7 +1,10 @@
 ﻿using BusinessLayer.Abstracts;
+using BusinessLayer.ValidationRules;
 using EntityLayer.Concretes;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Reflection.Metadata;
 
 namespace FitOnBlog.Controllers
 {
@@ -33,8 +36,22 @@ namespace FitOnBlog.Controllers
         [HttpPost]
         public IActionResult AddCategory(Category category)
         {
-            _categoryService.Insert(category);
-            return RedirectToAction("Index");
+            CategoryValidator categoryValidator = new CategoryValidator();
+            ValidationResult validationResult = categoryValidator.Validate(category);
+
+            if (validationResult.IsValid)
+            {
+                _categoryService.Insert(category);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                foreach (var item in validationResult.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            return View();
         }
 
         public IActionResult DeleteCategory(int id)
@@ -54,12 +71,21 @@ namespace FitOnBlog.Controllers
         [HttpPost]
         public IActionResult UpdateCategory(Category category)
         {
-            if (ModelState.IsValid)
+            CategoryValidator categoryValidator = new CategoryValidator();
+            ValidationResult validationResult = categoryValidator.Validate(category);
+
+            if (validationResult.IsValid)
             {
                 _categoryService.Update(category);
                 return RedirectToAction("Index");
             }
-
+            else
+            {
+                foreach (var item in validationResult.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
             return View();
         }
 

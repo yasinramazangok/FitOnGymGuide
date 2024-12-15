@@ -1,5 +1,7 @@
 ﻿using BusinessLayer.Abstracts;
+using BusinessLayer.ValidationRules;
 using EntityLayer.Concretes;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -84,12 +86,21 @@ namespace FitOnBlog.Controllers
         [HttpPost]
         public IActionResult AddBlog(Blog blog)
         {
-            if (ModelState.IsValid)
+            BlogValidator blogValidator = new BlogValidator();
+            ValidationResult validationResult = blogValidator.Validate(blog);
+
+            if (validationResult.IsValid)
             {
                 _blogService.Insert(blog);
                 return RedirectToAction("Index");
             }
-
+            else
+            {
+                foreach (var item in validationResult.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
             return View();
         }
 
@@ -113,12 +124,21 @@ namespace FitOnBlog.Controllers
         [HttpPost]
         public IActionResult UpdateBlog(Blog blog)
         {
-            if (ModelState.IsValid)
+            BlogValidator blogValidator = new BlogValidator();
+            ValidationResult validationResult = blogValidator.Validate(blog);
+
+            if (validationResult.IsValid)
             {
                 _blogService.Update(blog);
                 return RedirectToAction("Index");
             }
-
+            else
+            {
+                foreach (var item in validationResult.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
             return View();
         }
 

@@ -12,35 +12,35 @@
                 {
                     <div class="row form-group">
                         <div class="col-md-12 mb-3 mb-md-0">
-                            <label class="text-black" for="Name">Adınız</label>
-                            <input type="text" class="form-control" asp-for="Name">
+                            <label for="Name" style="color : #f36100">Adınız</label>
+                            <input type="text" class="form-control" placeholder="Adınızı giriniz" asp-for="Name">
                         </div>
                     </div>
 
                     <div class="row form-group">
                         <div class="col-md-12">
-                            <label class="text-black" for="Email">Email</label>
-                            <input type="email" class="form-control" asp-for="Email">
+                            <label for="Email" style="color : #f36100">Email</label>
+                            <input type="email" class="form-control" placeholder="Email adresinizi giriniz" asp-for="Email">
                         </div>
                     </div>
 
                     <div class="row form-group">
                         <div class="col-md-12">
-                            <label class="text-black" for="Subject">Konu</label>
-                            <input type="text" class="form-control" asp-for="Subject">
+                            <label for="Subject" style="color : #f36100">Konu</label>
+                            <input type="text" class="form-control" placeholder="Mesajınızın konusunu giriniz" asp-for="Subject">
                         </div>
                     </div>
 
                     <div class="row form-group">
                         <div class="col-md-12">
-                            <label class="text-black" for="Message">Mesajınız</label>
+                            <label for="Message" style="color : #f36100">Mesajınız</label>
                             <textarea cols="30" rows="12" class="form-control" placeholder="Buraya mesajınızı yazabilirsiniz..." asp-for="Message"></textarea>
                         </div>
                     </div>
 
                     <div class="row form-group">
                         <div class="col-md-12">
-                            <button type="submit" class="btn btn-outline-warning text-white py-2 px-4">Gönder</button>
+                            <button type="submit" class="btn btn-primary text-white py-2 px-4">Gönder</button>
                         </div>
                     </div>
                 }
@@ -48,4 +48,5 @@
             @await Component.InvokeAsync("ContactAddressPartial")
         </div>
     </div>
+    @await Html.PartialAsync("/Views/EmailSubscription/AddSubscriber.cshtml")
 </div>

@@ -1,6 +1,7 @@
 ﻿using Azure;
 using BusinessLayer.Containers;
 using DataAccessLayer.Contexts;
+using FluentValidation;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;

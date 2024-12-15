@@ -2,38 +2,38 @@
     Partial View
 *@
 
-<div class="comment-form-wrap pt-5">
-    <h3 class="mb-5">Yorum Yapabilirsiniz</h3>
+<div class="comment-form-wrap pt-5" style="color : #f36100">
+    <h3 class="mb-5" style="color : #fff">Yorum Yapabilirsiniz</h3>
     <form method="post" action="/Comment/LeaveComment/" class="p-5" style="background:transparent">
         <div class="form-group">
             <label for="name">Adınız</label>
-            <input type="text" name="Name" class="form-control" id="name">
+            <input type="text" name="Name" class="form-control" id="name" placeholder="Adınızı giriniz">
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" name="Email" class="form-control" id="email">
+            <input type="email" name="Email" class="form-control" id="email" placeholder="Email adresinizi giriniz">
         </div>
         <div class="form-group">
             <label for="message">Yorumunuz</label>
-            <textarea name="CommentText" cols="30" rows="10" class="form-control"></textarea>
+            <textarea name="CommentText" cols="30" rows="10" class="form-control" placeholder="Yorumunuzu buraya yazabilirsiniz"></textarea>
         </div>
         <div class="form-group">
             <label for="message">Puan Verin : </label>
-            <label>@Html.RadioButton("BlogRating", 1)1 </label>
-            <label>@Html.RadioButton("BlogRating", 2)2 </label>
-            <label>@Html.RadioButton("BlogRating", 3)3 </label>
-            <label>@Html.RadioButton("BlogRating", 4)4 </label>
-            <label>@Html.RadioButton("BlogRating", 5)5 </label>
-            <label>@Html.RadioButton("BlogRating", 6)6 </label>
-            <label>@Html.RadioButton("BlogRating", 7)7 </label>
-            <label>@Html.RadioButton("BlogRating", 8)8 </label>
-            <label>@Html.RadioButton("BlogRating", 9)9 </label>
-            <label>@Html.RadioButton("BlogRating", 10)10 </label>
+            <label style="color : #fff">@Html.RadioButton("BlogRating", 1)1 </label>
+            <label style="color : #fff">@Html.RadioButton("BlogRating", 2)2 </label>
+            <label style="color : #fff">@Html.RadioButton("BlogRating", 3)3 </label>
+            <label style="color : #fff">@Html.RadioButton("BlogRating", 4)4 </label>
+            <label style="color : #fff">@Html.RadioButton("BlogRating", 5)5 </label>
+            <label style="color : #fff">@Html.RadioButton("BlogRating", 6)6 </label>
+            <label style="color : #fff">@Html.RadioButton("BlogRating", 7)7 </label>
+            <label style="color : #fff">@Html.RadioButton("BlogRating", 8)8 </label>
+            <label style="color : #fff">@Html.RadioButton("BlogRating", 9)9 </label>
+            <label style="color : #fff">@Html.RadioButton("BlogRating", 10)10 </label>
         </div>
         <input type="hidden" name="Date" value="@DateTime.Now.ToShortDateString()" />
         <input type="hidden" name="BlogId" value="@ViewBag.Id" />
         <div class="form-group">
-            <input type="submit" value="Ekle" class="btn btn-success">
+            <input type="submit" value="Yorum Yap" class="btn btn-primary">
         </div>
     </form>
 </div>

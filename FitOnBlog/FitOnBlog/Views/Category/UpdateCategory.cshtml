@@ -22,12 +22,14 @@
                         <div class="col-sm-9">
                             <input type="text" class="form-control" placeholder="Kategori adını giriniz" asp-for="Name">
                         </div>
+                        <span asp-validation-for="Name" class="text-danger"></span>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-3 col-form-label">Kategori Açıklaması</label>
                         <div class="col-sm-9">
                             <textarea type="text" class="form-control" cols="30" rows="15" placeholder="Kategori açıklamasını yazınız" asp-for="Description"></textarea>
                         </div>
+                        <span asp-validation-for="Description" class="text-danger"></span>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-3 col-form-label"></label>

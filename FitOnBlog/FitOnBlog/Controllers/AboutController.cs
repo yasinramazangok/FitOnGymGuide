@@ -1,11 +1,13 @@
 ﻿using BusinessLayer.Abstracts;
+using BusinessLayer.ValidationRules;
 using EntityLayer.Concretes;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FitOnBlog.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Admin")]
     public class AboutController : Controller
     {
         private readonly IAboutService _aboutService;
@@ -33,12 +35,21 @@ namespace FitOnBlog.Controllers
         [HttpPost]
         public IActionResult UpdateAbout(About about)
         {
-            if (ModelState.IsValid)
+            AboutValidator aboutValidator = new AboutValidator();
+            ValidationResult validationResult = aboutValidator.Validate(about);
+
+            if (validationResult.IsValid)
             {
                 _aboutService.Update(about);
                 return RedirectToAction("Index");
             }
-
+            else
+            {
+                foreach (var item in validationResult.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
             return View();
         }
 

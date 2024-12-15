@@ -22,48 +22,56 @@
                         <label class="col-sm-3 col-form-label">Yazar Adı</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control" placeholder="Yazar adını giriniz" asp-for="Name">
+                            <span asp-validation-for="Name" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-3 col-form-label">Meslek / Branşı</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control" placeholder="Meslek / branş giriniz" asp-for="Title">
+                            <span asp-validation-for="Title" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-3 col-form-label">Uzmanlıklar</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control" placeholder="Uzmanlık alanlarını giriniz" asp-for="Expertises">
+                            <span asp-validation-for="Expertises" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-3 col-form-label">Resim Yolu</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control" placeholder="Resim yolunu giriniz" asp-for="ImageUrl">
+                            <span asp-validation-for="ImageUrl" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-3 col-form-label">Email</label>
                         <div class="col-sm-9">
                             <input type="email" class="form-control" placeholder="Email adresini giriniz" asp-for="Email">
+                            <span asp-validation-for="Email" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-3 col-form-label">Telefon</label>
                         <div class="col-sm-9">
                             <input type="tel" class="form-control" placeholder="Telefon numarasını giriniz" asp-for="PhoneNumber">
+                            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-3 col-form-label">Şifre</label>
                         <div class="col-sm-9">
                             <input type="text" class="form-control" placeholder="Şifreyi giriniz" asp-for="Password">
+                            <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-3 col-form-label">Hakkında</label>
                         <div class="col-sm-9">
                             <textarea type="text" class="form-control" cols="30" rows="15" placeholder="Yazar hakkında bilgileri yazınız" asp-for="About"></textarea>
+                            <span asp-validation-for="About" class="text-danger"></span>
                         </div>
                     </div>
                     <div class="form-group row">

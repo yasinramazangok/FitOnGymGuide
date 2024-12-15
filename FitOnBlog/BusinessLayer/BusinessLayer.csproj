@@ -27,9 +27,4 @@
     <ProjectReference Include="..\EntityLayer\EntityLayer.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="ValidationRules\" />
-    <Folder Include="ValidationRules\" />
-  </ItemGroup>
-
 </Project>

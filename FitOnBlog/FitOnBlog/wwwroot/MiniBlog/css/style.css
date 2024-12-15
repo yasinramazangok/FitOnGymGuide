@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5,
     }
 
 .btn {
-    border-radius: 0;
+    border-radius: 10;
 }
 
     .btn:hover, .btn:active, .btn:focus {
@@ -128,11 +128,11 @@ h1, h2, h3, h4, h5,
 
 .form-control {
     height: 43px;
-    border-radius: 0;
+    border-radius: 10;
 }
 
     .form-control:active, .form-control:focus {
-        border-color: #2f89fc;
+        border-color: #f36100;
     }
 
     .form-control:hover, .form-control:active, .form-control:focus {
@@ -175,7 +175,8 @@ h1, h2, h3, h4, h5,
 
 .site-footer {
     padding: 4em 0;
-    background: #0a0a0a;
+    opacity: 0.8;
+    background: #151515;
 }
 
 @media (min-width: 768px) {
@@ -369,9 +370,10 @@ h1, h2, h3, h4, h5,
 .site-navbar {
     margin-bottom: 0px;
     z-index: 1999;
-    position: relative;
+    position: fixed;
     width: 100%;
-    background: #0a0a0a;
+    opacity: 0.8;
+    background: #151515;
 }
 
     .site-navbar .site-logo a {
@@ -1262,10 +1264,12 @@ h1, h2, h3, h4, h5,
         margin-right: 2px;
         margin-bottom: 3px;
         display: inline-block;
+        color: #fff;
+        
     }
 
         .pagination li a {
-            border-radius: 50% !important;
+            border-radius: 40% !important;
             width: 40px;
             height: 40px;
             line-height: 40px;
@@ -1273,15 +1277,17 @@ h1, h2, h3, h4, h5,
             margin: 0;
             display: inline-block;
             text-align: center;
+            color: #f36100;
         }
 
             .pagination li a:focus, .pagination li a:active {
                 -webkit-box-shadow: none !important;
                 box-shadow: none !important;
+                color: #f36100;
             }
 
             .pagination li a:hover {
-                background: #2f89fc;
+                background: #f36100;
                 color: #fff;
                 border: 1px solid transparent;
             }
@@ -1617,12 +1623,12 @@ h1, h2, h3, h4, h5,
 }
 
 .custom-pagination a {
-    background: #2f89fc;
+    background: #f36100;
     color: #fff;
 }
 
     .custom-pagination a:hover {
-        background: #2f89fc;
+        background: #f36100;
     }
 
 .block-13, .slide-one-item {

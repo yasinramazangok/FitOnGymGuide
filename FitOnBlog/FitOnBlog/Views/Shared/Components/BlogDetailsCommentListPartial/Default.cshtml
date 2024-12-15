@@ -6,7 +6,7 @@
 *@
 
 <div class="pt-5">
-    <h3 class="mb-5">Yorumlar</h3>
+    <h3 class="mb-5" style="color : #f36100">Yorumlar</h3>
     <ul class="comment-list">
         @foreach (var item in Model)
         {
@@ -15,13 +15,13 @@
                     <img src="/MiniBlog/images/person_4.jpg" alt="Image placeholder">
                 </div>
                 <div class="comment-body">
-                    <h3>@item.Name</h3>
-                    <div class="meta">@(((DateTime)item.Date).ToString("dd.MM.yyyy"))</div>
-                    <p>@item.CommentText</p>
-                    <p><a href="#" class="reply rounded">Yanıtla</a></p>
-                </div>
+                    <h3 style="color : #fff">@item.Name</h3>
+                    <div class="meta" style="color : #f36100">@(((DateTime)item.Date).ToString("dd.MM.yyyy"))</div>
+                    <p style="color : #fff">@item.CommentText</p>
+                    @*<p><a href="#" class="reply rounded">Yanıtla</a></p>*@                
+                    </div>
             </li>
         }
     </ul>
 
-@await Html.PartialAsync("/Views/Comment/LeaveComment.cshtml")
+    @await Html.PartialAsync("/Views/Comment/LeaveComment.cshtml")
