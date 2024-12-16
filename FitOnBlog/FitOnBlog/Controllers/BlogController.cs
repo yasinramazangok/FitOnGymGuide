@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Text.Json.Serialization;
+using X.PagedList.Extensions;
 
 namespace FitOnBlog.Controllers
 {
@@ -181,11 +182,11 @@ namespace FitOnBlog.Controllers
         }
 
         [AllowAnonymous]
-        public IActionResult BlogsByCategory(int id)
+        public IActionResult BlogsByCategory(int id, int pageNumber = 1)
         {
             try
             {
-                var blogListByCategory = _blogService.GetBlogsByCategoryId(id);
+                var blogListByCategory = _blogService.GetBlogsByCategoryId(id).ToPagedList(pageNumber, 6);
 
                 var selectedBlog = blogListByCategory.FirstOrDefault();
 
@@ -199,7 +200,6 @@ namespace FitOnBlog.Controllers
             {
                 throw;
             }
-
         }
 
         #endregion

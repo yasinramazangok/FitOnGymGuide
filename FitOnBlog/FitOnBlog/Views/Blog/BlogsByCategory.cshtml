@@ -1,5 +1,7 @@
-﻿@using EntityLayer.Concretes
-@model List<Blog>
+﻿@using X.PagedList;
+@using X.PagedList.Mvc.Core;
+
+@model IPagedList<EntityLayer.Concretes.Blog>
 
 @{
     ViewData["Title"] = "BlogByCategory";
@@ -70,18 +72,27 @@
                     </div>
                 }
             </div>
-            <div class="row text-center pt-5 border-top">
-                <div class="col-md-12">
-                    <div class="custom-pagination">
-                        <span>1</span>
-                        <a href="#">2</a>
-                        <a href="#">3</a>
-                        <a href="#">4</a>
-                        <span>...</span>
-                        <a href="#">15</a>
-                    </div>
-                </div>
+            <div class="row text-center pt-5 border-top">             
             </div>
+            @Html.PagedListPager(
+                     Model,
+                     pageNumber => Url.Action("BlogsByCategory", new { pageNumber }),
+                     new PagedListRenderOptions
+            {
+                DisplayLinkToFirstPage = PagedListDisplayMode.Always,
+                DisplayLinkToLastPage = PagedListDisplayMode.Always,
+                DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+                DisplayLinkToNextPage = PagedListDisplayMode.Always,
+                // DisplayPageCountAndCurrentLocation = true,
+                // DisplayItemSliceAndTotal = true,
+                MaximumPageNumbersToDisplay = 5,
+                ClassToApplyToFirstListItemInPager = "first-item",
+                ClassToApplyToLastListItemInPager = "last-item",
+                LinkToPreviousPageFormat = "«",
+                LinkToNextPageFormat = "»",
+                LinkToFirstPageFormat = "««",
+                LinkToLastPageFormat = "»»"
+            })
         </div>
     </div>
     @await Html.PartialAsync("/Views/EmailSubscription/AddSubscriber.cshtml")
