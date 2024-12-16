@@ -2,6 +2,7 @@
 using DataAccessLayer.Concretes;
 using DataAccessLayer.Contexts;
 using EntityLayer.Concretes;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,6 +19,17 @@ namespace DataAccessLayer.EntityFrameworkCore
 
             return fitOnContext.Authors
                 .Where(a => a.UserId == userId)
+                .ToList();
+        }
+
+        // for Meet The Team in About
+        public override List<Author> GetListAll()
+        {
+            using var fitOnContext = new FitOnContext();
+
+            return fitOnContext.Authors
+                .OrderBy(a => Guid.NewGuid())
+                .Take(3) 
                 .ToList();
         }
     }
