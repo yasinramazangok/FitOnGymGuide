@@ -34,6 +34,4 @@
 
 </section>
 
-@await Html.PartialAsync("/Views/Default/OtherFeaturedPosts.cshtml")
-
-@* @await Html.PartialAsync("/Views/EmailSubscription/AddSubscriber.cshtml") *@
+@await Component.InvokeAsync("DefaultOtherFeaturedBlogsPartial")

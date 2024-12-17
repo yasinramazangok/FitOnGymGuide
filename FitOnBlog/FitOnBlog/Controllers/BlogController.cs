@@ -1,5 +1,7 @@
 ﻿using BusinessLayer.Abstracts;
+using BusinessLayer.ValidationRules;
 using EntityLayer.Concretes;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -7,6 +9,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
 using System.Text.Json.Serialization;
+using X.PagedList.Extensions;
 
 namespace FitOnBlog.Controllers
 {
@@ -84,12 +87,21 @@ namespace FitOnBlog.Controllers
         [HttpPost]
         public IActionResult AddBlog(Blog blog)
         {
-            if (ModelState.IsValid)
+            BlogValidator blogValidator = new BlogValidator();
+            ValidationResult validationResult = blogValidator.Validate(blog);
+
+            if (validationResult.IsValid)
             {
                 _blogService.Insert(blog);
                 return RedirectToAction("Index");
             }
-
+            else
+            {
+                foreach (var item in validationResult.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
             return View();
         }
 
@@ -113,12 +125,21 @@ namespace FitOnBlog.Controllers
         [HttpPost]
         public IActionResult UpdateBlog(Blog blog)
         {
-            if (ModelState.IsValid)
+            BlogValidator blogValidator = new BlogValidator();
+            ValidationResult validationResult = blogValidator.Validate(blog);
+
+            if (validationResult.IsValid)
             {
                 _blogService.Update(blog);
                 return RedirectToAction("Index");
             }
-
+            else
+            {
+                foreach (var item in validationResult.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
             return View();
         }
 
@@ -161,11 +182,11 @@ namespace FitOnBlog.Controllers
         }
 
         [AllowAnonymous]
-        public IActionResult BlogsByCategory(int id)
+        public IActionResult BlogsByCategory(int id, int pageNumber = 1)
         {
             try
             {
-                var blogListByCategory = _blogService.GetBlogsByCategoryId(id);
+                var blogListByCategory = _blogService.GetBlogsByCategoryId(id).ToPagedList(pageNumber, 6);
 
                 var selectedBlog = blogListByCategory.FirstOrDefault();
 
@@ -179,7 +200,6 @@ namespace FitOnBlog.Controllers
             {
                 throw;
             }
-
         }
 
         #endregion

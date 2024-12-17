@@ -7,7 +7,6 @@ using X.PagedList.Extensions;
 
 namespace FitOnBlog.Controllers
 {
-
     public class DefaultController : Controller
     {
         [AllowAnonymous]

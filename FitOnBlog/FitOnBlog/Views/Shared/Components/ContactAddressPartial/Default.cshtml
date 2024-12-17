@@ -8,20 +8,20 @@
 @foreach (var item in Model)
 {
 
-    <div class="col-md-5">
+    <div class="col-md-5" style="color : #fff">
 
         <div class="p-4 mb-3">
             <p class="mb-0 font-weight-bold">Adresimiz</p>
-        <p class="mb-4">@item.Neighbourhood, @item.Avenue, @item.District, @item.City @item.PostalCode</p>
+            <p class="mb-4" style="color : #f36100">@item.Neighbourhood, @item.Avenue, @item.District, @item.City @item.PostalCode</p>
 
             <p class="mb-0 font-weight-bold">Telefonlar</p>
-            <p class="mb-4"><a href="#">@item.PhoneNumber | @item.PhoneNumber1</a></p>
+            <p class="mb-4"><a href="#" style="color : #f36100">@item.PhoneNumber | @item.PhoneNumber1</a></p>
 
             <p class="mb-0 font-weight-bold">Email</p>
-            <p class="mb-0"><a href="mailto:yasinrmzngok@gmail.com">@item.Email</a></p>
+            <p class="mb-0"><a href="mailto:yasinrmzngok@gmail.com" style="color : #f36100">@item.Email</a></p>
         </div>
         <div class="map mb-3">
-            <iframe src="@item.MapInformation" height="315" width="550" style="border:0;" allowfullscreen=""></iframe>
+            <iframe src="@item.MapInformation" height="315" width="475" style="border:0;" allowfullscreen=""></iframe>
         </div>
     </div>
     

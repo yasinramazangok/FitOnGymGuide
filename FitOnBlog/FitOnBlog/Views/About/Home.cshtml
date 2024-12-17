@@ -8,7 +8,7 @@
 
 @await Html.PartialAsync("/Views/About/AboutContent1.cshtml")
 
-@await Html.PartialAsync("/Views/About/MeetTheTeam.cshtml")
+@await Component.InvokeAsync("AboutMeetTheTeamPartial")
 
 @await Html.PartialAsync("/Views/About/AboutContent2.cshtml")
 

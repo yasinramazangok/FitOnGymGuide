@@ -5,12 +5,41 @@
     Partial View
 *@
 
+@{
+    string blogsByCategory = string.Empty;
+}
+
 <div class="sidebar-box" style="background:transparent">
-    <h3 class="heading">Kategoriler</h3>
+    <h3 class="heading" style="color : #fff">Kategoriler</h3>
     <ul class="categories">
         @foreach (var item in Model)
         {
-            <li><a href="#">@item.Name<span></span></a></li>
+            if (item.Name == "YOGA")
+            {
+                blogsByCategory = "/Blog/BlogsByCategory/1";
+            }
+            if (item.Name == "PİLATES")
+            {
+                blogsByCategory = "/Blog/BlogsByCategory/2";
+            }
+            if (item.Name == "DİYET")
+            {
+                blogsByCategory = "/Blog/BlogsByCategory/3";
+            }
+            if (item.Name == "KARDİYO")
+            {
+                blogsByCategory = "/Blog/BlogsByCategory/4";
+            }
+            if (item.Name == "CROSSFİT")
+            {
+                blogsByCategory = "/Blog/BlogsByCategory/5";
+            }
+            if (item.Name == "VÜCUT GELİŞTİRME")
+            {
+                blogsByCategory = "/Blog/BlogsByCategory/6";
+            }
+
+            <li><a href="@blogsByCategory" style="color : #f36100">@item.Name<span></span></a></li>
         }
     </ul>
 </div>

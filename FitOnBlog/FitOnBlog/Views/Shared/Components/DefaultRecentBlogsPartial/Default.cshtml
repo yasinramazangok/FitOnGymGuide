@@ -13,9 +13,9 @@
 
 <div class="site-section">
     <div class="container">
-        <div class="row mb-5">
+        <div class="row mb-5 text-center">
             <div class="col-12">
-                <h2>Son Bloglar</h2>
+                <h2 style="color : #ffff"><strong>✍️ Son Bloglar ✍️</strong></h2>
             </div>
         </div>
         <div class="row">
@@ -52,16 +52,16 @@
                         <a href="/Blog/BlogDetails/@item.BlogId/" target="_blank"><img src="@item.ImageUrl" alt="Image" class="img-fluid rounded"></a>
                         <div class="excerpt">
                             <span class="@categoryColor">@item.Category?.Name</span>
-                            <h2><a href="/Blog/BlogDetails/@item.BlogId/" target="_blank">@item.Title</a></h2>
+                            <h2><a href="/Blog/BlogDetails/@item.BlogId/" target="_blank" style="color : #ffff">@item.Title</a></h2>
                             <div class="post-meta align-items-center text-left clearfix">
                                 <figure class="author-figure mb-0 mr-3 float-left"><img src="@item.Author?.ImageUrl" alt="Image" class="img-fluid"></figure>
-                                <span class="d-inline-block mt-1"><a href="#">@item.Author?.Name</a></span>
-                                <span>
+                                <span class="d-inline-block mt-1"><a href="#" style="color : #f36100">@item.Author?.Name</a></span>
+                                <span style="color : #ffff">
                                     &nbsp;-&nbsp; @(((DateTime)item.Date).ToString("dd.MM.yyyy"))
                                 </span>
                             </div>
-                            <p>@item.Content?.Substring(0, item.Content.Substring(0, 150).LastIndexOf(" "))...</p>
-                            <p><a href="/Blog/BlogDetails/@item.BlogId/" target="_blank">Devamını Oku</a></p>
+                            <p style="color : #ffff">@item.Content?.Substring(0, item.Content.Substring(0, 150).LastIndexOf(" "))...</p>
+                            <p><a href="/Blog/BlogDetails/@item.BlogId/" target="_blank" style="color : #f36100">Devamını Oku</a></p>
 
                         </div>
                     </div>
@@ -90,5 +90,4 @@
             LinkToLastPageFormat = "»»"
         })
     </div>
-    @await Html.PartialAsync("/Views/EmailSubscription/AddSubscriber.cshtml")
 </div>

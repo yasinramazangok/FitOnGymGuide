@@ -1,5 +1,7 @@
 ﻿using BusinessLayer.Abstracts;
+using BusinessLayer.ValidationRules;
 using EntityLayer.Concretes;
+using FluentValidation.Results;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -54,8 +56,22 @@ namespace FitOnBlog.Controllers
         [HttpPost]
         public IActionResult AddAuthor(Author author)
         {
-            _authorService.Insert(author);
-            return RedirectToAction("Index");
+            AuthorValidator authorValidator = new AuthorValidator();
+            ValidationResult validationResult = authorValidator.Validate(author);
+
+            if (validationResult.IsValid)
+            {
+                _authorService.Insert(author);
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                foreach (var item in validationResult.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
+            return View();
         }
 
         [Authorize(Roles = "Admin")]
@@ -78,12 +94,21 @@ namespace FitOnBlog.Controllers
         [HttpPost]
         public IActionResult UpdateAuthor(Author author)
         {
-            if (ModelState.IsValid)
+            AuthorValidator authorValidator = new AuthorValidator();
+            ValidationResult validationResult = authorValidator.Validate(author);
+
+            if (validationResult.IsValid)
             {
                 _authorService.Update(author);
                 return RedirectToAction("Index");
             }
-
+            else
+            {
+                foreach (var item in validationResult.Errors)
+                {
+                    ModelState.AddModelError(item.PropertyName, item.ErrorMessage);
+                }
+            }
             return View();
         }
 
