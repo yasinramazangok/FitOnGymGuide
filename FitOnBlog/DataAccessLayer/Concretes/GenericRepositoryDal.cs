@@ -11,7 +11,7 @@ namespace DataAccessLayer.Concretes
 {
     public class GenericRepositoryDal<T> : IGenericDal<T> where T : class, new()
     {
-        public void Delete(T entity)
+        public virtual void Delete(T entity)
         {
             using var fitOnContext = new FitOnContext();
             fitOnContext.Remove(entity);

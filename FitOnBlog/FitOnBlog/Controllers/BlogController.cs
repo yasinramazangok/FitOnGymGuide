@@ -16,10 +16,29 @@ namespace FitOnBlog.Controllers
     public class BlogController : Controller
     {
         private readonly IBlogService _blogService;
+        private readonly ILogger<BlogController> _logger;
 
-        public BlogController(IBlogService blogService)
+
+        public BlogController(IBlogService blogService, ILogger<BlogController> logger)
         {
             _blogService = blogService;
+            _logger = logger;
+        }
+
+        private const int PageSize = 6;
+
+        private IEnumerable<Blog> GetBlogsForCurrentUser()
+        {
+            if (User.IsInRole("Admin"))
+            {
+                return _blogService.GetListAll();
+            }
+            else if (User.IsInRole("Yazar"))
+            {
+                string authorUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+                return _blogService.GetBlogsByAuthorId(authorUserId);
+            }
+            return new List<Blog>();
         }
 
         #region Admin Operations
@@ -27,46 +46,14 @@ namespace FitOnBlog.Controllers
         [Authorize(Roles = "Admin, Yazar")]
         public IActionResult Index()
         {
-            IEnumerable<Blog> values;
-
-            if (User.IsInRole("Admin"))
-            {
-                values = _blogService.GetListAll();
-            }
-
-            else if (User.IsInRole("Yazar"))
-            {
-                string authorUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-
-                values = _blogService.GetBlogsByAuthorId(authorUserId);
-            }
-            else
-            {
-                values = new List<Blog>();
-            }
+            var values = GetBlogsForCurrentUser();
             return View(values);
         }
 
         [Authorize(Roles = "Admin, Yazar")]
         public IActionResult BlogOverview()
         {
-            IEnumerable<Blog> values;
-
-            if (User.IsInRole("Admin"))
-            {
-                values = _blogService.GetListAll();
-            }
-
-            else if (User.IsInRole("Yazar"))
-            {
-                string authorUserId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-
-                values = _blogService.GetBlogsByAuthorId(authorUserId);
-            }
-            else
-            {
-                values = new List<Blog>();
-            }
+            var values = GetBlogsForCurrentUser();
             return View(values);
         }
 
@@ -105,7 +92,7 @@ namespace FitOnBlog.Controllers
             return View();
         }
 
-        [Authorize(Roles = "Admin")]
+        [Authorize(Roles = "Yazar")]
         public IActionResult DeleteBlog(int id)
         {
             var value = _blogService.GetById(id);
@@ -164,9 +151,9 @@ namespace FitOnBlog.Controllers
             }
             catch (Exception e)
             {
+                _logger.LogError(e, "Blog ayrıntıları getirilirken hata oluştu. BlogId: {Id}", id);
                 throw;
             }
-
         }
 
         [AllowAnonymous]
@@ -184,9 +171,10 @@ namespace FitOnBlog.Controllers
         [AllowAnonymous]
         public IActionResult BlogsByCategory(int id, int pageNumber = 1)
         {
+            // BlogsByCategoryViewModel will be defined and used here for a more readable and type-safe structure.
             try
             {
-                var blogListByCategory = _blogService.GetBlogsByCategoryId(id).ToPagedList(pageNumber, 6);
+                var blogListByCategory = _blogService.GetBlogsByCategoryId(id).ToPagedList(pageNumber, PageSize);
 
                 var selectedBlog = blogListByCategory.FirstOrDefault();
 
@@ -196,8 +184,9 @@ namespace FitOnBlog.Controllers
 
                 return View(blogListByCategory);
             }
-            catch (Exception)
+            catch (Exception e)
             {
+                _logger.LogError(e, "Blog ayrıntıları getirilirken hata oluştu. BlogId: {Id}", id);
                 throw;
             }
         }

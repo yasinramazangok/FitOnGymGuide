@@ -1,4 +1,5 @@
-﻿using EntityLayer.Concretes;
+﻿using DataAccessLayer.Contexts;
+using EntityLayer.Concretes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,5 +11,8 @@ namespace BusinessLayer.Abstracts
     public interface IAuthorService : IGenericService<Author>
     {
         public IEnumerable<Author> GetAuthenticatedAuthor(string userId);
+
+        // for Meet The Team in About
+        public List<Author> GetRandomAuthor();
     }
 }

@@ -37,6 +37,11 @@ namespace BusinessLayer.Concretes
             return _authorDal.GetListAll();
         }
 
+        public List<Author> GetRandomAuthor()
+        {
+            return _authorDal.GetRandomAuthor();
+        }
+
         public void Insert(Author author)
         {
             _authorDal.Insert(author);

@@ -14,7 +14,7 @@ namespace FitOnBlog.ViewComponents
 
         public IViewComponentResult Invoke()
         {
-            var values = _authorService.GetListAll();
+            var values = _authorService.GetRandomAuthor();
             return View(values);
         }
     }
