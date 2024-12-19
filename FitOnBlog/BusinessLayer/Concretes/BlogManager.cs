@@ -11,6 +11,8 @@ namespace BusinessLayer.Concretes
 {
     public class BlogManager : IBlogService
     {
+        // See the comments where a method is defined to learn what it does 
+
         private readonly IBlogDal _blogDal;
 
         private readonly ICategoryService _categoryService;

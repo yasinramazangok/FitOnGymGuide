@@ -9,8 +9,10 @@ namespace BusinessLayer.Abstracts
 {
     public interface IChartService
     {
+        // for Chart 
         public BlogCategoryDataDto GetCategoryBlogCountAsync();
 
+        // for Chart
         public BlogCategoryDataDto GetBlogRatingAsync();
     }
 }

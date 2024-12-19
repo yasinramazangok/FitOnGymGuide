@@ -18,11 +18,11 @@
                             <span class="username">
                                 <a href="#">@item.Name</a>
                             </span>
-                            <span class="description">@item.Blog?.Title</span>
+                            <span class="description" style="color : #0a0a0a">@item.Blog?.Title</span>
                         </div>
                         <p>@item.CommentText</p>
                         <p>
-                            <span class="description">@(((DateTime)item.Date).ToString("dd.MM.yyyy"))</span>
+                            <span class="description" style="color : #f36100">@(((DateTime)item.Date).ToString("dd.MM.yyyy"))</span>
                             <span class="float-right">
                                 <a href="/Comment/ChangeStatusToFalse/@item.CommentId" class="link-black text-sm"><i class="far fa-trash-alt mr-1"></i>Yorumu Kaldır</a>
                             </span>

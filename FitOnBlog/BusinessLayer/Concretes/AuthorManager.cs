@@ -11,12 +11,15 @@ namespace BusinessLayer.Concretes
 {
     public class AuthorManager : IAuthorService
     {
+        // See the comments where a method is defined to learn what it does 
+
         private readonly IAuthorDal _authorDal;
 
         public AuthorManager(IAuthorDal authorDal)
         {
             _authorDal = authorDal;
         }
+
         public void Delete(Author author)
         {
             _authorDal.Delete(author);

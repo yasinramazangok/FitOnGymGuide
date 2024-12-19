@@ -11,6 +11,8 @@ namespace BusinessLayer.Concretes
 {
     public class CategoryManager : ICategoryService
     {
+        // See the comments where a method is defined to learn what it does 
+
         private readonly ICategoryDal _categoryDal;
 
         public CategoryManager(ICategoryDal categoryDal)

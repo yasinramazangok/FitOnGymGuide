@@ -10,13 +10,18 @@
 
 <div class="wrapper">
     <section class="content">
-        <div class="card card-solid">
+        <div class="card card-danger">
+            <div class="card-header">
+                <h3 class="card-title">Yazarlar</h3>
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fas fa-minus"></i></button>
+                </div>
+            </div>
             <div class="card-body pb-0">
                 <div class="row d-flex align-items-stretch">
                     @foreach (var item in Model)
                     {
                         <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
-
                             <div class="card bg-light">
                                 <div class="card-header text-muted border-bottom-0">
                                     @item.Title
@@ -40,9 +45,6 @@
                                 </div>
                                 <div class="card-footer">
                                     <div class="text-right">
-                                        <a href="/Blog/Index/" class="btn btn-sm bg-teal">
-                                            <i class="fas fa-comments">Yazarın Blogları</i>
-                                        </a>
                                         <a href="/Author/DeleteAuthor/@item.AuthorId" class="btn btn-sm btn-outline-danger">
                                             <i class="fas fa-user"></i>Yazarı Sil
                                         </a>
@@ -52,7 +54,6 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     }
                 </div>

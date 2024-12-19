@@ -10,9 +10,10 @@ namespace BusinessLayer.Abstracts
 {
     public interface IAuthorService : IGenericService<Author>
     {
+        // for Author list in Admin panel and Author panel Profile page
         public IEnumerable<Author> GetAuthenticatedAuthor(string userId);
 
-        // for Meet The Team in About
+        // for Meet The Team in About page
         public List<Author> GetRandomAuthor();
     }
 }
