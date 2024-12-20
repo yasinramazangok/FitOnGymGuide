@@ -24,7 +24,7 @@
                         <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch">
                             <div class="card bg-light">
                                 <div class="card-header text-muted border-bottom-0">
-                                    @item.Title
+                                    <span class="badge badge-primary">@item.Title</span>
                                 </div>
                                 <div class="card-body pt-0">
                                     <div class="row">
@@ -45,6 +45,9 @@
                                 </div>
                                 <div class="card-footer">
                                     <div class="text-right">
+                                        <a href="/Blog/BlogOverview/" class="btn btn-sm bg-teal">
+                                            <i class="fas fa-comments">Tüm Blogları Gör</i>
+                                        </a>
                                         <a href="/Author/DeleteAuthor/@item.AuthorId" class="btn btn-sm btn-outline-danger">
                                             <i class="fas fa-user"></i>Yazarı Sil
                                         </a>

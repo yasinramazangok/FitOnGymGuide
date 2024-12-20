@@ -18,9 +18,20 @@ namespace DataAccessLayer.EntityFrameworkCore
             using var fitOnContext = new FitOnContext();
 
             return fitOnContext.Blogs
+                .OrderByDescending(d => d.Date)
                 .Include(blog => blog.Author)
                 .Include(blog => blog.Category)
                 .ToList();
+        }
+
+        public override Blog GetById(int id)
+        {
+            using var fitOnContext = new FitOnContext();
+
+            return fitOnContext.Blogs
+                .Include(blog => blog.Author)
+                .Include(blog => blog.Category)
+                .FirstOrDefault(blog => blog.BlogId == id);
         }
 
         public Blog GetLastBlogByCategory(int id)

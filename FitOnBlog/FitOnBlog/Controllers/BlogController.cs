@@ -18,7 +18,6 @@ namespace FitOnBlog.Controllers
         private readonly IBlogService _blogService;
         private readonly ILogger<BlogController> _logger;
 
-
         public BlogController(IBlogService blogService, ILogger<BlogController> logger)
         {
             _blogService = blogService;

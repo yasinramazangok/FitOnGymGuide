@@ -126,7 +126,7 @@
 
                                         <td class="mailbox-name">@item.Name</td>
                                         <td class="mailbox-subject">
-                                            <a href="/Contact/MessageDetails/@item.ContactId" style="color:black"><b>@item.Subject</b> - @item.Message?.Substring(1, (int)@item.Message.Substring(1, 50).LastIndexOf(" "))...</a>
+                                            <a href="/Contact/MessageDetails/@item.ContactId" style="color:black"><b>@item.Subject</b> - @item.Message?.Substring(0, @item.Message.Substring(0, 10).LastIndexOf(" "))...</a>
                                         </td>
                                         <td class="mailbox-attachment"><a href="/Contact/MessageDetails/@item.ContactId">Mesajı Oku</a></td>
                                         <td class="mailbox-date">@(((DateTime)item.Date).ToString("dd.MM.yyyy"))</td>

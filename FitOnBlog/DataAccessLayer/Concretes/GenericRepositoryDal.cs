@@ -18,7 +18,7 @@ namespace DataAccessLayer.Concretes
             fitOnContext.SaveChanges();
         }
 
-        public T GetById(int id)
+        public virtual T GetById(int id)
         {
             using var fitOnContext = new FitOnContext();
             return fitOnContext.Set<T>().Find(id);

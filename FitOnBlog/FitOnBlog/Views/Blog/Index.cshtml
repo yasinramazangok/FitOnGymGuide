@@ -3,10 +3,10 @@
 
 @{
     ViewData["Title"] = "Index";
-
     Layout = User.IsInRole("Admin") ? "~/Views/Shared/_AdminLayout.cshtml" :
              User.IsInRole("Yazar") ? "~/Views/Shared/_AuthorLayout.cshtml" :
              "~/Views/Shared/_DefaultLayout.cshtml";
+    string categoryColor = string.Empty;
 }
 
 <div class="card card-primary">
@@ -24,9 +24,9 @@
                 <tr>
                     <th>#</th>
                     <th>Başlık</th>
+                    <th>Tarih</th>
                     <th>Yazar</th>
                     <th>Kategori</th>
-                    <th>Tarih</th>
                     <th>Sil</th>
                     <th>Güncelle</th>
                     <th>Detaylar</th>
@@ -36,16 +36,41 @@
             <tbody>
                 @foreach (var item in Model)
                 {
+                    if (item.Category?.Name == "YOGA")
+                    {
+                        categoryColor = "badge badge-warning";
+                    }
+                    if (item.Category?.Name == "PİLATES")
+                    {
+                        categoryColor = "badge badge-info";
+                    }
+                    if (item.Category?.Name == "DİYET")
+                    {
+                        categoryColor = "badge badge-secondary";
+                    }
+                    if (item.Category?.Name == "KARDİYO")
+                    {
+                        categoryColor = "badge badge-danger";
+                    }
+                    if (item.Category?.Name == "CROSSFİT")
+                    {
+                        categoryColor = "badge badge-primary";
+                    }
+                    if (item.Category?.Name == "VÜCUT GELİŞTİRME")
+                    {
+                        categoryColor = "badge badge-success";
+                    }
+
                     <tr>
                         <td>@item.BlogId</td>
                         <td>@item.Title</td>
+                        <td style="color : #f36100">@(((DateTime)item.Date).ToString("dd.MM.yyyy"))</td>
                         <td>@item.Author?.Name</td>
-                        <td>@item.Category?.Name</td>
-                        <td>@(((DateTime)item.Date).ToString("dd.MM.yyyy"))</td>
+                        <td class="project-state"><span class="@categoryColor">@item.Category?.Name</span></td>
                         <td><a href="/Blog/DeleteBlog/@item.BlogId" class="btn btn-outline-danger">Sil</a></td>
                         <td><a href="/Blog/UpdateBlog/@item.BlogId" class="btn btn-outline-warning">Güncelle</a></td>
-                        <td><a href="/Blog/BlogDetails/@item.BlogId" target="_blank" class="btn btn-outline-primary">Sitede Gör</a></td>
-                        <td><a href="/Comment/CommentListByBlogId/@item.BlogId" class="btn btn-outline-secondary">Yorumları Oku</a></td>
+                        <td><a href="/Blog/BlogDetails/@item.BlogId" target="_blank" class="btn btn-primary">Sitede Gör</a></td>
+                        <td><a href="/Comment/CommentListByBlogId/@item.BlogId" class="btn btn-secondary">Yorumları Oku</a></td>
                     </tr>
                 }
             </tbody>
