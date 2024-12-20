@@ -198,27 +198,6 @@ namespace DataAccessLayer.Migrations
                     b.ToTable("Addresses");
                 });
 
-            modelBuilder.Entity("EntityLayer.Concretes.Admin", b =>
-                {
-                    b.Property<int>("AdminId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AdminId"));
-
-                    b.Property<string>("Name")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("Password")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
-
-                    b.HasKey("AdminId");
-
-                    b.ToTable("Admins");
-                });
-
             modelBuilder.Entity("EntityLayer.Concretes.Author", b =>
                 {
                     b.Property<int>("AuthorId")

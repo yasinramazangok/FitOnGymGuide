@@ -16,12 +16,11 @@ namespace DataAccessLayer.Contexts
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("server = YASINRAMAZANGOK; database = FitOnBlogDatabase; integrated security = true; trustservercertificate = true;");
+            optionsBuilder.UseSqlServer("server = YASINRAMAZANGOK; database = FitOnBlogDatabase; user id = fitonbloguser; password = Yasinramazan.123!; integrated security = false; trustservercertificate = true;");
         }
       
         public DbSet<About> Abouts { get; set; }
         public DbSet<Address> Addresses { get; set; }
-        public DbSet<Admin> Admins { get; set; }
         public DbSet<Author> Authors { get; set; }
         public DbSet<Blog> Blogs { get; set; }
         public DbSet<Category> Categories { get; set; }

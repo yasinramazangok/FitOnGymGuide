@@ -58,6 +58,7 @@ namespace FitOnBlog.Controllers
                     else
                     {
                         ModelState.AddModelError("", "Seçilen rol ile eşleşen bir kullanıcı bulunamadı.");
+                        return View(model);
                     }
                 }
                 ModelState.AddModelError("", "Geçersiz kullanıcı adı veya şifre.");

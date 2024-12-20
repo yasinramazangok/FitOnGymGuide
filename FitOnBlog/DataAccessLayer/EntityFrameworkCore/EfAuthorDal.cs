@@ -23,14 +23,45 @@ namespace DataAccessLayer.EntityFrameworkCore
         }
 
         // for Meet The Team in About
-        public override List<Author> GetListAll()
+        public List<Author> GetRandomAuthor()
         {
             using var fitOnContext = new FitOnContext();
 
             return fitOnContext.Authors
                 .OrderBy(a => Guid.NewGuid())
-                .Take(3) 
+                .Take(3)
                 .ToList();
+        }
+
+        public override void Delete(Author author)
+        {
+            using (var fitOnContext = new FitOnContext())
+            {
+                using (var transaction = fitOnContext.Database.BeginTransaction())
+                {
+                    try
+                    {
+                        var user = fitOnContext.Users
+                            .FirstOrDefault(u => u.Id == author.UserId);
+
+                        if (user != null)
+                        {
+                            fitOnContext.Users.Remove(user);
+
+                            fitOnContext.Authors.Remove(author);
+
+                            fitOnContext.SaveChanges();
+
+                            transaction.Commit();
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        transaction.Rollback();
+                        throw;
+                    }
+                }
+            }
         }
     }
 }

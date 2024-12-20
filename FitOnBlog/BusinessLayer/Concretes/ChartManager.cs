@@ -10,6 +10,8 @@ namespace BusinessLayer.Concretes
 {
     public class ChartManager : IChartService
     {
+        // See the comments where a method is defined to learn what it does 
+
         private readonly ICategoryService _categoryService;
 
         private readonly IBlogService _blogService;

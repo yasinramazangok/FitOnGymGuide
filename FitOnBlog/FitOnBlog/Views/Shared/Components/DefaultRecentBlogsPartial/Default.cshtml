@@ -7,9 +7,33 @@
     string categoryColor = string.Empty;
 }
 
-@*
-    Partial View
-*@
+<style>
+    .blog-card {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .image-container {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .blog-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+        .blog-image:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+</style>
 
 <div class="site-section">
     <div class="container">
@@ -21,7 +45,6 @@
         <div class="row">
             @foreach (var item in Model)
             {
-
                 if (item.Category?.Name == "YOGA")
                 {
                     categoryColor = "post-category text-white bg-warning mb-3";
@@ -46,10 +69,15 @@
                 {
                     categoryColor = "post-category text-white bg-success mb-3";
                 }
-
                 <div class="col-lg-4 mb-4">
                     <div class="entry2">
-                        <a href="/Blog/BlogDetails/@item.BlogId/" target="_blank"><img src="@item.ImageUrl" alt="Image" class="img-fluid rounded"></a>
+                        <div class="blog-card">
+                            <div class="image-container">
+                                <a href="/Blog/BlogDetails/@item.BlogId/" target="_blank"><img src="@item.ImageUrl" alt="Image" class="img-fluid rounded blog-image"></a>
+                            </div>
+                        </div>
+                        <br />
+                        @* <a href="/Blog/BlogDetails/@item.BlogId/" target="_blank"><img src="@item.ImageUrl" alt="Image" class="img-fluid rounded blog-image"></a> *@
                         <div class="excerpt">
                             <span class="@categoryColor">@item.Category?.Name</span>
                             <h2><a href="/Blog/BlogDetails/@item.BlogId/" target="_blank" style="color : #ffff">@item.Title</a></h2>
@@ -62,7 +90,6 @@
                             </div>
                             <p style="color : #ffff">@item.Content?.Substring(0, item.Content.Substring(0, 150).LastIndexOf(" "))...</p>
                             <p><a href="/Blog/BlogDetails/@item.BlogId/" target="_blank" style="color : #f36100">Devamını Oku</a></p>
-
                         </div>
                     </div>
                 </div>

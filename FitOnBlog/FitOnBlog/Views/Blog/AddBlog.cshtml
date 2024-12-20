@@ -30,6 +30,7 @@
                                 @await Component.InvokeAsync("AdminAddBlogCategoryListPartial")
                             </select>
                         </div>
+                        <span asp-validation-for="CategoryId" class="text-danger"></span>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-3 col-form-label">Resim Yolu</label>
@@ -52,6 +53,7 @@
                                 @await Component.InvokeAsync("AdminAddBlogAuthorListPartial")
                             </select>
                         </div>
+                        <span asp-validation-for="AuthorId" class="text-danger"></span>
                     </div>
                     <div class="form-group row">
                         <label class="col-sm-3 col-form-label">İçerik</label>

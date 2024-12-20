@@ -1,7 +1,10 @@
 ﻿using BusinessLayer.Abstracts;
 using BusinessLayer.Concretes;
+using BusinessLayer.ValidationRules;
 using DataAccessLayer.Abstracts;
 using DataAccessLayer.EntityFrameworkCore;
+using EntityLayer.Concretes;
+using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
@@ -32,10 +35,10 @@ namespace BusinessLayer.Containers
 
             services.AddScoped<ICommentService, CommentManager>();
             services.AddScoped<ICommentDal, EfCommentDal>();
-            
+
             services.AddScoped<IBlogService, BlogManager>();
             services.AddScoped<IBlogDal, EfBlogDal>();
-            
+
             services.AddScoped<IContactService, ContactManager>();
             services.AddScoped<IContactDal, EfContactDal>();
 
@@ -44,6 +47,11 @@ namespace BusinessLayer.Containers
 
             services.AddScoped<IChartService, ChartManager>();
 
+            services.AddScoped<IValidator<Blog>, BlogValidator>();
+            services.AddScoped<IValidator<Category>, CategoryValidator>();
+            services.AddScoped<IValidator<About>, AboutValidator>();
+            services.AddScoped<IValidator<Author>, AuthorValidator>();
+            services.AddScoped<IValidator<EmailSubscription>, EmailSubscriptionValidator>();
         }
     }
 }

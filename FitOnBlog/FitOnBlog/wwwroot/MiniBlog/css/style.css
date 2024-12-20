@@ -262,7 +262,7 @@ h1, h2, h3, h4, h5,
 }
 
 .bg-image {
-    background-image: url('/MiniBlog/images/slider-bg-1.jpg');
+    background-image: url('/MiniBlog/images/1.jpg');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;

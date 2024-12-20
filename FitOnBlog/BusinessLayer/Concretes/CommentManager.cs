@@ -11,6 +11,8 @@ namespace BusinessLayer.Concretes
 {
     public class CommentManager : ICommentService
     {
+        // See the comments where a method is defined to learn what it does 
+
         private readonly ICommentDal _commentDal;
 
         public CommentManager(ICommentDal commentDal)

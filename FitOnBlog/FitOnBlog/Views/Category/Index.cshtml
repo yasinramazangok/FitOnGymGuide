@@ -7,7 +7,7 @@
 }
 
 <section class="content">
-    <div class="card">
+    <div class="card card-info">
         <div class="card-header">
             <h3 class="card-title">Kategoriler</h3>
             <div class="card-tools">
@@ -18,29 +18,28 @@
             <table class="table table-striped projects">
                 <thead>
                     <tr>
-                        <th style="width: 8%">ID</th>
-                        <th style="width: 15%">Kategori Adı</th>
-                        <th style="width: 15%">Blog Sayısı</th>
-                        <th style="width: 15%">En Çok Yazanlar</th>
-                        <th style="width: 20%">Beğeni Oranı</th>
-                        <th style="width: 8%" class="text-center">Durumu</th>
-                        <th class="text-center" style="width: 35%">İşlemler</th>
+                        <th style="width: 15%">ID</th>
+                        <th style="width: 20%">Kategori Adı</th>
+                        <th class="text-center" style="width: 15%">Blog Sayısı</th>
+                        <th class="text-center" style="width: 15%">Silme İşlemi</th>
+                        <th class="text-center" style="width: 15%">Güncelleme İşlemi</th>
+                        <th class="text-center" style="width: 15%">Kategorideki Bloglar</th>
                     </tr>
                 </thead>
                 <tbody>
                     @foreach (var item in Model)
                     {
                         <tr>
-                            <td>#</td>
+                            <td>@item.CategoryId</td>
                             <td><a>@item.Name</a></td>
-                            <td><a>@item.BlogCount</a></td>
+                            <td class="project-state text-center"><span class="badge badge-success">@item.BlogCount</span></td>
+                            @*                             
                             <td>
                                 <ul class="list-inline">
                                     <li class="list-inline-item"><img alt="Avatar" class="table-avatar" src="~/BlogAdminLTE/dist/img/avatar.png"></li>
-                                    <li class="list-inline-item"><img alt="Avatar" class="table-avatar" src="~/BlogAdminLTE/dist/img/avatar2.png"></li>
-                                    <li class="list-inline-item"><img alt="Avatar" class="table-avatar" src="~/BlogAdminLTE/dist/img/avatar3.png"></li>
                                 </ul>
-                            </td>
+                            </td> 
+
                             <td class="project_progress">
                                 <div class="progress progress-sm">
                                     <div class="progress-bar bg-green" role="progressbar" aria-volumenow="57" aria-volumemin="0" aria-volumemax="100" style="width: 57%"></div>
@@ -48,9 +47,14 @@
                                 <small>57% Complete</small>
                             </td>
                             <td class="project-state"><span class="badge badge-success">Success</span></td>
+                            *@
                             <td class="project-actions text-center">
                                 <a class="btn btn-outline-danger btn-sm" href="/Category/DeleteCategory/@item.CategoryId"><i class="fas fa-trash"></i> Sil</a>
+                            </td>
+                            <td class="project-actions text-center">
                                 <a class="btn btn-outline-warning btn-sm" href="/Category/UpdateCategory/@item.CategoryId"><i class="fas fa-pencil-alt"></i> Güncelle</a>
+                            </td>
+                            <td class="project-actions text-center">
                                 <a class="btn btn-outline-primary btn-sm" href="/Blog/BlogsByCategory/@item.CategoryId" target="_blank"><i class="fas fa-fast-forward"></i> Sitede Gör</a>
                             </td>
                         </tr>

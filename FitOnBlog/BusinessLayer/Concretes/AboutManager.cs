@@ -9,9 +9,14 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concretes
 {
-    public class AboutManager(IAboutDal aboutDal) : IAboutService
+    public class AboutManager : IAboutService
     {
-        private readonly IAboutDal _aboutDal = aboutDal; // Primary Constructor
+        private readonly IAboutDal _aboutDal;
+
+        public AboutManager(IAboutDal aboutDal)
+        {
+            _aboutDal = aboutDal;
+        }
 
         public void Delete(About about)
         {

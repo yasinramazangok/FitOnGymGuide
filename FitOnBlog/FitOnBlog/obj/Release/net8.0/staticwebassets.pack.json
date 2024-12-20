@@ -565,34 +565,6 @@
       "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\boxed-bg.png"
     },
     {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\credit\\american-express.png",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\credit\\american-express.png"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\credit\\cirrus.png",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\credit\\cirrus.png"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\credit\\mastercard.png",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\credit\\mastercard.png"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\credit\\mestro.png",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\credit\\mestro.png"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\credit\\paypal.png",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\credit\\paypal.png"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\credit\\paypal2.png",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\credit\\paypal2.png"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\credit\\visa.png",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\credit\\visa.png"
-    },
-    {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\default-150x150.png",
       "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\default-150x150.png"
     },
@@ -623,74 +595,6 @@
     {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\logo\\logo.svg",
       "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\logo\\logo.svg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\photo1.png",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\photo1.png"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\photo2.png",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\photo2.png"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\photo3.jpg",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\photo3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\photo4.jpg",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\photo4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\prod-1.jpg",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\prod-1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\prod-2.jpg",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\prod-2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\prod-3.jpg",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\prod-3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\prod-4.jpg",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\prod-4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\prod-5.jpg",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\prod-5.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\user1-128x128.jpg",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\user1-128x128.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\user2-160x160.jpg",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\user2-160x160.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\user3-128x128.jpg",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\user3-128x128.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\user4-128x128.jpg",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\user4-128x128.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\user5-128x128.jpg",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\user5-128x128.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\user6-128x128.jpg",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\user6-128x128.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\user7-128x128.jpg",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\user7-128x128.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\user8-128x128.jpg",
-      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\user8-128x128.jpg"
     },
     {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\js\\adminlte.js",
@@ -8437,40 +8341,28 @@
       "PackagePath": "staticwebassets\\DarkPan\\form.html"
     },
     {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\DarkPan\\img\\1.jpg",
+      "PackagePath": "staticwebassets\\DarkPan\\img\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\DarkPan\\img\\2.jpg",
+      "PackagePath": "staticwebassets\\DarkPan\\img\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\DarkPan\\img\\29.jpg",
+      "PackagePath": "staticwebassets\\DarkPan\\img\\29.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\DarkPan\\img\\30.jpg",
+      "PackagePath": "staticwebassets\\DarkPan\\img\\30.jpg"
+    },
+    {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\DarkPan\\img\\fiton-favicon.png",
       "PackagePath": "staticwebassets\\DarkPan\\img\\fiton-favicon.png"
     },
     {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\DarkPan\\img\\fiton-logo.svg",
       "PackagePath": "staticwebassets\\DarkPan\\img\\fiton-logo.svg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\DarkPan\\img\\role-screen.jpg",
-      "PackagePath": "staticwebassets\\DarkPan\\img\\role-screen.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\DarkPan\\img\\role-screen1.jpg",
-      "PackagePath": "staticwebassets\\DarkPan\\img\\role-screen1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\DarkPan\\img\\slider-bg-1.jpg",
-      "PackagePath": "staticwebassets\\DarkPan\\img\\slider-bg-1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\DarkPan\\img\\testimonial-1.jpg",
-      "PackagePath": "staticwebassets\\DarkPan\\img\\testimonial-1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\DarkPan\\img\\testimonial-2.jpg",
-      "PackagePath": "staticwebassets\\DarkPan\\img\\testimonial-2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\DarkPan\\img\\trainer-bg.jpg",
-      "PackagePath": "staticwebassets\\DarkPan\\img\\trainer-bg.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\DarkPan\\img\\user.jpg",
-      "PackagePath": "staticwebassets\\DarkPan\\img\\user.jpg"
     },
     {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\DarkPan\\index.html",
@@ -9109,8 +9001,200 @@
       "PackagePath": "staticwebassets\\MiniBlog\\fonts\\icomoon\\style.css"
     },
     {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\10.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\11.1.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\11.1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\11.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\12.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\13.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\14.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\15.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\15.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\16.png",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\16.png"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\17.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\18.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\18.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\19.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\19.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\2.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\20.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\20.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\21.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\21.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\22.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\22.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\23.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\23.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\24.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\24.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\25.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\25.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\26.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\26.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\27.png",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\27.png"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\28.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\28.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\29.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\29.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\3.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\30.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\30.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\31.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\31.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\32.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\32.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\33.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\33.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\34.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\34.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\35.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\35.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\36.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\36.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\37.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\37.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\38.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\38.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\39.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\39.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\4.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\40.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\40.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\5.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\6.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\7.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\8.png",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\8.png"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\9.1.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\9.1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\9.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\9.jpg"
+    },
+    {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\authors\\team-1.jpg",
       "PackagePath": "staticwebassets\\MiniBlog\\images\\authors\\team-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\authors\\team-10.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\authors\\team-10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\authors\\team-11.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\authors\\team-11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\authors\\team-12.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\authors\\team-12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\authors\\team-13.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\authors\\team-13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\authors\\team-14.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\authors\\team-14.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\authors\\team-15.png",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\authors\\team-15.png"
     },
     {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\authors\\team-2.jpg",
@@ -9133,12 +9217,164 @@
       "PackagePath": "staticwebassets\\MiniBlog\\images\\authors\\team-6.jpg"
     },
     {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\cebupacific-booking.jpg",
-      "PackagePath": "staticwebassets\\MiniBlog\\images\\cebupacific-booking.jpg"
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\authors\\team-7.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\authors\\team-7.jpg"
     },
     {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\comment-icon.png",
-      "PackagePath": "staticwebassets\\MiniBlog\\images\\comment-icon.png"
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\authors\\team-8.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\authors\\team-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\authors\\team-9.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\authors\\team-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\bodybuilding\\bb.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\bodybuilding\\bb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\bodybuilding\\bb1.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\bodybuilding\\bb1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\bodybuilding\\bb2.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\bodybuilding\\bb2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\bodybuilding\\bb3.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\bodybuilding\\bb3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\bodybuilding\\bb4.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\bodybuilding\\bb4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\bodybuilding\\bb5.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\bodybuilding\\bb5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\bodybuilding\\bb6.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\bodybuilding\\bb6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\cardio\\cardio.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\cardio\\cardio.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\cardio\\cardio1.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\cardio\\cardio1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\cardio\\cardio2.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\cardio\\cardio2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\cardio\\cardio3.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\cardio\\cardio3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\cardio\\cardio4.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\cardio\\cardio4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\cardio\\cardio5.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\cardio\\cardio5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\crossfit\\crossfit.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\crossfit\\crossfit.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\crossfit\\crossfit1.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\crossfit\\crossfit1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\crossfit\\crossfit2.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\crossfit\\crossfit2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\crossfit\\crossfit3.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\crossfit\\crossfit3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\crossfit\\crossfit4.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\crossfit\\crossfit4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\crossfit\\crossfit5.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\crossfit\\crossfit5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\crossfit\\crossfit6.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\crossfit\\crossfit6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\diet\\1.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\diet\\1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\diet\\10.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\diet\\10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\diet\\11.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\diet\\11.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\diet\\12.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\diet\\12.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\diet\\2.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\diet\\2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\diet\\3.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\diet\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\diet\\4.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\diet\\4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\diet\\5.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\diet\\5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\diet\\6.png",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\diet\\6.png"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\diet\\7.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\diet\\7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\diet\\8.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\diet\\8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\diet\\9.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\diet\\9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\pilates\\pilates.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\pilates\\pilates.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\pilates\\pilates1.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\pilates\\pilates1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\pilates\\pilates2.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\pilates\\pilates2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\yoga\\yoga.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\yoga\\yoga.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\yoga\\yoga1.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\yoga\\yoga1.jpg"
     },
     {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\fiton-favicon.png",
@@ -9147,58 +9383,6 @@
     {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\fiton-logo.svg",
       "PackagePath": "staticwebassets\\MiniBlog\\images\\fiton-logo.svg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\hero_1.jpg",
-      "PackagePath": "staticwebassets\\MiniBlog\\images\\hero_1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\img_1.jpg",
-      "PackagePath": "staticwebassets\\MiniBlog\\images\\img_1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\img_2.jpg",
-      "PackagePath": "staticwebassets\\MiniBlog\\images\\img_2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\img_3.jpg",
-      "PackagePath": "staticwebassets\\MiniBlog\\images\\img_3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\img_4.jpg",
-      "PackagePath": "staticwebassets\\MiniBlog\\images\\img_4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\img_v_1.jpg",
-      "PackagePath": "staticwebassets\\MiniBlog\\images\\img_v_1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\img_v_2.jpg",
-      "PackagePath": "staticwebassets\\MiniBlog\\images\\img_v_2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\person_1.jpg",
-      "PackagePath": "staticwebassets\\MiniBlog\\images\\person_1.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\person_2.jpg",
-      "PackagePath": "staticwebassets\\MiniBlog\\images\\person_2.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\person_3.jpg",
-      "PackagePath": "staticwebassets\\MiniBlog\\images\\person_3.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\person_4.jpg",
-      "PackagePath": "staticwebassets\\MiniBlog\\images\\person_4.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\person_5.jpg",
-      "PackagePath": "staticwebassets\\MiniBlog\\images\\person_5.jpg"
-    },
-    {
-      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\slider-bg-1.jpg",
-      "PackagePath": "staticwebassets\\MiniBlog\\images\\slider-bg-1.jpg"
     },
     {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\index.html",

@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{0E215ED2-EFB8-40FA-9243-67F59D868BF7}|TestLayer\\TestLayer.csproj|c:\\users\\yasinramazangok\\desktop\\fitongymguide\\fitonblog\\testlayer\\unittests\\blogtests\\businesslayerupdateunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E215ED2-EFB8-40FA-9243-67F59D868BF7}|TestLayer\\TestLayer.csproj|solutionrelative:testlayer\\unittests\\blogtests\\businesslayerupdateunittests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -35,19 +30,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BusinessLayerUpdateUnitTests.cs",
-              "DocumentMoniker": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\TestLayer\\UnitTests\\BlogTests\\BusinessLayerUpdateUnitTests.cs",
-              "RelativeDocumentMoniker": "TestLayer\\UnitTests\\BlogTests\\BusinessLayerUpdateUnitTests.cs",
-              "ToolTip": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\TestLayer\\UnitTests\\BlogTests\\BusinessLayerUpdateUnitTests.cs",
-              "RelativeToolTip": "TestLayer\\UnitTests\\BlogTests\\BusinessLayerUpdateUnitTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-17T02:40:20.179Z",
-              "EditorCaption": ""
             }
           ]
         }

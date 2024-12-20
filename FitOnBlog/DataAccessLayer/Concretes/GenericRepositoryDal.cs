@@ -11,14 +11,14 @@ namespace DataAccessLayer.Concretes
 {
     public class GenericRepositoryDal<T> : IGenericDal<T> where T : class, new()
     {
-        public void Delete(T entity)
+        public virtual void Delete(T entity)
         {
             using var fitOnContext = new FitOnContext();
             fitOnContext.Remove(entity);
             fitOnContext.SaveChanges();
         }
 
-        public T GetById(int id)
+        public virtual T GetById(int id)
         {
             using var fitOnContext = new FitOnContext();
             return fitOnContext.Set<T>().Find(id);
