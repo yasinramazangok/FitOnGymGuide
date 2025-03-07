@@ -25,6 +25,6 @@ namespace DataAccessLayer.EntityFrameworkCore
             using var fitOnContext = new FitOnContext();
 
             fitOnContext.Database.ExecuteSqlRaw("EXEC IncrementBlogCount @CategoryId = {0}", categoryId);
-        }
+        }    
     }
 }

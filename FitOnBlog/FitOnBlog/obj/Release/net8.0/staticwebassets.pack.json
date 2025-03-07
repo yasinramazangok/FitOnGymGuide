@@ -525,6 +525,10 @@
       "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\css\\alt\\adminlte.plugins.min.css.map"
     },
     {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\16.png",
+      "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\16.png"
+    },
+    {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\BlogAdminLTE\\dist\\img\\2.png",
       "PackagePath": "staticwebassets\\BlogAdminLTE\\dist\\img\\2.png"
     },
@@ -9367,6 +9371,10 @@
     {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\pilates\\pilates2.jpg",
       "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\pilates\\pilates2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\pilates\\pilates3.jpg",
+      "PackagePath": "staticwebassets\\MiniBlog\\images\\blog\\pilates\\pilates3.jpg"
     },
     {
       "Id": "C:\\Users\\yasinramazangok\\Desktop\\FitOnGymGuide\\FitOnBlog\\FitOnBlog\\wwwroot\\MiniBlog\\images\\blog\\yoga\\yoga.jpg",

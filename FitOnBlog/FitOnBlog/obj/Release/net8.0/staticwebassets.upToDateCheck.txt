@@ -126,6 +126,7 @@ wwwroot\BlogAdminLTE\dist\css\alt\adminlte.plugins.css
 wwwroot\BlogAdminLTE\dist\css\alt\adminlte.plugins.css.map
 wwwroot\BlogAdminLTE\dist\css\alt\adminlte.plugins.min.css
 wwwroot\BlogAdminLTE\dist\css\alt\adminlte.plugins.min.css.map
+wwwroot\BlogAdminLTE\dist\img\16.png
 wwwroot\BlogAdminLTE\dist\img\2.png
 wwwroot\BlogAdminLTE\dist\img\4.png
 wwwroot\BlogAdminLTE\dist\img\AdminLTELogo.png
@@ -2399,6 +2400,7 @@ wwwroot\MiniBlog\images\blog\diet\9.jpg
 wwwroot\MiniBlog\images\blog\pilates\pilates.jpg
 wwwroot\MiniBlog\images\blog\pilates\pilates1.jpg
 wwwroot\MiniBlog\images\blog\pilates\pilates2.jpg
+wwwroot\MiniBlog\images\blog\pilates\pilates3.jpg
 wwwroot\MiniBlog\images\blog\yoga\yoga.jpg
 wwwroot\MiniBlog\images\blog\yoga\yoga1.jpg
 wwwroot\MiniBlog\images\fiton-favicon.png
